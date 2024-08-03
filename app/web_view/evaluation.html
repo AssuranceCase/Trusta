@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assurance Case Ratings</title>
+
+  <script type="text/javascript" src="../web_view/js/vue.global.js"></script>
+</head>
+
+<body>
+  <h2 style="text-align: center;">Assurance Case Rating, Reasons, and Suggestions</h2>
+  <div id="app">
+    <div style="display: flex; margin: auto; width: 550px;">
+      <div v-for="(value, key, index) in ratings" :key="index" style="margin: 0 20px 0 20px;">
+        <span class="rating">
+          <strong>{{ key }}:</strong> {{ value['Evaluation Rating'] }}
+        </span>
+      </div>
+    </div>
+
+    <div>
+      <div style="width: 1200px;">
+        <h2 style="text-align: center;">Original Assurance Case</h2>
+        <object :data="images['original']" type="image/svg+xml"></object>
+      </div>
+
+      <div style="width: 1200px;">
+        <h2 style="text-align: center;">Suggested Assurance Case</h2>
+        <object :data="images['suggested']" type="image/svg+xml"></object>
+      </div>
+    </div>
+
+    <div v-for="(value, key, index) in ratings" :key="index" class="rating-section">
+      <div class="rating">
+        <h2>{{ key }}</h2>
+        <p><strong>Evaluation Rating:</strong> {{ value['Evaluation Rating'] }}</p>
+        <div>
+          <strong>Reasons for Rating:</strong>
+          <ul>
+            <li v-for="reason in value['Reasons for Rating']">{{ reason }}</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Suggestions for Improvement:</strong>
+          <ul>
+            <li v-for="suggestion in value['Suggestions for Improvement']">{{ suggestion }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Your JSON data
+    const ratingsData_demo = {
+      "Ratings": {
+        "Structure Rating": {
+          "Evaluation Rating": "7/10",
+          "Reasons for Rating": [
+            "Compliance: The structure of the Assurance Case follows the GSN format, which is a standard format for representing Assurance Cases.",
+            "Layout Rationality: The layout of the Assurance Case is logical and follows a hierarchical structure, with goals, strategies, solutions, context, assumptions, and justifications clearly defined."
+          ],
+          "Suggestions for Improvement": [
+            "Suggestion 1: Consider using consistent indentation and line breaks to enhance readability.",
+            "Suggestion 2: Add a top-level goal to clearly indicate the overall objective of the Assurance Case."
+          ]
+        }, 
+        "Content Rating": {
+          "Evaluation Rating": "6/10",
+          "Reasons for Rating": [
+            "Grammar, Spelling, and Punctuation: There are some minor grammar and punctuation errors in the Assurance Case, such as missing spaces and incorrect capitalization.",
+            "Clarity and Ambiguity: The descriptions in the Assurance Case are generally clear, but there are some statements that could be more precise or could benefit from additional context."
+          ],
+          "Suggestions for Improvement": [
+            "Suggestion 1: Review the Assurance Case for grammar and punctuation errors, and make necessary corrections.",
+            "Suggestion 2: Provide more specific details and definitions for certain terms and concepts to reduce ambiguity."
+          ]
+        }, 
+        "Logic Rating": {
+          "Evaluation Rating": "5/10",
+          "Reasons for Rating": [
+            "Comprehensiveness: The Assurance Case covers a range of aspects related to the safe stopping of the automatic guided vehicle, but there are some gaps in the logical flow and coverage.",
+            "Redundancy: There are some redundant statements in the Assurance Case that could be consolidated or removed to improve clarity and conciseness.",
+            "Contradiction: There is a contradiction between G2 and G4, as G2 assumes that the vehicle can decelerate to a standstill before impact, while G4 assumes that the vehicle can start braking at the appropriate time."
+          ],
+          "Suggestions for Improvement": [
+            "Suggestion 1: Review the Assurance Case for logical gaps and ensure that all necessary aspects are covered.",
+            "Suggestion 2: Consolidate redundant statements to improve clarity and conciseness.",
+            "Suggestion 3: Resolve the contradiction between G2 and G4 by aligning the assumptions or revising the goals."
+          ]
+        }
+      },
+      "Images": {
+        "original": "../history/tmp_gsn2x_code.svg",
+        "suggested": "../history/tmp_gsn2x_code.svg"
+      }
+    };
+
+    const ratingsData = <RATINGS_DATA>;
+
+    // Vue instance
+    const app = {
+      data() {
+        return {
+          ratings: ratingsData.Ratings,
+          images: ratingsData.Images
+        }
+      }
+    }
+    Vue.createApp(app).mount('#app')
+  </script>
+
+
+</body>
+
+</html>

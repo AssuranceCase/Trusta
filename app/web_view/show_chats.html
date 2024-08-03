@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block_p {margin: 0px; padding: 0px; white-space: pre-wrap;}
+        .block_span {width:60px; display:block; float:left;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/vue.global.js"></script>
+    <script type="text/javascript" src="js/axios.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="app" style="font-size: 14px;">
+<table class="table-sm table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>参数</th>
+            <th>提问</th>
+            <th>回答</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr v-for="(chat, index) in info">
+            <th scope="row" width="40">{[ index + 1 ]}</th>
+            <td width="180">
+                <p>模型名：{[ chat.llm_name ]}</p>
+                <p>发散度：{[ chat.temperature ]}</p>
+                <p>尝试次数：{[ chat.num_tries ]}</p>
+                <p>推理耗时：{[ chat.elapsed_time ]} 秒</p>
+                <p>时间：{[ chat.create_time ]}</p>
+            </td>
+            
+            <td class="block_p">{[ chat.question_text ]}</td>
+            <td class="block_p">{[ chat.answer_text ]}</td>
+        </tr>
+
+    </tbody>
+</table>  
+</div>
+
+<script>
+
+const app = {
+    compilerOptions: {
+        delimiters: ['{[', ']}'],
+        comments: true
+    },
+    data() {
+        return {
+            info: 'chats 数据',
+            timer: null // 初始定时器变量名为null
+        }
+    },
+    mounted () {
+        this.getAllServerInfo();
+        /*
+        最初始情况，项目刚打开的时候，这个时候页面是必定没有定时器的，那么逻辑就会走else，这个时候就会注册一个定时器去循环调用相应逻辑代码
+        后续有三种情况
+            情况一：路由跳转，跳走了，就要清除这个定时器，所以在beforeDestroy钩子中要清除定时器
+            情况二：关闭项目，关闭项目了以后，系统就会自动停掉定时器，这个不用管它
+            情况三：刷新页面，这个时候vue组件的钩子是不会执行beforeDestroy和destroyed钩子的，所以
+                    需要加上if判断一下，若还有定时器的话，就清除掉，所以这个就是mounted钩子的if判断的原因
+        */
+        if (this.timer) {
+            clearInterval(this.timer);
+        } else {
+            this.timer = setInterval(this.getAllServerInfo, 8000);
+        }
+    },
+    methods: {
+        getAllServerInfo() {
+            let that = this;
+            axios
+            .get('http://52.83.192.235:8001/openai/chat_history/today/')
+            .then(function (response) {
+                that.info = response.data;
+                // 预处理数据
+                for (var i = 0; i < that.info.length; i++) {
+                    that.info[i].question_text = that.info[i].question_text.replace(/\\n/g,'\n');
+                    that.info[i].answer_text = that.info[i].answer_text.replace(/\\n/g,'\n');
+                }
+            })
+            .catch(function (error) { // 请求失败处理
+                console.log('axios错误');
+                console.log(error);
+            });
+        }
+    },
+    beforeDestroy() {
+        clearInterval(this.timer);
+    }
+}
+    
+Vue.createApp(app).mount('#app')
+
+</script>
+</body>
+</html>
+

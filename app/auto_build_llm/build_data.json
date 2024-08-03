@@ -1,0 +1,129 @@
+{
+    "The automatic guided vehicle can stop safely when encountering obstacles.": {
+        "goal": "The automatic guided vehicle can stop safely when encountering obstacles.",
+        "block": "Decomposition",
+        "strategy": "The safety of the automatic guided vehicle can be determined by examining its obstacle detection system and braking system.",
+        "subgoals": {
+            "G1.1": "The obstacle detection system is reliable.",
+            "G1.2": "The braking system is effective."
+        },
+        "solutions": {
+            "Sn1.1": "Sensor test reports, third-party evaluations.",
+            "Sn1.2": "Brake performance tests, manufacturer specifications."
+        }
+    },
+    "The obstacle detection system is reliable.": {
+        "goal": "The obstacle detection system is reliable.",
+        "block": "Decomposition",
+        "strategy": "The reliability of the obstacle detection system can be determined by examining its hardware and software components.",
+        "subgoals": {
+            "G1.1": "The sensor system is accurate.",
+            "G1.2": "The object recognition algorithm is effective.",
+            "G1.3": "The system can detect obstacles in real-time."
+        },
+        "solutions": {
+            "Sn1.1": "Manufacturer test reports, third-party evaluations.",
+            "Sn1.2": "Code audits, simulation results.",
+            "Sn1.3": "Real-time testing scenarios, independent assessments."
+        }
+    },
+    "The braking system is effective.": {
+        "goal": "The braking system is effective.",
+        "block": "Decomposition",
+        "strategy": "The effectiveness of the braking system can be determined by examining its components and performance.",
+        "subgoals": {
+            "G1.1": "The brake pads have sufficient friction.",
+            "G1.2": "The brake fluid is at the correct level.",
+            "G1.3": "The brake pedal is responsive."
+        },
+        "solutions": {
+            "Sn1.1": "Friction coefficient tests, manufacturer specifications.",
+            "Sn1.2": "Fluid level checks, maintenance records.",
+            "Sn1.3": "Pedal sensitivity tests, user feedback."
+        }
+    },
+    "The automatic guided trolley can stop safely when encountering obstacles.": {
+        "goal": "The self-driving car is safe to operate on public roads.",
+        "block": "Decomposition",
+        "strategy": "The safety of the self-driving car can be determined by examining its hardware and software components.",
+        "subgoals": {
+            "G1.1": "The sensor system is reliable.",
+            "G1.2": "The navigation algorithm is accurate.",
+            "G1.3": "The emergency systems function correctly."
+        },
+        "solutions": {
+            "Sn1.1": "Manufacturer test reports, third-party evaluations.",
+            "Sn1.2": "Code audits, simulation results.",
+            "Sn1.3": "Test scenarios, independent assessments."
+        }
+    },
+    "The sensor system is reliable.": {
+        "goal": "The sensor system is reliable.",
+        "block": "Decomposition",
+        "strategy": "The reliability of the sensor system can be determined by examining its hardware and software components.",
+        "subgoals": {
+            "G1.1": "The hardware components are fault-tolerant.",
+            "G1.2": "The software is error-free.",
+            "G1.3": "The calibration process is accurate."
+        },
+        "solutions": {
+            "Sn1.1": "Manufacturer test reports, third-party evaluations of hardware components.",
+            "Sn1.2": "Code audits, simulation results for software reliability.",
+            "Sn1.3": "Calibration records, independent assessments of sensor accuracy."
+        }
+    },
+    "The navigation algorithm is accurate.": {
+        "goal": "The navigation algorithm is accurate.",
+        "block": "Decomposition",
+        "strategy": "The accuracy of the navigation algorithm can be determined by examining its ability to provide correct routes and detect obstacles.",
+        "subgoals": {
+            "G1.1": "The algorithm provides correct routes in 95% of cases.",
+            "G1.2": "The algorithm detects obstacles with a false negative rate of less than 5%."
+        },
+        "solutions": {
+            "Sn1.1": "Simulation results, test drives on various routes.",
+            "Sn1.2": "Sensor data analysis, obstacle detection logs."
+        }
+    },
+    "The emergency systems function correctly.": {
+        "goal": "The emergency systems function correctly.",
+        "block": "Decomposition",
+        "strategy": "The correctness of the emergency systems can be determined by examining their individual components and their interactions.",
+        "subgoals": {
+            "G1.1": "The fire suppression system functions correctly.",
+            "G1.2": "The emergency power supply system functions correctly.",
+            "G1.3": "The alarm and notification system functions correctly."
+        },
+        "solutions": {
+            "Sn1.1": "Test reports, third-party evaluations of the fire suppression system.",
+            "Sn1.2": "Manufacturer documentation, independent assessments of the emergency power supply system.",
+            "Sn1.3": "System logs, simulation results demonstrating correct alarm and notification functionality."
+        }
+    },
+    "The hardware components are fault-tolerant.": {
+        "goal": "The hardware components are fault-tolerant.",
+        "block": "Decomposition",
+        "strategy": "The fault tolerance of the hardware components can be determined by examining their redundancy and fail-safe mechanisms.",
+        "subgoals": {
+            "G1.1": "The redundant systems are properly configured.",
+            "G1.2": "The fail-safe mechanisms are correctly implemented."
+        },
+        "solutions": {
+            "Sn1.1": "Manufacturer documentation, system design specifications.",
+            "Sn1.2": "Test results, fault injection experiments."
+        }
+    },
+    "The 1553B bus transmits messages that conform to requirements": {
+        "goal": "The 1553B bus transmits messages that conform to requirements.",
+        "block": "Decomposition",
+        "strategy": "From two aspects: message transmission timing and content.",
+        "subgoals": {
+            "G1.1": "The 1553B bus transmits messages within the required timing constraints.",
+            "G1.2": "The 1553B bus transmits messages with correct content."
+        },
+        "solutions": {
+            "Sn1.1": "Bus protocol specifications, testing results showing timing compliance.",
+            "Sn1.2": "Message format documentation, validation of message contents through testing or simulation."
+        }
+    }
+}

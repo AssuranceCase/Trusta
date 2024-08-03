@@ -1,0 +1,93 @@
+BEGIN
+Root : "type:PC"
+
+### DS理论案例-开始
+Root -> A : 1
+A -> B : 0.3
+A -> C : 0.7
+C -> D : 0.5
+C -> E : 0.5
+# B -- D
+
+A : "type:PC"
+C : "type:PR"
+B : "dec:0.6,conf:0.4"
+D : "dec:0.5,conf:0.4"
+E : "dec:0.7,conf:0.6"
+
+A = "通过比较反馈机制验证两次构建生成的二进制包的一致性并反馈不可解释的差异"
+B = "使用比较工具验证两次构建生成的二进制包的一致性"
+C = "有反馈机制以消除经比较发现的不可解释的差异"
+D = "消除比较发现的不可解释的差异"
+E = "将比较发现的不可解释的差异积累为新的已知差异因素"
+
+# C << "bcolor:Aqua"
+# B << "bcolor:GreenYellow"
+### DS理论案例-结束
+
+### 经典与案例-开始
+Root -> series_fan_unit : 1
+series_fan_unit -> fan_1 : 0.5
+series_fan_unit -> fan_2 : 0.5
+
+series_fan_unit : "type:ClassicAnd"
+fan_1 : "dec:0.6,conf:0.4"
+fan_2 : "dec:0.8,conf:0.8"
+
+series_fan_unit = "串联风扇组"
+fan_1 = "风扇1"
+fan_2 = "风扇2"
+### 经典与案例-结束
+
+### 经典或案例-开始
+Root -> parallel_fan_unit : 1
+parallel_fan_unit -> fan_1 : 0.5
+parallel_fan_unit -> fan_2 : 0.5
+
+parallel_fan_unit : "type:ClassicOr"
+fan_1 : "dec:0.6,conf:0.4"
+fan_2 : "dec:0.8,conf:0.8"
+
+parallel_fan_unit = "并联风扇组"
+fan_1 = "风扇1"
+fan_2 = "风扇2"
+### 经典或案例-结束
+
+### 加权求和案例-开始
+Root -> software_defect : 1
+software_defect -> bug_1 : 0.5
+software_defect -> bug_2 : 0.3
+software_defect -> bug_3 : 0.2
+
+software_defect : "type:WeightedSum"
+bug_1 : "dec:0.6,conf:0.8"
+bug_2 : "dec:0.7,conf:0.8"
+bug_3 : "dec:0.8,conf:0.8"
+
+software_defect = "软件缺陷"
+bug_1 = "计算错误"
+bug_2 = "意外关闭"
+bug_3 = "执行较慢"
+### 加权求和案例-结束
+
+### 短板案例-开始
+Root -> equipment : 1
+equipment -> power : 0.7
+equipment -> disk : 0.1
+equipment -> cpu : 0.1
+equipment -> memory : 0.1
+
+equipment : "type:BucketsEffect"
+power : "dec:0.3,conf:0.7"
+disk : "dec:0.6,conf:0.4"
+cpu : "dec:0.6,conf:0.4"
+memory : "dec:0.6,conf:0.4"
+
+equipment = "电子设备"
+power = "电源"
+disk = "磁盘"
+cpu = "中央处理器"
+memory = "内存"
+### 短板案例-结束
+
+END

@@ -1,0 +1,805 @@
+{
+    "UAVs flying in the managed airspace will not collide with fixed ground-based obstacles (FGB)": {
+        "goal": "UAVs flying in the managed airspace will not collide with fixed ground-based obstacles (FGB)",
+        "block": "Decomposition",
+        "strategy": "The safety of the UAVs can be determined by examining its navigation system, obstacle detection system, and control system.",
+        "subgoals": {
+            "G1.1": "The UAV's navigation system accurately identifies the location of FGBs.",
+            "G1.2": "The UAV's obstacle detection system can detect FGBs in its flight path.",
+            "G1.3": "The UAV's control system can effectively avoid FGBs."
+        },
+        "solutions": {
+            "Sn1.1": "Navigation system test reports, third-party evaluations.",
+            "Sn1.2": "Obstacle detection system test reports, simulation results.",
+            "Sn1.3": "Control system test scenarios, independent assessments."
+        }
+    },
+    "Comply to infrastructure safety case (ISAC) requirements.": {
+        "goal": "Comply to infrastructure safety case (ISAC) requirements.",
+        "block": "Decomposition",
+        "strategy": "Compliance to ISAC requirements can be achieved by meeting all the individual requirements outlined in the ISAC.",
+        "subgoals": {
+            "G1.1": "Comply to ISAC requirement 1.",
+            "G1.2": "Comply to ISAC requirement 2.",
+            "G1.3": "Comply to ISAC requirement 3."
+        },
+        "solutions": {
+            "Sn1.1": "Documentation showing compliance to ISAC requirement 1.",
+            "Sn1.2": "Documentation showing compliance to ISAC requirement 2.",
+            "Sn1.3": "Documentation showing compliance to ISAC requirement 3."
+        }
+    },
+    "UAVs avoid all fixed Ground-Based objects.": {
+        "goal": "UAVs avoid all fixed Ground-Based objects.",
+        "block": "Decomposition",
+        "strategy": "The UAV's ability to avoid ground-based objects can be determined by examining its sensor system and navigation algorithm.",
+        "subgoals": {
+            "G1.1": "The UAV's sensor system can accurately detect ground-based objects.",
+            "G1.2": "The UAV's navigation algorithm can effectively avoid detected objects."
+        },
+        "solutions": {
+            "Sn1.1": "Sensor test reports, third-party evaluations.",
+            "Sn1.2": "Algorithm audits, simulation results."
+        }
+    },
+    "Collision Avoidance Algorithm (CAA) provides correct instructions for avoiding collisions between two UAVs.": {
+        "goal": "Collision Avoidance Algorithm (CAA) provides correct instructions for avoiding collisions between two UAVs.",
+        "block": "Decomposition",
+        "strategy": "The correctness of the Collision Avoidance Algorithm can be determined by examining its ability to detect potential collisions and its ability to provide correct avoidance instructions.",
+        "subgoals": {
+            "G1.1": "The CAA can accurately detect potential collisions.",
+            "G1.2": "The CAA can provide correct avoidance instructions."
+        },
+        "solutions": {
+            "Sn1.1": "Simulation results, third-party evaluations.",
+            "Sn1.2": "Test scenarios, independent assessments."
+        }
+    },
+    "GPS is accurate within 5 cms.": {
+        "goal": "GPS is accurate within 5 cms.",
+        "block": "Calculation",
+        "strategy": "The accuracy of GPS can be calculated by comparing the GPS reading with the actual location.",
+        "subgoals": {
+            "G1.1": "The GPS reading is within 5 cms of the actual location."
+        },
+        "solutions": {
+            "Sn1.1": "Field tests, third-party evaluations."
+        }
+    },
+    "The hazard El1 -- Running out of battery is sufficiently mitigated.": {
+        "goal": "The hazard El1 -- Running out of battery is sufficiently mitigated.",
+        "block": "Decomposition",
+        "strategy": "The hazard can be mitigated by ensuring the battery is regularly checked and the system is capable of alerting the user when the battery is low.",
+        "subgoals": {
+            "G1.1": "The battery check system is functioning correctly.",
+            "G1.2": "The low battery alert system is functioning correctly."
+        },
+        "solutions": {
+            "Sn1.1": "Battery check system test reports, maintenance records.",
+            "Sn1.2": "Low battery alert system test reports, user feedback."
+        }
+    },
+    "All identified causes for the hazard, El1, are sufficiently managed": {
+        "goal": "All identified causes for the hazard, El1, are sufficiently managed",
+        "block": "Decomposition",
+        "strategy": "The management of the hazard can be determined by examining the identified causes and the measures taken to manage them.",
+        "subgoals": {
+            "G1.1": "Identified causes for the hazard, El1, have been accurately determined.",
+            "G1.2": "Appropriate measures have been taken to manage each identified cause."
+        },
+        "solutions": {
+            "Sn1.1": "Hazard analysis reports, expert reviews.",
+            "Sn1.2": "Risk management plans, implementation records."
+        }
+    },
+    "The applied mitigations lead to sufficient risk reduction of the hazard El1": {
+        "goal": "The applied mitigations lead to sufficient risk reduction of the hazard El1",
+        "block": "Decomposition",
+        "strategy": "The risk reduction can be determined by examining the effectiveness of the applied mitigations.",
+        "subgoals": {
+            "G1.1": "The applied mitigations are effective.",
+            "G1.2": "The hazard El1 is sufficiently reduced."
+        },
+        "solutions": {
+            "Sn1.1": "Risk assessment reports, mitigation implementation records.",
+            "Sn1.2": "Hazard analysis reports, safety assessments."
+        }
+    },
+    "The mitigation requirement R1 holds": {
+        "goal": "The mitigation requirement R1 holds",
+        "block": "Decomposition",
+        "strategy": "The mitigation requirement R1 can be satisfied by ensuring the system's resilience and the effectiveness of the mitigation measures.",
+        "subgoals": {
+            "G1.1": "The system is resilient to potential threats.",
+            "G1.2": "The mitigation measures are effective."
+        },
+        "solutions": {
+            "Sn1.1": "System resilience test reports, third-party evaluations.",
+            "Sn1.2": "Mitigation measures test results, independent assessments."
+        }
+    },
+    "Contract-based formal verification shows with sufficient confidence that R1 is achieved in the design of Inspection Rover": {
+        "goal": "Contract-based formal verification shows with sufficient confidence that R1 is achieved in the design of Inspection Rover",
+        "block": "Decomposition",
+        "strategy": "The verification of R1 can be achieved by examining the contract-based formal verification process, the design of the Inspection Rover, and the confidence level.",
+        "subgoals": {
+            "G1.1": "The contract-based formal verification process is reliable.",
+            "G1.2": "The design of the Inspection Rover is sound.",
+            "G1.3": "The confidence level is sufficient."
+        },
+        "solutions": {
+            "Sn1.1": "Verification process documentation, third-party evaluations.",
+            "Sn1.2": "Design blueprints, engineering assessments.",
+            "Sn1.3": "Statistical analysis, expert reviews."
+        }
+    },
+    "System remains functional for intended radiation environment(NASA R&M mod) in order to complete science mission objective: Record the number of upsets in 28nm bulk SRAM in LEO for a period of 1 year.": {
+        "goal": "System remains functional for intended radiation environment(NASA R&M mod) in order to complete science mission objective: Record the number of upsets in 28nm bulk SRAM in LEO for a period of 1 year.",
+        "block": "Decomposition",
+        "strategy": "The system's functionality in the intended radiation environment can be determined by examining its design, materials, and testing procedures.",
+        "subgoals": {
+            "G1.1": "The system is designed to withstand the radiation environment.",
+            "G1.2": "The materials used in the system are radiation-resistant.",
+            "G1.3": "The system has been tested and proven to function in the radiation environment."
+        },
+        "solutions": {
+            "Sn1.1": "Design documents, radiation tolerance specifications.",
+            "Sn1.2": "Material data sheets, radiation resistance test results.",
+            "Sn1.3": "Test reports, third-party evaluations."
+        }
+    },
+    "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).": {
+        "goal": "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).",
+        "block": "Decomposition",
+        "strategy": "The system's ability to withstand nominal and extreme loads and stresses can be determined by examining its design, materials, and testing procedures.",
+        "subgoals": {
+            "G1.1": "The system is designed to withstand nominal and extreme loads and stresses.",
+            "G1.2": "The materials used in the system can withstand nominal and extreme loads and stresses.",
+            "G1.3": "The system has been tested to withstand nominal and extreme loads and stresses for the life of the mission."
+        },
+        "solutions": {
+            "Sn1.1": "Design documents, engineering analyses.",
+            "Sn1.2": "Material specifications, test reports.",
+            "Sn1.3": "Test plans, test results, third-party evaluations."
+        }
+    },
+    "System is tolerant to radiation-induced faults and failures (NASA R&M mod).": {
+        "goal": "System is tolerant to radiation-induced faults and failures (NASA R&M mod).",
+        "block": "Decomposition",
+        "strategy": "The system's tolerance to radiation-induced faults and failures can be determined by examining its design, materials, and shielding.",
+        "subgoals": {
+            "G1.1": "The system design incorporates radiation-hardened components.",
+            "G1.2": "The materials used in the system are resistant to radiation damage.",
+            "G1.3": "The system is equipped with adequate radiation shielding."
+        },
+        "solutions": {
+            "Sn1.1": "Design documents, manufacturer specifications.",
+            "Sn1.2": "Material test reports, radiation exposure studies.",
+            "Sn1.3": "Shielding design documents, radiation exposure test results."
+        }
+    },
+    "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).": {
+        "goal": "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).",
+        "block": "Decomposition",
+        "strategy": "The system's ability to recover from anomalies can be determined by examining its fault detection, isolation, and recovery (FDIR) capabilities.",
+        "subgoals": {
+            "G1.1": "The system can detect anomalies.",
+            "G1.2": "The system can isolate anomalies.",
+            "G1.3": "The system can recover from anomalies."
+        },
+        "solutions": {
+            "Sn1.1": "System logs, anomaly detection test results.",
+            "Sn1.2": "Isolation test results, system design documents.",
+            "Sn1.3": "Recovery test results, system resilience assessments."
+        }
+    },
+    "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.": {
+        "goal": "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.",
+        "block": "Decomposition",
+        "strategy": "The COTS parts can pass the mission proton SEL requirement by meeting the proton energy and density thresholds.",
+        "subgoals": {
+            "G1.1": "The COTS parts can withstand up to 5e9 protons/cm2.",
+            "G1.2": "The COTS parts can withstand 200 MeV protons."
+        },
+        "solutions": {
+            "Sn1.1": "Radiation testing reports, manufacturer specifications.",
+            "Sn1.2": "Radiation testing reports, manufacturer specifications."
+        }
+    },
+    "We see a world where everyone who chooses to use these services, as well as those who do not, have confidence in a safe and secure sector...": {
+        "goal": "We see a world where everyone who chooses to use these services, as well as those who do not, have confidence in a safe and secure sector...",
+        "block": "Decomposition",
+        "strategy": "The confidence in a safe and secure sector can be achieved by ensuring the safety of the services, the security of the services, and the accessibility of the services.",
+        "subgoals": {
+            "G1.1": "The services are safe to use.",
+            "G1.2": "The services are secure from external threats.",
+            "G1.3": "The services are accessible to everyone."
+        },
+        "solutions": {
+            "Sn1.1": "Safety audits, user feedback.",
+            "Sn1.2": "Security assessments, penetration testing results.",
+            "Sn1.3": "User surveys, accessibility audits."
+        }
+    },
+    "There is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services": {
+        "goal": "There is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+        "block": "Decomposition",
+        "strategy": "The confidence in the cyber-security of UK regulated services can be justified by examining the security measures in place, the resilience of these services to cyber attacks, and the potential impact of any breaches.",
+        "subgoals": {
+            "G1.1": "The security measures in place are robust and effective.",
+            "G1.2": "The services are resilient to cyber attacks.",
+            "G1.3": "The potential impact of any breaches is minimal."
+        },
+        "solutions": {
+            "Sn1.1": "Security audits, penetration testing reports.",
+            "Sn1.2": "Resilience testing reports, incident response plans.",
+            "Sn1.3": "Risk assessments, impact analysis reports."
+        }
+    },
+    "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services": {
+        "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+        "block": "Decomposition",
+        "strategy": "The confidence in cyber-security can be justified by examining the security measures in place, the resilience of the system, and the potential impact of any breaches.",
+        "subgoals": {
+            "G1.1": "ARO has robust cyber-security measures in place.",
+            "G1.2": "The system is resilient to potential cyber-security breaches.",
+            "G1.3": "The potential impact of any breaches is minimal."
+        },
+        "solutions": {
+            "Sn1.1": "Security audits, penetration testing reports.",
+            "Sn1.2": "System resilience tests, recovery plan documentation.",
+            "Sn1.3": "Risk assessments, impact analysis reports."
+        }
+    },
+    "Other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services": {
+        "goal": "Other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+        "block": "Decomposition",
+        "strategy": "Justified confidence can be achieved by demonstrating robust cyber-security measures, effective risk management, and resilience in the face of potential threats.",
+        "subgoals": {
+            "G1.1": "Robust cyber-security measures are in place.",
+            "G1.2": "Effective risk management strategies are implemented.",
+            "G1.3": "The system is resilient to potential cyber threats."
+        },
+        "solutions": {
+            "Sn1.1": "Cyber-security audits, penetration testing reports.",
+            "Sn1.2": "Risk assessment reports, risk mitigation plans.",
+            "Sn1.3": "Disaster recovery plans, incident response records."
+        }
+    },
+    "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services at present": {
+        "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services at present",
+        "block": "Decomposition",
+        "strategy": "The confidence in cyber-security can be justified by examining the security measures in place, the resilience of the system, and the current threat landscape.",
+        "subgoals": {
+            "G1.1": "The security measures in place are robust.",
+            "G1.2": "The system is resilient to potential cyber attacks.",
+            "G1.3": "The current threat landscape does not pose unacceptable risks."
+        },
+        "solutions": {
+            "Sn1.1": "Security audits, penetration testing reports.",
+            "Sn1.2": "System resilience tests, disaster recovery plans.",
+            "Sn1.3": "Threat intelligence reports, risk assessments."
+        }
+    },
+    "ARO has justified confidence that cyber-security issues will not pose unacceptable risks to the safety and resilience of the UK regulated services in the future": {
+        "goal": "ARO has justified confidence that cyber-security issues will not pose unacceptable risks to the safety and resilience of the UK regulated services in the future",
+        "block": "Decomposition",
+        "strategy": "The confidence in cyber-security can be justified by examining the current cyber-security measures, the resilience of the services, and the future plans for cyber-security.",
+        "subgoals": {
+            "G1.1": "Current cyber-security measures are effective.",
+            "G1.2": "The services are resilient to cyber-attacks.",
+            "G1.3": "Future plans for cyber-security are robust."
+        },
+        "solutions": {
+            "Sn1.1": "Cyber-security audit reports, incident response records.",
+            "Sn1.2": "Resilience testing results, incident recovery records.",
+            "Sn1.3": "Cyber-security strategy documents, third-party evaluations of future plans."
+        }
+    },
+    "ARO regulatory activity provides justified confidence in the security and reslience": {
+        "goal": "ARO regulatory activity provides justified confidence in the security and reslience",
+        "block": "Decomposition",
+        "strategy": "The justified confidence in the security and resilience can be determined by examining the regulatory processes and their effectiveness.",
+        "subgoals": {
+            "G1.1": "The regulatory processes are robust and comprehensive.",
+            "G1.2": "The regulatory processes are effectively implemented."
+        },
+        "solutions": {
+            "Sn1.1": "Regulatory framework documents, third-party evaluations.",
+            "Sn1.2": "Audit reports, compliance records."
+        }
+    },
+    "ARO has justified confidence in the overall regulatory institutions and standards": {
+        "goal": "ARO has justified confidence in the overall regulatory institutions and standards",
+        "block": "Decomposition",
+        "strategy": "Justified confidence can be determined by examining the regulatory institutions' credibility, the effectiveness of the standards, and the enforcement of these standards.",
+        "subgoals": {
+            "G1.1": "The regulatory institutions are credible.",
+            "G1.2": "The standards are effective.",
+            "G1.3": "The standards are enforced."
+        },
+        "solutions": {
+            "Sn1.1": "Historical records, third-party evaluations.",
+            "Sn1.2": "Case studies, analytical reports.",
+            "Sn1.3": "Audit reports, penalty records."
+        }
+    },
+    "ARO has justified confidence that the regulated system can deal with cyber related events and changes": {
+        "goal": "ARO has justified confidence that the regulated system can deal with cyber related events and changes",
+        "block": "Decomposition",
+        "strategy": "The confidence in the regulated system's ability to deal with cyber related events and changes can be justified by examining its cyber security measures, incident response capabilities, and adaptability to changes.",
+        "subgoals": {
+            "G1.1": "The regulated system has robust cyber security measures.",
+            "G1.2": "The regulated system has effective incident response capabilities.",
+            "G1.3": "The regulated system can adapt to changes in cyber threats."
+        },
+        "solutions": {
+            "Sn1.1": "Cyber security audits, penetration testing reports.",
+            "Sn1.2": "Incident response drills, historical incident handling records.",
+            "Sn1.3": "Change management policies, records of system updates in response to new threats."
+        }
+    },
+    "ARO has justified confidence in the technical approaches for addressing cyber-security informed safety and resilience": {
+        "goal": "ARO has justified confidence in the technical approaches for addressing cyber-security informed safety and resilience",
+        "block": "Decomposition",
+        "strategy": "The confidence in the technical approaches can be justified by examining the cyber-security measures, safety protocols, and resilience strategies.",
+        "subgoals": {
+            "G1.1": "The cyber-security measures are robust.",
+            "G1.2": "The safety protocols are effective.",
+            "G1.3": "The resilience strategies are reliable."
+        },
+        "solutions": {
+            "Sn1.1": "Security audits, penetration testing reports.",
+            "Sn1.2": "Safety protocol reviews, incident response records.",
+            "Sn1.3": "Resilience testing results, recovery plan evaluations."
+        }
+    },
+    "ARO provides other stakeholders with justified confidence in the regulated security and resilience": {
+        "goal": "ARO provides other stakeholders with justified confidence in the regulated security and resilience",
+        "block": "Decomposition",
+        "strategy": "Justified confidence can be achieved by demonstrating the effectiveness of the security measures and resilience strategies in place.",
+        "subgoals": {
+            "G1.1": "ARO has effective security measures in place.",
+            "G1.2": "ARO has effective resilience strategies in place."
+        },
+        "solutions": {
+            "Sn1.1": "Security audits, penetration testing reports.",
+            "Sn1.2": "Business continuity plans, disaster recovery test results."
+        }
+    },
+    "Provides confidence existing system secure and resilient": {
+        "goal": "Provides confidence existing system secure and resilient",
+        "block": "Decomposition",
+        "strategy": "The system's security and resilience can be determined by examining its ability to prevent unauthorized access and its ability to recover from potential attacks.",
+        "subgoals": {
+            "G1.1": "The system has robust security measures in place.",
+            "G1.2": "The system has effective recovery mechanisms in place."
+        },
+        "solutions": {
+            "Sn1.1": "Security audit reports, penetration testing results.",
+            "Sn1.2": "Disaster recovery plans, incident response reports."
+        }
+    },
+    "Sources of doubt actively managed - actual and perceived risks": {
+        "goal": "Sources of doubt actively managed - actual and perceived risks",
+        "block": "Decomposition",
+        "strategy": "Managing sources of doubt involves identifying and addressing both actual and perceived risks.",
+        "subgoals": {
+            "G1.1": "Actual risks are identified and mitigated.",
+            "G1.2": "Perceived risks are identified and addressed."
+        },
+        "solutions": {
+            "Sn1.1": "Risk assessments, mitigation plans.",
+            "Sn1.2": "Surveys, communication strategies."
+        }
+    },
+    "The vehicle is acceptably safe": {
+        "goal": "The vehicle is acceptably safe",
+        "block": "Decomposition",
+        "strategy": "The vehicle's safety can be determined by examining its structural integrity, safety features, and performance in safety tests.",
+        "subgoals": {
+            "G1.1": "The vehicle's structure is sound and durable.",
+            "G1.2": "The vehicle is equipped with necessary safety features.",
+            "G1.3": "The vehicle has performed well in safety tests."
+        },
+        "solutions": {
+            "Sn1.1": "Inspection reports, manufacturer's specifications.",
+            "Sn1.2": "Vehicle feature list, safety feature test results.",
+            "Sn1.3": "Safety test results, third-party evaluations."
+        }
+    },
+    "Argument over the implementation of safety requirements during product development": {
+        "goal": "Argument over the implementation of safety requirements during product development",
+        "block": "Decomposition",
+        "strategy": "The implementation of safety requirements can be evaluated by examining the design process, testing process, and compliance with safety standards.",
+        "subgoals": {
+            "G1.1": "The design process incorporates safety requirements.",
+            "G1.2": "The testing process verifies the implementation of safety requirements.",
+            "G1.3": "The product complies with relevant safety standards."
+        },
+        "solutions": {
+            "Sn1.1": "Design documents, safety requirement specifications.",
+            "Sn1.2": "Test plans, test results.",
+            "Sn1.3": "Compliance certificates, audit reports."
+        }
+    },
+    "Argument over the implementation of safety requirements post product development": {
+        "goal": "Argument over the implementation of safety requirements post product development",
+        "block": "Decomposition",
+        "strategy": "The implementation of safety requirements can be evaluated by examining the product's design, manufacturing process, and post-production testing.",
+        "subgoals": {
+            "G1.1": "The product's design incorporates all necessary safety features.",
+            "G1.2": "The manufacturing process adheres to safety standards.",
+            "G1.3": "The product has passed all post-production safety tests."
+        },
+        "solutions": {
+            "Sn1.1": "Design documents, safety feature specifications.",
+            "Sn1.2": "Manufacturing process documentation, safety compliance certificates.",
+            "Sn1.3": "Test results, safety certification."
+        }
+    },
+    "The vehicle satisfies its Pre-defined Safety Requirements": {
+        "goal": "The vehicle satisfies its Pre-defined Safety Requirements",
+        "block": "Decomposition",
+        "strategy": "The vehicle's safety can be determined by examining its structural integrity, safety features, and performance in safety tests.",
+        "subgoals": {
+            "G1.1": "The vehicle's structure is robust and crash-resistant.",
+            "G1.2": "The vehicle is equipped with necessary safety features.",
+            "G1.3": "The vehicle has passed all necessary safety tests."
+        },
+        "solutions": {
+            "Sn1.1": "Structural analysis reports, crash test results.",
+            "Sn1.2": "Vehicle specifications, safety feature test results.",
+            "Sn1.3": "Safety test reports, third-party evaluations."
+        }
+    },
+    "System is acceptably safe to operate in the specified environment": {
+        "goal": "System is acceptably safe to operate in the specified environment",
+        "block": "Decomposition",
+        "strategy": "The system's safety can be determined by examining its design, operation, and maintenance.",
+        "subgoals": {
+            "G1.1": "The system is designed to withstand the specified environment.",
+            "G1.2": "The system operates correctly in the specified environment.",
+            "G1.3": "The system is maintained regularly to ensure its safety."
+        },
+        "solutions": {
+            "Sn1.1": "Design documents, stress test results.",
+            "Sn1.2": "Operational logs, incident reports.",
+            "Sn1.3": "Maintenance schedules, inspection reports."
+        }
+    },
+    "The residual risk associated with the identified system hazards has been reduced to an acceptable level": {
+        "goal": "The residual risk associated with the identified system hazards has been reduced to an acceptable level",
+        "block": "Decomposition",
+        "strategy": "The residual risk can be reduced by identifying and mitigating each system hazard.",
+        "subgoals": {
+            "G1.1": "All system hazards have been identified.",
+            "G1.2": "Appropriate mitigation measures have been implemented for each identified hazard.",
+            "G1.3": "The effectiveness of the mitigation measures has been verified."
+        },
+        "solutions": {
+            "Sn1.1": "Hazard identification reports, risk assessments.",
+            "Sn1.2": "Mitigation plans, implementation records.",
+            "Sn1.3": "Verification reports, follow-up assessments."
+        }
+    },
+    "Functional Safety: The residual risk of (hazard T) is acceptable": {
+        "goal": "Functional Safety: The residual risk of (hazard T) is acceptable",
+        "block": "Decomposition",
+        "strategy": "The residual risk can be determined by examining the risk reduction measures and their effectiveness.",
+        "subgoals": {
+            "G1.1": "Risk reduction measures are in place.",
+            "G1.2": "The risk reduction measures are effective."
+        },
+        "solutions": {
+            "Sn1.1": "Safety procedures documentation, training records.",
+            "Sn1.2": "Risk assessment reports, incident logs."
+        }
+    },
+    "Mitigation: Implementation of Safety Goal U has reduced the occurrence or propagation of hazard T causes": {
+        "goal": "Mitigation: Implementation of Safety Goal U has reduced the occurrence or propagation of hazard T causes",
+        "block": "Decomposition",
+        "strategy": "The effectiveness of Safety Goal U in reducing hazard T can be evaluated by examining the frequency of hazard T before and after the implementation of Safety Goal U.",
+        "subgoals": {
+            "G1.1": "Hazard T was frequently occurring before the implementation of Safety Goal U.",
+            "G1.2": "Hazard T is less frequent after the implementation of Safety Goal U."
+        },
+        "solutions": {
+            "Sn1.1": "Incident reports, hazard logs prior to Safety Goal U implementation.",
+            "Sn1.2": "Incident reports, hazard logs after Safety Goal U implementation."
+        }
+    },
+    "Detection and Diagnostics: Argument by appeal to detection and diagnostics of systematic and random failures within the design": {
+        "goal": "Detection and Diagnostics: Argument by appeal to detection and diagnostics of systematic and random failures within the design",
+        "block": "Decomposition",
+        "strategy": "The detection and diagnostics of systematic and random failures can be evaluated by examining the system's detection capabilities and diagnostic procedures.",
+        "subgoals": {
+            "G1.1": "The system can detect both systematic and random failures.",
+            "G1.2": "The system has effective diagnostic procedures for identified failures."
+        },
+        "solutions": {
+            "Sn1.1": "System test reports, failure detection logs.",
+            "Sn1.2": "Diagnostic procedure manuals, case studies of previous failures."
+        }
+    },
+    "System Degradation: Argument by appeal over the transition to a safe system state in an appropriate time": {
+        "goal": "System Degradation: Argument by appeal over the transition to a safe system state in an appropriate time",
+        "block": "Decomposition",
+        "strategy": "The system's ability to transition to a safe state can be determined by examining its degradation detection and response mechanisms.",
+        "subgoals": {
+            "G1.1": "The system can detect degradation in a timely manner.",
+            "G1.2": "The system can transition to a safe state within an appropriate time after degradation is detected."
+        },
+        "solutions": {
+            "Sn1.1": "System logs, fault detection algorithms.",
+            "Sn1.2": "System design documents, test results showing transition times."
+        }
+    },
+    "Random Failures: The impact of random failures which can invalidate the Safety Goal U have been adequately managed": {
+        "goal": "Random Failures: The impact of random failures which can invalidate the Safety Goal U have been adequately managed",
+        "block": "Decomposition",
+        "strategy": "The impact of random failures can be managed by ensuring system robustness, implementing fail-safe mechanisms, and having a comprehensive recovery plan.",
+        "subgoals": {
+            "G1.1": "The system is robust against random failures.",
+            "G1.2": "Fail-safe mechanisms are in place.",
+            "G1.3": "A comprehensive recovery plan is in place."
+        },
+        "solutions": {
+            "Sn1.1": "System stress test results, robustness analysis reports.",
+            "Sn1.2": "Design documents detailing fail-safe mechanisms, test results showing their effectiveness.",
+            "Sn1.3": "Recovery plan documents, test results showing successful recovery from simulated failures."
+        }
+    },
+    "A justified system safe state has been developed": {
+        "goal": "A justified system safe state has been developed",
+        "block": "Decomposition",
+        "strategy": "The system safe state can be justified by demonstrating that it minimizes risk and harm in the event of a system failure.",
+        "subgoals": {
+            "G1.1": "The system safe state minimizes risk.",
+            "G1.2": "The system safe state minimizes harm."
+        },
+        "solutions": {
+            "Sn1.1": "Risk assessment reports, safety analysis.",
+            "Sn1.2": "Hazard analysis, safety testing results."
+        }
+    },
+    "Restriction: Vehicle functionality has been restricted": {
+        "goal": "Restriction: Vehicle functionality has been restricted",
+        "block": "Decomposition",
+        "strategy": "Vehicle functionality can be restricted in terms of speed, location, and operational hours.",
+        "subgoals": {
+            "G1.1": "Vehicle speed has been restricted.",
+            "G1.2": "Vehicle location has been restricted.",
+            "G1.3": "Vehicle operational hours have been restricted."
+        },
+        "solutions": {
+            "Sn1.1": "Vehicle speed logs, speed limit settings.",
+            "Sn1.2": "GPS data, geofencing settings.",
+            "Sn1.3": "Operational logs, time restriction settings."
+        }
+    },
+    "The implemented pacemaker software is acceptably safe to operate in VVI mode": {
+        "goal": "The implemented pacemaker software is acceptably safe to operate in VVI mode",
+        "block": "Decomposition",
+        "strategy": "The safety of the pacemaker software in VVI mode can be determined by examining its functionality, reliability, and performance.",
+        "subgoals": {
+            "G1.1": "The pacemaker software functions correctly in VVI mode.",
+            "G1.2": "The pacemaker software is reliable in VVI mode.",
+            "G1.3": "The pacemaker software performs well in VVI mode."
+        },
+        "solutions": {
+            "Sn1.1": "Functional test results, clinical trial data.",
+            "Sn1.2": "Reliability test results, historical performance data.",
+            "Sn1.3": "Performance test results, patient feedback."
+        }
+    },
+    "The implementation satisfies all the desired safety properties within acceptable timing tolerances": {
+        "goal": "The implementation satisfies all the desired safety properties within acceptable timing tolerances",
+        "block": "Decomposition",
+        "strategy": "The implementation's safety and timing properties need to be evaluated separately.",
+        "subgoals": {
+            "G1.1": "The implementation satisfies all the desired safety properties.",
+            "G1.2": "The implementation operates within acceptable timing tolerances."
+        },
+        "solutions": {
+            "Sn1.1": "Safety analysis reports, test results.",
+            "Sn1.2": "Performance testing reports, timing analysis."
+        }
+    },
+    "The model satisfies all the desired properties": {
+        "goal": "The model satisfies all the desired properties",
+        "block": "Decomposition",
+        "strategy": "The model's satisfaction of desired properties can be determined by examining each property individually.",
+        "subgoals": {
+            "G1.1": "The model satisfies property 1.",
+            "G1.2": "The model satisfies property 2.",
+            "G1.3": "The model satisfies property 3."
+        },
+        "solutions": {
+            "Sn1.1": "Simulation results, analytical reports for property 1.",
+            "Sn1.2": "Simulation results, analytical reports for property 2.",
+            "Sn1.3": "Simulation results, analytical reports for property 3."
+        }
+    },
+    "The code generation process transforms the model into the code correctly": {
+        "goal": "The code generation process transforms the model into the code correctly",
+        "block": "Decomposition",
+        "strategy": "The correctness of the code generation process can be determined by examining the transformation rules and the generated code.",
+        "subgoals": {
+            "G1.1": "The transformation rules are correctly defined.",
+            "G1.2": "The generated code correctly represents the model."
+        },
+        "solutions": {
+            "Sn1.1": "Review of transformation rules, expert validation.",
+            "Sn1.2": "Code review, comparison with the model."
+        }
+    },
+    "The synthesized code satisfies all the desired properties with the timing tolerance": {
+        "goal": "The synthesized code satisfies all the desired properties with the timing tolerance",
+        "block": "Decomposition",
+        "strategy": "The synthesized code's properties can be evaluated by examining its functionality, performance, and timing tolerance.",
+        "subgoals": {
+            "G1.1": "The code performs the desired functions.",
+            "G1.2": "The code performs within the desired time frame.",
+            "G1.3": "The code's timing tolerance is within acceptable limits."
+        },
+        "solutions": {
+            "Sn1.1": "Functional testing results, code review reports.",
+            "Sn1.2": "Performance testing results, benchmarking reports.",
+            "Sn1.3": "Timing analysis reports, simulation results."
+        }
+    },
+    "Argument by use of a reliable tool set": {
+        "goal": "Argument by use of a reliable tool set",
+        "block": "Decomposition",
+        "strategy": "The reliability of the tool set can be determined by examining its individual tools.",
+        "subgoals": {
+            "G1.1": "The hammer in the tool set is reliable.",
+            "G1.2": "The screwdriver in the tool set is reliable.",
+            "G1.3": "The wrench in the tool set is reliable."
+        },
+        "solutions": {
+            "Sn1.1": "Manufacturer test reports, third-party evaluations.",
+            "Sn1.2": "User reviews, independent assessments.",
+            "Sn1.3": "Durability tests, user feedback."
+        }
+    },
+    "Argument by harmless manual modification": {
+        "goal": "Argument by harmless manual modification",
+        "block": "Substitution",
+        "strategy": "The manual modification does not affect the overall functionality or safety of the system.",
+        "subgoals": {
+            "G1.1": "The modification does not affect the system's functionality.",
+            "G1.2": "The modification does not affect the system's safety."
+        },
+        "solutions": {
+            "Sn1.1": "Functional test results, user feedback.",
+            "Sn1.2": "Safety test results, risk assessments."
+        }
+    },
+    "The code satisfies the property PropLRI with timing tolerance": {
+        "goal": "The code satisfies the property PropLRI with timing tolerance",
+        "block": "Decomposition",
+        "strategy": "The code's satisfaction of the property PropLRI with timing tolerance can be determined by examining its execution time and the property's requirements.",
+        "subgoals": {
+            "G1.1": "The code's execution time is within the specified timing tolerance.",
+            "G1.2": "The code satisfies the property PropLRI."
+        },
+        "solutions": {
+            "Sn1.1": "Execution time logs, performance tests.",
+            "Sn1.2": "Code review reports, property verification results."
+        }
+    },
+    "The model satisfies the property PropHRI with timing tolerance": {
+        "goal": "The model satisfies the property PropHRI with timing tolerance",
+        "block": "Decomposition",
+        "strategy": "The model's satisfaction of the property PropHRI with timing tolerance can be determined by examining its performance under different conditions.",
+        "subgoals": {
+            "G1.1": "The model satisfies the property PropHRI under normal conditions.",
+            "G1.2": "The model satisfies the property PropHRI under stress conditions.",
+            "G1.3": "The model satisfies the property PropHRI with timing tolerance under unexpected conditions."
+        },
+        "solutions": {
+            "Sn1.1": "Simulation results, performance reports under normal conditions.",
+            "Sn1.2": "Stress test results, performance reports under stress conditions.",
+            "Sn1.3": "Unexpected scenario test results, performance reports under unexpected conditions."
+        }
+    },
+    "The code satisfies the property PropVRP": {
+        "goal": "The code satisfies the property PropVRP",
+        "block": "Decomposition",
+        "strategy": "The property PropVRP can be satisfied by ensuring the code meets certain sub-properties.",
+        "subgoals": {
+            "G1.1": "The code satisfies sub-property PropVRP1.",
+            "G1.2": "The code satisfies sub-property PropVRP2.",
+            "G1.3": "The code satisfies sub-property PropVRP3."
+        },
+        "solutions": {
+            "Sn1.1": "Code review reports, unit test results.",
+            "Sn1.2": "Integration test results, code audit reports.",
+            "Sn1.3": "System test results, third-party code assessments."
+        }
+    },
+    "Detect runway incursions or report failure": {
+        "goal": "Detect runway incursions or report failure",
+        "block": "Decomposition",
+        "strategy": "The system's ability to detect runway incursions or report failure can be determined by examining its detection capabilities and failure reporting mechanisms.",
+        "subgoals": {
+            "G1.1": "The system can accurately detect runway incursions.",
+            "G1.2": "The system can effectively report any failures."
+        },
+        "solutions": {
+            "Sn1.1": "Test reports, third-party evaluations.",
+            "Sn1.2": "System logs, failure reports."
+        }
+    },
+    "RSM data inadequacy detection is implemented with required dependability": {
+        "goal": "RSM data inadequacy detection is implemented with required dependability",
+        "block": "Decomposition",
+        "strategy": "The dependability of RSM data inadequacy detection can be determined by examining its ability to detect errors, its robustness, and its reliability.",
+        "subgoals": {
+            "G1.1": "The system can accurately detect errors in RSM data.",
+            "G1.2": "The system is robust against false positives and negatives.",
+            "G1.3": "The system is reliable and consistently performs as expected."
+        },
+        "solutions": {
+            "Sn1.1": "Test results showing error detection accuracy.",
+            "Sn1.2": "Test results showing system robustness.",
+            "Sn1.3": "System uptime records, maintenance logs."
+        }
+    },
+    "Ownship runway locator reports failure with p>=p2 if quality of information is inaccurate": {
+        "goal": "Ownship runway locator reports failure with p>=p2 if quality of information is inaccurate",
+        "block": "Decomposition",
+        "strategy": "The failure of the ownship runway locator can be determined by examining the quality of information it provides.",
+        "subgoals": {
+            "G1.1": "The information provided by the locator is accurate.",
+            "G1.2": "The probability of failure is greater than or equal to p2."
+        },
+        "solutions": {
+            "Sn1.1": "Test reports, third-party evaluations.",
+            "Sn1.2": "Statistical analysis, historical failure data."
+        }
+    },
+    "Conflict detector reports failure with p>=p3 if quality of information is inadequate": {
+        "goal": "Conflict detector reports failure with p>=p3 if quality of information is inadequate",
+        "block": "Decomposition",
+        "strategy": "The conflict detector's failure can be determined by examining the quality of information it receives and the probability of failure.",
+        "subgoals": {
+            "G1.1": "The quality of information received by the conflict detector is adequate.",
+            "G1.2": "The probability of failure is greater than or equal to p3."
+        },
+        "solutions": {
+            "Sn1.1": "Data quality reports, system logs.",
+            "Sn1.2": "Statistical analysis, system logs."
+        }
+    },
+    "Traffic positions component reports failure with p>=9 if quality of information is inadequate": {
+        "goal": "Traffic positions component reports failure with p>=9 if quality of information is inadequate",
+        "block": "Decomposition",
+        "strategy": "The failure of the traffic positions component can be determined by examining the quality of information it receives.",
+        "subgoals": {
+            "G1.1": "The quality of information received by the traffic positions component is adequate.",
+            "G1.2": "The traffic positions component is capable of reporting failure when the quality of information is inadequate."
+        },
+        "solutions": {
+            "Sn1.1": "Data quality assessments, system logs.",
+            "Sn1.2": "System test reports, failure mode analysis."
+        }
+    },
+    "Traffic positions component correctly implements reasonableness checks and error detection protocol": {
+        "goal": "Traffic positions component correctly implements reasonableness checks and error detection protocol",
+        "block": "Decomposition",
+        "strategy": "The correct implementation of reasonableness checks and error detection protocol can be determined by examining the software code and testing the component under different scenarios.",
+        "subgoals": {
+            "G1.1": "The software code for reasonableness checks is correctly implemented.",
+            "G1.2": "The software code for error detection protocol is correctly implemented.",
+            "G1.3": "The component behaves as expected under different scenarios."
+        },
+        "solutions": {
+            "Sn1.1": "Code review reports, software testing results.",
+            "Sn1.2": "Code review reports, software testing results.",
+            "Sn1.3": "Simulation results, real-world testing results."
+        }
+    }
+}

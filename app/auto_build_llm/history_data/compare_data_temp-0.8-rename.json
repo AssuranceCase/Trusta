@@ -1,0 +1,3696 @@
+{
+    "UAVs flying in the managed airspace will not collide with fixed ground-based obstacles (FGB)": {
+        "domain": "UAV",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Each UAV in the managed airspace knows the altitude of the terrain in its current vicinity.",
+                        "The infrastructure provides a map documenting the coordinates and height of all FGBs in the managed area.",
+                        "Each UAV will avoid FGB obstacles."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The UAV's obstacle detection system is reliable.",
+                        "The UAV's obstacle avoidance algorithm is effective.",
+                        "The UAV's communication system is reliable to receive obstacle information from the airspace management system."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Simulation results, flight testing records.",
+                        "Communication logs, system performance test results."
+                    ],
+                    "strategy": "The goal can be achieved by ensuring the UAVs have obstacle detection and avoidance capabilities.",
+                    "block": "Decomposition",
+                    "goal": "UAVs flying in the managed airspace will not collide with fixed ground-based obstacles (FGB)",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The flight algorithms accurately identify and avoid FGB.",
+                        "The sensor systems reliably detect FGB.",
+                        "The communication systems promptly transmit information about FGB."
+                    ],
+                    "solution": [
+                        "Simulation results, code audits.",
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Communication tests, independent assessments."
+                    ],
+                    "strategy": "UAVs' ability to avoid collision with FGB relies on their flight algorithms, sensor systems, and communication systems.",
+                    "block": "Decomposition",
+                    "goal": "UAVs flying in the managed airspace will not collide with fixed ground-based obstacles (FGB)",
+                    "similarity": 100
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The flight paths of UAVs are known and predictable.",
+                        "The locations of fixed ground-based obstacles are known and accurate."
+                    ],
+                    "solution": [
+                        "Flight plans, air traffic control data.",
+                        "Maps, surveys, satellite imagery."
+                    ],
+                    "strategy": "The safety of UAVs flying in the managed airspace can be determined by examining their flight paths and the locations of fixed ground-based obstacles.",
+                    "block": "Decomposition",
+                    "goal": "UAVs flying in the managed airspace will not collide with fixed ground-based obstacles (FGB)",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "Comply to infrastructure safety case (ISAC) requirements.": {
+        "domain": "UAV",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Report distance from ground every x seconds.",
+                        "UAVs avoid all fixed Ground-Based objects."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The identification and analysis of safety hazards in the infrastructure.",
+                        "The implementation and effectiveness of safety measures.",
+                        "The documentation and verification of safety-related activities."
+                    ],
+                    "solution": [
+                        "Hazard identification reports, risk assessments.",
+                        "Inspection records, maintenance logs.",
+                        "Safety plans, test results."
+                    ],
+                    "strategy": "The compliance to ISAC requirements can be determined by examining various aspects of the infrastructure safety case.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "Comply to infrastructure safety case (ISAC) requirements.",
+                    "similarity": 12
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The infrastructure is designed according to ISAC guidelines.",
+                        "The infrastructure is constructed according to ISAC guidelines.",
+                        "The infrastructure is maintained according to ISAC guidelines."
+                    ],
+                    "solution": [
+                        "Design blueprints, safety assessments.",
+                        "Construction records, safety inspection reports.",
+                        "Maintenance logs, independent safety audits."
+                    ],
+                    "strategy": "Compliance to ISAC requirements can be checked by validating against the specified criteria in the ISAC.",
+                    "block": "Decomposition",
+                    "goal": "Comply to infrastructure safety case (ISAC) requirements.",
+                    "similarity": 100
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The hardware components comply with ISAC requirements.",
+                        "The software components comply with ISAC requirements.",
+                        "The human-machine interfaces comply with ISAC requirements."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Usability studies, human factors assessments."
+                    ],
+                    "strategy": "The ISAC requirements can be decomposed into sub-requirements for each component of the infrastructure.",
+                    "block": "Decomposition",
+                    "goal": "Comply to infrastructure safety case (ISAC) requirements.",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "UAVs avoid all fixed Ground-Based objects.": {
+        "domain": "UAV",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Routes are planned to avoid Ground-Based objects depicted in the current map.",
+                        "Current map of managed area downloaded onto ground control station prior to entering area.",
+                        "Onboard image sensor & vision processing with high-speed deep learning algorithms provided by manufacturer enables sense and\navoid."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The sensor system can detect and accurately locate fixed Ground-Based objects.",
+                        "The navigation algorithm can calculate and execute appropriate avoidance maneuvers."
+                    ],
+                    "solution": [
+                        "Sensor calibration reports, obstacle detection and location accuracy tests.",
+                        "Navigation algorithm verification and validation, simulation results."
+                    ],
+                    "strategy": "The avoidance of fixed Ground-Based objects can be achieved by analyzing the UAV's sensor system and navigation algorithm.",
+                    "block": "Decomposition, Concretion",
+                    "goal": "UAVs avoid all fixed Ground-Based objects.",
+                    "similarity": 92
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The UAV\u2019s sensor systems can reliably detect fixed ground-based objects.",
+                        "The UAV\u2019s path planning algorithm accurately identifies safe paths.",
+                        "The UAV\u2019s control system effectively avoids detected objects."
+                    ],
+                    "solution": [
+                        "Sensor calibration reports, field test data.",
+                        "Algorithm validation results, simulation reports.",
+                        "Control system test reports, incident logs."
+                    ],
+                    "strategy": "UAVs can avoid ground-based objects through reliable detection, robust path planning, and effective collision avoidance mechanism.",
+                    "block": "Decomposition",
+                    "goal": "UAVs avoid all fixed Ground-Based objects.",
+                    "similarity": 92
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The UAV is equipped with sensors that can detect fixed Ground-Based objects.",
+                        "The UAV has algorithms that can process the sensor data and generate a path that avoids fixed Ground-Based objects."
+                    ],
+                    "solution": [
+                        "Sensor specifications, test reports.",
+                        "Algorithm documentation, simulation results."
+                    ],
+                    "strategy": "UAVs can avoid all fixed Ground-Based objects by using a combination of sensors and algorithms.",
+                    "block": "Decomposition",
+                    "goal": "UAVs avoid all fixed Ground-Based objects.",
+                    "similarity": 92
+                }
+            ]
+        }
+    },
+    "Collision Avoidance Algorithm (CAA) provides correct instructions for avoiding collisions between two UAVs.": {
+        "domain": "UAV",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "GPS is accurate within 5 cms.",
+                        "CAA provides avoidance directives that prevent violation of minimum time-to-impact."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The inputs to the Collision Avoidance Algorithm are accurate.",
+                        "The outputs of the Collision Avoidance Algorithm are correct.",
+                        "The logic used in determining collision avoidance instructions is sound."
+                    ],
+                    "solution": [
+                        "Sensor data verification, calibration reports.",
+                        "Simulation results, real-world testing.",
+                        "Algorithm code review, verification of mathematical models used in the algorithm."
+                    ],
+                    "strategy": "The correctness of the Collision Avoidance Algorithm can be determined by examining its inputs, outputs, and the logic used in determining collision avoidance instructions.",
+                    "block": "Decomposition",
+                    "goal": "Collision Avoidance Algorithm (CAA) provides correct instructions for avoiding collisions between two UAVs.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "CAA can predict potential collisions accurately.",
+                        "CAA can compute evasion maneuvers effectively.",
+                        "CAA implements the evasion maneuvers in real-time."
+                    ],
+                    "solution": [
+                        "Simulated tests showcasing accurate prediction of potential collisions.",
+                        "Analytical reports detailing the efficiency of maneuver computations.",
+                        "Real-time field test results showcasing successful evasion."
+                    ],
+                    "strategy": "The effectiveness of CAA can be evaluated by looking at its ability to predict potential collisions, compute evasion maneuvers and execute those maneuvers in real-time.",
+                    "block": "Decomposition",
+                    "goal": "Collision Avoidance Algorithm (CAA) provides correct instructions for avoiding collisions between two UAVs.",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system provides accurate information about the environment.",
+                        "The path planning algorithm generates collision-free paths.",
+                        "The control system can execute the planned paths accurately."
+                    ],
+                    "solution": [
+                        "Sensor test reports, calibration records.",
+                        "Simulation results, code reviews.",
+                        "Control system test reports, flight test data."
+                    ],
+                    "strategy": "The correctness of the CAA can be determined by examining its components and their interactions.",
+                    "block": "Decomposition",
+                    "goal": "Collision Avoidance Algorithm (CAA) provides correct instructions for avoiding collisions between two UAVs.",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "GPS is accurate within 5 cms.": {
+        "domain": "UAV",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "RTK HERE+ provides accuracy within 5 cms.",
+                        "RTK functions correctly on America hexcopters with S-900 folding wings airframe."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The GPS receiver is precise.",
+                        "The satellite positioning system is accurate."
+                    ],
+                    "solution": [
+                        "Manufacturer specifications, third-party evaluations.",
+                        "Signal quality analysis, satellite ephemeris data."
+                    ],
+                    "strategy": "The accuracy of GPS can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "GPS is accurate within 5 cms.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Signal strength from satellites is strong.",
+                        "Position trilateration is exact."
+                    ],
+                    "solution": [
+                        "Signal strength logs from satellites.",
+                        "Algorithm review, system test reports."
+                    ],
+                    "strategy": "The accuracy of GPS can be determined based on signal strength and position trilateration.",
+                    "block": "Calculation",
+                    "goal": "GPS is accurate within 5 cms.",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The difference between the GPS-reported location and the true location is less than or equal to 5 cms 95% of the time."
+                    ],
+                    "solution": [
+                        "Test results from multiple locations and times."
+                    ],
+                    "strategy": "Accuracy within 5 cms means that the difference between the GPS-reported location and the true location is less than or equal to 5 cms 95% of the time.",
+                    "block": "Concretion",
+                    "goal": "GPS is accurate within 5 cms.",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "The hazard El1 -- Running out of battery is sufficiently mitigated.": {
+        "domain": "AutoRobot",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "All identified causes for the hazard, El1, are sufficiently managed",
+                        "The applied mitigations lead to sufficient risk reduction of the hazard El1"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The battery life is sufficient for the intended operation.",
+                        "The low battery warning system is effective."
+                    ],
+                    "solution": [
+                        "Battery performance tests, manufacturer specifications.",
+                        "User feedback on warning system, testing of warning system functionality."
+                    ],
+                    "strategy": "The hazard of running out of battery can be mitigated by ensuring a reliable battery life and implementing effective low battery warning system.",
+                    "block": "Decomposition, Concretion",
+                    "goal": "The hazard El1 -- Running out of battery is sufficiently mitigated.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system has a sufficient power capacity.",
+                        "There is an effective battery management system in place.",
+                        "There is a low battery warning system in place."
+                    ],
+                    "solution": [
+                        "System specifications, capacity testing results.",
+                        "Battery management system design documents, operational logs.",
+                        "Design documents for the warning system, user feedback, testing results."
+                    ],
+                    "strategy": "Mitigation of the hazard 'Running out of battery' can be achieved through proper system design and management.",
+                    "block": "Decomposition",
+                    "goal": "The hazard El1 -- Running out of battery is sufficiently mitigated.",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The charging system is reliable.",
+                        "The battery management system is reliable."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results."
+                    ],
+                    "strategy": "The hazard of running out of battery can be sufficiently mitigated by implementing a reliable charging system and a battery management system.",
+                    "block": "Decomposition",
+                    "goal": "The hazard El1 -- Running out of battery is sufficiently mitigated.",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "All identified causes for the hazard, El1, are sufficiently managed": {
+        "domain": "AutoRobot",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The identified causes either individually, or in combination, produce the hazard, El1",
+                        "The cause, Wrong charging station location, of the hazard, El1, is managed",
+                        "The cause, Reaching destination takes more battery than planned, of the hazard. El1, is managed",
+                        "The cause, Charging station not selected when supposed to, of the hazard, El1, is managed"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Identify all causes for hazard El1.",
+                        "Develop strategies to manage each identified cause."
+                    ],
+                    "solution": [
+                        "Hazard analysis reports, incident reports.",
+                        "Risk management plans, mitigation strategies."
+                    ],
+                    "strategy": "The hazard, El1, can be managed by addressing its identified causes.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "All identified causes for the hazard, El1, are sufficiently managed.",
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "All potential causes of El1 are identified.",
+                        "Appropriate controls are in place for each identified cause."
+                    ],
+                    "solution": [
+                        "Risk assessments, hazard identification reports.",
+                        "Control implementation records, safety inspection reports."
+                    ],
+                    "strategy": "Managing the hazard involves identifying all possible causes and implementing appropriate controls.",
+                    "block": "Decomposition",
+                    "goal": "All identified causes for the hazard, El1, are sufficiently managed",
+                    "similarity": 100
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The causes for the hazard, El1, are identified.",
+                        "The causes for the hazard, El1, are managed."
+                    ],
+                    "solution": [
+                        "Hazard identification reports, risk assessments.",
+                        "Mitigation plans, safety procedures."
+                    ],
+                    "strategy": "The causes for the hazard, El1, can be identified and managed.",
+                    "block": "Decomposition",
+                    "goal": "All identified causes for the hazard, El1, are sufficiently managed",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "The applied mitigations lead to sufficient risk reduction of the hazard El1": {
+        "domain": "AutoRobot",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The mitigation requirement R1 holds"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The required risk reduction for hazard El1 is achieved."
+                    ],
+                    "solution": [
+                        "Risk assessment reports, safety analysis showing equivalence of applied mitigations and required risk reduction."
+                    ],
+                    "strategy": "The applied mitigations are equivalent to the required risk reduction for hazard El1.",
+                    "block": "Substitution",
+                    "goal": "The applied mitigations lead to sufficient risk reduction of the hazard El1.",
+                    "similarity": 60
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Mitigation A is effective in reducing risk.",
+                        "Mitigation B is effective in reducing risk.",
+                        "The combined effect of all mitigations significantly reduces the risk of hazard El1."
+                    ],
+                    "solution": [
+                        "Risk assessment reports for mitigation A.",
+                        "Risk assessment reports for mitigation B.",
+                        "Overall risk assessment reports showing cumulative effect."
+                    ],
+                    "strategy": "The sufficiency of risk reduction can be determined by analyzing the effectiveness of each mitigation measure applied and calculating their combined effect on hazard El1.",
+                    "block": "Decomposition, Calculation",
+                    "goal": "The applied mitigations lead to sufficient risk reduction of the hazard El1",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The applied mitigations are effective in reducing the likelihood of the hazard El1.",
+                        "The applied mitigations are effective in reducing the severity of the hazard El1."
+                    ],
+                    "solution": [
+                        "Hazard analysis reports, risk assessment reports.",
+                        "Mitigation effectiveness reports, test results."
+                    ],
+                    "strategy": "The risk reduction of the hazard El1 can be evaluated by examining the effectiveness of the applied mitigations.",
+                    "block": "Decomposition",
+                    "goal": "The applied mitigations lead to sufficient risk reduction of the hazard El1",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "The mitigation requirement R1 holds": {
+        "domain": "AutoRobot",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Contract-based formal verification shows with sufficient confidence that R1 is achieved in the design of Inspection Rover"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The first component of R1 is effective.",
+                        "The second component of R1 is effective."
+                    ],
+                    "solution": [
+                        "Test results, analysis reports.",
+                        "Expert assessments, historical data."
+                    ],
+                    "strategy": "The mitigation requirement R1 can be evaluated by examining its components and verifying their effectiveness.",
+                    "block": "Decomposition",
+                    "goal": "The mitigation requirement R1 holds.",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The risk assessment process identifies all potential threats.",
+                        "The risk control measures are effective in reducing threats.",
+                        "The disaster recovery plan ensures business continuity."
+                    ],
+                    "solution": [
+                        "Risk Assessment report",
+                        "Risk Control Measures Analysis",
+                        "Disaster Recovery Plan"
+                    ],
+                    "strategy": "The mitigation requirement can be met by implementing proper risk assessment, risk control, and disaster recovery plans.",
+                    "block": "Decomposition",
+                    "goal": "The mitigation requirement R1 holds",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The navigation algorithm is accurate.",
+                        "The emergency systems function correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The safety of the self-driving car can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The self-driving car is safe to operate on public roads.",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "Contract-based formal verification shows with sufficient confidence that R1 is achieved in the design of Inspection Rover": {
+        "domain": "AutoRobot",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The model FOL Rover in Matlab Simulink used for contract-based verification is a valid representation of the design of inspection Rover",
+                        "R1 is correctly formalized by the NavigationSystem contract battery_GT",
+                        "CoCoSim results show that the NavigationSystem contract battery_GT is verified in the model FOL Rover in Matlab Simulink",
+                        "Results produced by CoCoSim are trustworthy"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The contract-based formal verification process is reliable and accurate.",
+                        "The contract specifies the desired property R1.",
+                        "The contract-based formal verification process successfully verifies the achievement of property R1."
+                    ],
+                    "solution": [
+                        "Historical records of successful verification using contract-based formal verification.",
+                        "Documentation showing the specification of property R1 in the contract.",
+                        "Verification reports demonstrating the successful verification of property R1."
+                    ],
+                    "strategy": "Contract-based formal verification can provide evidence that R1 is achieved in the design of Inspection Rover.",
+                    "block": "Calculation or proof",
+                    "goal": "Contract-based formal verification shows with sufficient confidence that R1 is achieved in the design of Inspection Rover.",
+                    "similarity": 88
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The rover's contract-based formal verification shows that all design requirements are met.",
+                        "The rover's design is reliable and performs as expected under various conditions."
+                    ],
+                    "solution": [
+                        "Formal verification reports, contract specifications.",
+                        "Test reports, design analysis reports, field testing results."
+                    ],
+                    "strategy": "The design of the Inspection Rover can be assured through a combination of contract-based formal verification methods and analysis of design reliability.",
+                    "block": "Decomposition",
+                    "goal": "Contract-based formal verification shows with sufficient confidence that R1 is achieved in the design of Inspection Rover",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The contract-based formal verification is correct.",
+                        "The design of Inspection Rover satisfies the contract."
+                    ],
+                    "solution": [
+                        "Verification results, peer review reports.",
+                        "Design documentation, test results."
+                    ],
+                    "strategy": "The contract-based formal verification shows that R1 is achieved in the design of Inspection Rover.",
+                    "block": "Decomposition",
+                    "goal": "Contract-based formal verification shows with sufficient confidence that R1 is achieved in the design of Inspection Rover",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "System remains functional for intended radiation environment(NASA R&M mod) in order to complete science mission objective: Record the number of upsets in 28nm bulk SRAM in LEO for a period of 1 year.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).",
+                        "System is tolerant to radiation-induced faults and failures (NASA R&M mod)."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system's hardware components are radiation hardened.",
+                        "The system has been successfully operated in similar radiation environments."
+                    ],
+                    "solution": [
+                        "Manufacturer specifications for radiation hardening, radiation test reports for individual components.",
+                        "Records of successful mission operations in similar radiation environments, radiation test reports for similar systems."
+                    ],
+                    "strategy": "The system's functionality in the intended radiation environment can be determined by examining its hardware components and incorporating evidence of successful operation in similar radiation environments.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "System remains functional for intended radiation environment(NASA R&M mod) in order to complete science mission objective: Record the number of upsets in 28nm bulk SRAM in LEO for a period of 1 year.",
+                    "similarity": 92
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The 28nm bulk SRAM is reliable in LEO radiation environment.",
+                        "The system correctly measures the number of upsets.",
+                        "The system remains functional for a period of 1 year in LEO."
+                    ],
+                    "solution": [
+                        "Radiation testing results of the 28nm bulk SRAM.",
+                        "Verification of measurement accuracy.",
+                        "System lifetime prediction analysis, historical data of similar systems in LEO."
+                    ],
+                    "strategy": "The system functionality can be determined by the reliability of the SRAM operation in the radiation environment, the measurement accuracy of upsets, and the system lifespan.",
+                    "block": "Decomposition",
+                    "goal": "System remains functional for intended radiation environment(NASA R&M mod) in order to complete science mission objective: Record the number of upsets in 28nm bulk SRAM in LEO for a period of 1 year.",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The navigation algorithm is accurate.",
+                        "The emergency systems function correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The safety of the self-driving car can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The self-driving car is safe to operate on public roads.",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.",
+                        "System recovers from SELs."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system design incorporates redundancy and fault-tolerant features.",
+                        "The system has been tested and validated under extreme load and stress conditions, including radiation."
+                    ],
+                    "solution": [
+                        "Design documentation, fault tolerance analysis.",
+                        "Test reports, radiation testing results."
+                    ],
+                    "strategy": "The goal can be supported by examining the system's design and its ability to withstand nominal and extreme loads and stresses, including radiation.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The design of the system is robust.",
+                        "The materials used in the system are durable and radiation-resistant.",
+                        "The system has adequate safety measures in place to handle extreme loads and stresses."
+                    ],
+                    "solution": [
+                        "Design blueprints, simulation results.",
+                        "Material specification documents, test results.",
+                        "Safety protocol documents, emergency response plans."
+                    ],
+                    "strategy": "The system's ability to withstand nominal and extreme loads and stresses can be determined by examining its design, materials used, and the safety measures in place.",
+                    "block": "Decomposition",
+                    "goal": "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "Each component of the system is designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission."
+                    ],
+                    "solution": [
+                        "Component specifications, test reports."
+                    ],
+                    "strategy": "The system and its elements can withstand nominal and extreme loads and stresses (radiation) for the life of the mission if each of its components can withstand nominal and extreme loads and stresses (radiation) for the life of the mission.",
+                    "block": "Decomposition",
+                    "goal": "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "System is tolerant to radiation-induced faults and failures (NASA R&M mod).": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M)."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The hardware components are radiation-hardened.",
+                        "The probability of failure under radiation is within acceptable limits."
+                    ],
+                    "solution": [
+                        "Radiation hardening techniques used in hardware design, manufacturer specifications.",
+                        "Radiation testing reports, probabilistic analysis of failure rates under radiation."
+                    ],
+                    "strategy": "The system's tolerance to radiation-induced faults and failures can be determined by examining its hardware components and calculating the probability of failure under radiation.",
+                    "block": "Decomposition, Calculation or proof",
+                    "goal": "System is tolerant to radiation-induced faults and failures (NASA R&M mod).",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system design is inherently radiation tolerant.",
+                        "The materials used in the system are radiation resistant.",
+                        "The shielding of the system successfully mitigates radiation exposure."
+                    ],
+                    "solution": [
+                        "Design documents, simulation results.",
+                        "Material test reports, manufacturer data sheets.",
+                        "Shielding design documents, radiation test reports."
+                    ],
+                    "strategy": "The radiation tolerance of the system can be examined by its design, materials used, and shielding.",
+                    "block": "Decomposition",
+                    "goal": "System is tolerant to radiation-induced faults and failures (NASA R&M mod).",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The system components are tolerant to radiation-induced faults and failures."
+                    ],
+                    "solution": [
+                        "Component-level radiation testing reports."
+                    ],
+                    "strategy": "The system can tolerate radiation-induced faults and failures if its components are tolerant to radiation-induced faults and failures.",
+                    "block": "Decomposition",
+                    "goal": "System is tolerant to radiation-induced faults and failures (NASA R&M mod).",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Physical and functional pathways for SEL fault propagation or combination are limited (NASA R&M).",
+                        "System detects SEFI in microcontroller.",
+                        "System recovers from SEFI in the microcontroller.",
+                        "System recovers from SELs."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system can detect anomalies affecting important functions.",
+                        "The system can respond to anomalies and recover the affected functions."
+                    ],
+                    "solution": [
+                        "Anomaly detection algorithms, system logs.",
+                        "Recovery mechanisms documentation, system test results."
+                    ],
+                    "strategy": "The system's ability to recover can be evaluated by examining its anomaly detection and response mechanisms.",
+                    "block": "Decomposition",
+                    "goal": "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system is capable of detecting anomalies.",
+                        "The system is able to recover from detected anomalies."
+                    ],
+                    "solution": [
+                        "Test results showing successful anomaly detection.",
+                        "Test results showing successful recovery from detected anomalies."
+                    ],
+                    "strategy": "The system's recovery capability can be determined by examining its anomaly detection and recovery mechanisms.",
+                    "block": "Decomposition",
+                    "goal": "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The system has redundant components.",
+                        "The redundant components can take over the functions of failed components."
+                    ],
+                    "solution": [
+                        "Design documentation, system architecture diagrams.",
+                        "Test reports, simulation results."
+                    ],
+                    "strategy": "The system can recover from anomalies by having redundant components that can take over the functions of failed components.",
+                    "block": "Decomposition",
+                    "goal": "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).",
+                    "similarity": 60
+                }
+            ]
+        }
+    },
+    "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "FRAM (FM24V10-GTR) passes SEL mission requirement."
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The latch-up behavior of COTS parts under proton fluence of 5e9 protons/cm2.",
+                        "The latch-up behavior of COTS parts under 200 MeV proton energy."
+                    ],
+                    "solution": [
+                        "Latch-up test reports for COTS parts under 5e9 protons/cm2.",
+                        "Latch-up test reports for COTS parts under 200 MeV proton energy."
+                    ],
+                    "strategy": "The COTS parts' ability to pass the mission proton SEL requirement can be determined by examining their latch-up behavior under specified proton fluence and energy conditions.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.",
+                    "similarity": 60
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "COTS parts can withstand up to 5e9 protons/cm2.",
+                        "COTS parts meet the 200 MeV energy level for protons."
+                    ],
+                    "solution": [
+                        "Proton irradiation test results.",
+                        "Energy level measurement reports."
+                    ],
+                    "strategy": "Verify that the COTS parts can withstand the specified amount of protons/cm2 and that it meets the energy level requirement.",
+                    "block": "Decomposition",
+                    "goal": "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The COTS parts do not experience latch-up when exposed to 5e9 protons/cm2 of 200 MeV protons."
+                    ],
+                    "solution": [
+                        "Test results showing that the COTS parts did not experience latch-up when exposed to 5e9 protons/cm2 of 200 MeV protons."
+                    ],
+                    "strategy": "The COTS parts will pass the mission proton SEL requirement if they do not experience latch-up when exposed to 5e9 protons/cm2 of 200 MeV protons.",
+                    "block": "Decomposition",
+                    "goal": "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.",
+                    "similarity": 12
+                }
+            ]
+        }
+    },
+    "We see a world where everyone who chooses to use these services, as well as those who do not, have confidence in a safe and secure sector...": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "There is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The services are safe and secure.",
+                        "Effective communication about safety and security measures."
+                    ],
+                    "solution": [
+                        "Comprehensive risk assessments, security audits, user feedback.",
+                        "Clear and transparent communication about safety and security measures through user agreements, privacy policies, and public awareness campaigns."
+                    ],
+                    "strategy": "The confidence in a safe and secure sector can be achieved by ensuring the safety and security of the services and effectively communicating this to the users.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "We see a world where everyone who chooses to use these services, as well as those who do not, have confidence in a safe and secure sector.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The services are reliable and function as intended.",
+                        "The data security measures in place are top-grade.",
+                        "The services are accessible and easy to use for the public."
+                    ],
+                    "solution": [
+                        "Service quality reports, maintenance logs.",
+                        "Data security audits, encryption standards.",
+                        "User experience studies, accessibility audits."
+                    ],
+                    "strategy": "The confidence in a safe and secure sector can be achieved by ensuring the reliability of the services, the security of data, and the ease of use for the public.",
+                    "block": "Decomposition",
+                    "goal": "We see a world where everyone who chooses to use these services, as well as those who do not, have confidence in a safe and secure sector...",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The navigation algorithm is accurate.",
+                        "The emergency systems function correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The safety of the self-driving car can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The self-driving car is safe to operate on public roads.",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "There is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+                        "Other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Cyber-security measures are in place.",
+                        "The effectiveness of cyber-security measures is verified."
+                    ],
+                    "solution": [
+                        "Cyber-security policies and procedures, security audits.",
+                        "Penetration testing, vulnerability assessments."
+                    ],
+                    "strategy": "Cyber-security measures are implemented and tested to ensure the safety and resilience of UK regulated services.",
+                    "block": "Evidence Incorporation",
+                    "goal": "There is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services.",
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Effective measures are in place to mitigate cyber threats.",
+                        "UK regulated services have resilient systems that can withstand cyber-attacks.",
+                        "There is a robust incident response plan for cyber-security issues."
+                    ],
+                    "solution": [
+                        "Cyber-security policies and procedures, third-party audits.",
+                        "System resilience tests, backup and recovery plans.",
+                        "Incident response plans, evidence of incident response training."
+                    ],
+                    "strategy": "The confidence in the cyber-security of the UK regulated services can be justified by examining the measures taken to mitigate threats, the resilience of the systems in place, and the capability to respond to incidents.",
+                    "block": "Decomposition",
+                    "goal": "There is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+                    "similarity": 100
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "Cyber-security issues do not pose unacceptable risks to the safety of the UK regulated services.",
+                        "Cyber-security issues do not pose unacceptable risks to the resilience of the UK regulated services."
+                    ],
+                    "solution": [
+                        "Risk assessments, security audits, penetration testing reports.",
+                        "Business continuity plans, disaster recovery procedures, incident response plans."
+                    ],
+                    "strategy": "To show that there is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services, we can break down the goal into sub-goals that address each of these aspects.",
+                    "block": "Decomposition",
+                    "goal": "There is justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services at present",
+                        "ARO has justified confidence that cyber-security issues will not pose unacceptable risks to the safety and resilience of the UK regulated services in the future"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The cyber-security measures are robust.",
+                        "The risks posed by cyber-security issues are acceptable.",
+                        "The regulated services are resilient to cyber-security threats."
+                    ],
+                    "solution": [
+                        "Penetration testing results, security audits.",
+                        "Risk assessments, threat modeling.",
+                        "Business continuity plans, incident response plans."
+                    ],
+                    "strategy": "The justification of confidence can be achieved by examining the cyber-security measures and their effectiveness in mitigating risks.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services.",
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The cyber-security measures in place are robust and effective.",
+                        "The UK regulated services are resilient to cyber-attacks.",
+                        "There are contingency plans in place for dealing with cyber-security breaches."
+                    ],
+                    "solution": [
+                        "Security audits, third-party evaluations.",
+                        "Resilience assessments, documentation showing resilience measures.",
+                        "Documentation of contingency plans, records of drills and simulations."
+                    ],
+                    "strategy": "ARO's confidence can be justified by evaluating the cyber-security measures in place, the resilience of the UK regulated services, and the contingency plans for dealing with cyber-security breaches.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+                    "similarity": 95
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the resilience of the UK regulated services."
+                    ],
+                    "solution": [
+                        "ARO's risk assessments, independent reviews of ARO's risk assessments."
+                    ],
+                    "strategy": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety of the UK regulated services.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+                    "similarity": 95
+                }
+            ]
+        }
+    },
+    "Other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Other sources (out of scope)",
+                        "ARO provides other stakeholders with justified confidence in the regulated security and resilience"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The safety measures in place are effective.",
+                        "The resilience measures in place are effective."
+                    ],
+                    "solution": [
+                        "Safety audits, incident response testing.",
+                        "Resilience testing, disaster recovery plans."
+                    ],
+                    "strategy": "The confidence of stakeholders can be achieved by addressing the safety and resilience aspects of the UK regulated services.",
+                    "block": "Decomposition",
+                    "goal": "Other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Implementable security measures are in place.",
+                        "Systems have resilience against possible cyber threats."
+                    ],
+                    "solution": [
+                        "Documentation on security measures, staff training records.",
+                        "Resilience testing results, third-party audits."
+                    ],
+                    "strategy": "The stakeholders' confidence can be justified by the implementable security standards and resilient systems in place.",
+                    "block": "Decomposition",
+                    "goal": "Other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "Other stakeholders have confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services.",
+                        "This confidence is justified."
+                    ],
+                    "solution": [],
+                    "strategy": "To show that other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services, we can show that: 1) other stakeholders have confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services, and 2) this confidence is justified.",
+                    "block": "Decomposition",
+                    "goal": "Other stakeholders have justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services at present": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "ARO regulatory activity provides justified confidence in the security and reslience",
+                        "ARO has justified confidence in the overall regulatory institutions and standards",
+                        "ARO confident that the composition of all the activities addresses security and resilience of the regulated system as a whole and are proportionate"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The systems of UK regulated services are safe and resilient.",
+                        "The risks posed by cyber-security issues are acceptable."
+                    ],
+                    "solution": [
+                        "System audits, penetration testing, incident response records.",
+                        "Risk assessments, vulnerability assessments, threat intelligence reports."
+                    ],
+                    "strategy": "The cyber-security of UK regulated services can be assessed by examining the safety and resilience of their systems and evaluating the risks posed by cyber-security issues.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services at present.",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Cyber-security issues do not pose unacceptable risks to the safety of UK regulated services.",
+                        "Cyber-security issues do not pose unacceptable risks to the resilience of UK regulated services."
+                    ],
+                    "solution": [
+                        "Cyber-security risk assessments, incident reports, mitigation strategies.",
+                        "Resilience testing results, contingency plans, recovery strategies."
+                    ],
+                    "strategy": "We break down the goal into two main areas: cyber security issues related to safety, and cyber security issues related to resilience of UK regulated services.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services at present",
+                    "similarity": 100
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "ARO has implemented effective cyber-security measures.",
+                        "The cyber-security measures are effective in mitigating the risks to the safety and resilience of UK regulated services."
+                    ],
+                    "solution": [
+                        "ARO's cyber-security policies and procedures, evidence of compliance with relevant standards and regulations.",
+                        "ARO's cyber-security risk assessments, incident response plans, and evidence of successful implementation."
+                    ],
+                    "strategy": "ARO's confidence in the safety and resilience of UK regulated services can be justified by examining the effectiveness of its cyber-security measures.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues do not pose unacceptable risks to the safety and resilience of the UK regulated services at present",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "ARO has justified confidence that cyber-security issues will not pose unacceptable risks to the safety and resilience of the UK regulated services in the future": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "ARO has justified confidence that the regulated system can deal with cyber related events and changes"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The preventive measures are effective.",
+                        "The mitigative measures are effective."
+                    ],
+                    "solution": [
+                        "Penetration testing reports, vulnerability assessments.",
+                        "Incident response reports, disaster recovery plans."
+                    ],
+                    "strategy": "The confidence in cyber-security can be determined by examining the measures in place for preventing and mitigating cyber attacks.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues will not pose unacceptable risks to the safety and resilience of the UK regulated services in the future.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "ARO has robust cybersecurity measures in place.",
+                        "ARO has conducted thorough cybersecurity risk assessments.",
+                        "ARO has plans in place to enhance cybersecurity resilience in the future."
+                    ],
+                    "solution": [
+                        "Cybersecurity policies, compliance certifications, third-party evaluation reports.",
+                        "Risk assessment reports, vulnerability scans, penetration testing results.",
+                        "Future cybersecurity strategy, investment plans in cybersecurity infrastructure and personnel."
+                    ],
+                    "strategy": "ARO's confidence can be justified through evidence of robust cybersecurity measures, risk assessment and future resilience planning.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues will not pose unacceptable risks to the safety and resilience of the UK regulated services in the future",
+                    "similarity": 95
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "ARO has implemented effective cyber-security measures.",
+                        "ARO's cyber-security measures are aligned with industry best practices.",
+                        "ARO's cyber-security measures have been independently verified."
+                    ],
+                    "solution": [
+                        "Documentation of cyber-security measures, results of security audits.",
+                        "Comparison of ARO's cyber-security measures with industry standards and best practices.",
+                        "Reports from independent security assessments."
+                    ],
+                    "strategy": "ARO's justified confidence can be demonstrated by examining the effectiveness of its cyber-security measures.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that cyber-security issues will not pose unacceptable risks to the safety and resilience of the UK regulated services in the future",
+                    "similarity": 92
+                }
+            ]
+        }
+    },
+    "ARO regulatory activity provides justified confidence in the security and reslience": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "ARO has processes and procedures to deliver assessments of cyber-security informed safety and resilience",
+                        "ARO has capability to undertake cyber roles",
+                        "ARO has justified confidence in the technical approaches for addressing cyber-security informed safety and resilience"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The regulatory standards for security and resilience are met."
+                    ],
+                    "solution": [
+                        "Regulatory compliance reports, audit results."
+                    ],
+                    "strategy": "Regulatory activity ensures compliance with security and resilience standards.",
+                    "block": "Evidence Incorporation",
+                    "goal": "ARO regulatory activity provides justified confidence in the security and resilience.",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The risk management processes are effective.",
+                        "Control implementation is robust.",
+                        "Compliance to security standards is maintained."
+                    ],
+                    "solution": [
+                        "Risk assessment reports, incident response plans.",
+                        "Control implementation records, independent audits.",
+                        "Security compliance certifications, audit trail."
+                    ],
+                    "strategy": "Confidence in ARO's regulatory activity can be justified by examining its risk management, control implementation, and compliance to security standards.",
+                    "block": "Decomposition",
+                    "goal": "ARO regulatory activity provides justified confidence in the security and reslience",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "ARO regulatory activity is effective in ensuring the security of the system.",
+                        "ARO regulatory activity is effective in ensuring the reslience of the system."
+                    ],
+                    "solution": [
+                        "ARO regulatory activity reports, third-party assessments.",
+                        "ARO regulatory activity reports, third-party assessments."
+                    ],
+                    "strategy": "ARO regulatory activity provides justified confidence in the security and reslience of the system.",
+                    "block": "Decomposition",
+                    "goal": "ARO regulatory activity provides justified confidence in the security and reslience",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "ARO has justified confidence in the overall regulatory institutions and standards": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Standards and legislation adequately applied",
+                        "Standards and legislation address cyber adequately"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The regulatory institutions are reliable.",
+                        "The regulatory standards are effective."
+                    ],
+                    "solution": [
+                        "Historical records of regulatory institution performance, third-party assessments.",
+                        "Compliance rates with regulatory standards, safety records."
+                    ],
+                    "strategy": "The confidence in regulatory institutions and standards can be determined by examining their reliability and effectiveness.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence in the overall regulatory institutions and standards.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The regulatory institutions are competent.",
+                        "The regulatory standards are robust."
+                    ],
+                    "solution": [
+                        "Historical performance records, independent assessments.",
+                        "Review of the standards, comparison with international standards."
+                    ],
+                    "strategy": "Justified confidence in the overall regulatory institutions and standards can be achieved by analyzing the competence of the regulatory institutions and the robustness of the standards.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence in the overall regulatory institutions and standards",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "ARO has justified confidence in the regulatory institutions.",
+                        "ARO has justified confidence in the regulatory standards."
+                    ],
+                    "solution": [
+                        "ARO's assessment of the regulatory institutions.",
+                        "ARO's assessment of the regulatory standards."
+                    ],
+                    "strategy": "ARO's confidence in the overall regulatory institutions and standards can be decomposed into confidence in the institutions and confidence in the standards.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence in the overall regulatory institutions and standards",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "ARO has justified confidence that the regulated system can deal with cyber related events and changes": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Vulnerability discovery and evolving threats are adequately addressed",
+                        "Regulated system changes are conducted in a controlled way",
+                        "Institutional and legal changes are performed properly",
+                        "Innovation and service connectivity are properly dealt with",
+                        "Incidents and accidents including attacks are adequately responded to"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system has robust cybersecurity measures.",
+                        "The system can effectively detect and respond to cyber threats.",
+                        "The system can adapt to changes in the cyber landscape."
+                    ],
+                    "solution": [
+                        "Security audit reports, penetration testing results.",
+                        "Incident response documentation, intrusion detection system reports.",
+                        "Change management records, vulnerability assessments."
+                    ],
+                    "strategy": "The justified confidence in the regulated system can be achieved by examining its ability to handle cyber related events and changes.",
+                    "block": "Decomposition, Substitution, Evidence Incorporation",
+                    "goal": "ARO has justified confidence that the regulated system can deal with cyber related events and changes.",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system has effective preventive measures against cyber threats.",
+                        "The system has robust response capabilities to handle cyber incidents.",
+                        "The system can adapt to changes in the cyber threat landscape."
+                    ],
+                    "solution": [
+                        "Cybersecurity risk assessments, penetration testing reports.",
+                        "Incident response plans, records of previous incident handling.",
+                        "Change management procedures, records of system updates."
+                    ],
+                    "strategy": "Confidence in the system's cyber resilience can be justified by evaluating its preventive measures, response capabilities, and adaptability to changes.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that the regulated system can deal with cyber related events and changes",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The system has adequate security controls in place.",
+                        "The system has an effective incident response procedure in place."
+                    ],
+                    "solution": [
+                        "Security audit reports, penetration testing reports.",
+                        "Incident response plan, documentation of successful incident response drills."
+                    ],
+                    "strategy": "ARO's confidence in the regulated system's ability to deal with cyber related events and changes can be justified by examining the system's security controls and incident response procedures.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence that the regulated system can deal with cyber related events and changes",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "ARO has justified confidence in the technical approaches for addressing cyber-security informed safety and resilience": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Assessment of resilience is carried out taking security into consideration",
+                        "Assessment of safety cases is cyber informed",
+                        "Audit and assessment of SMS and SecMS addresses cyber"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The technical approaches effectively address cyber-security.",
+                        "The technical approaches effectively address safety.",
+                        "The technical approaches effectively address resilience."
+                    ],
+                    "solution": [
+                        "Penetration testing reports, vulnerability assessments.",
+                        "Safety analysis reports, hazard identification and assessment.",
+                        "Resilience testing reports, risk assessments."
+                    ],
+                    "strategy": "The technical approaches can be evaluated by examining their effectiveness in addressing cyber-security, safety, and resilience.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence in the technical approaches for addressing cyber-security informed safety and resilience.",
+                    "similarity": 67
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "ARO's cyber-security measures are effective.",
+                        "ARO's safety procedures are comprehensive.",
+                        "ARO's resilience strategies are robust."
+                    ],
+                    "solution": [
+                        "Cyber-security audit reports, penetration testing results.",
+                        "Safety procedure manuals, safety training records.",
+                        "Resilience strategy documentation, evidence of successful disaster recovery exercises."
+                    ],
+                    "strategy": "Confidence in the technical approaches can be established through evaluation of ARO's cyber-security measures, safety procedures and resilience strategies.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence in the technical approaches for addressing cyber-security informed safety and resilience",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The technical approaches are effective in addressing cyber-security informed safety.",
+                        "The technical approaches are effective in addressing cyber-security informed resilience."
+                    ],
+                    "solution": [
+                        "ARO's internal assessments, external evaluations.",
+                        "ARO's internal assessments, external evaluations."
+                    ],
+                    "strategy": "ARO's confidence in the technical approaches can be justified by examining the effectiveness of the approaches in addressing cyber-security informed safety and resilience.",
+                    "block": "Decomposition",
+                    "goal": "ARO has justified confidence in the technical approaches for addressing cyber-security informed safety and resilience",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "ARO provides other stakeholders with justified confidence in the regulated security and resilience": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Provides confidence existing system secure and resilient",
+                        "Sources of doubt actively managed - actual and perceived risks"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The security features of ARO are robust.",
+                        "The resilience capabilities of ARO are effective."
+                    ],
+                    "solution": [
+                        "Security audits, penetration testing.",
+                        "Disaster recovery plans, incident response exercises."
+                    ],
+                    "strategy": "The confidence in ARO can be determined by examining its security features and resilience capabilities.",
+                    "block": "Decomposition",
+                    "goal": "ARO provides other stakeholders with justified confidence in the regulated security and resilience.",
+                    "similarity": 80
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "ARO demonstrates transparency in its operations.",
+                        "ARO complies with all applicable regulations.",
+                        "ARO consistently performs to meet security and resilience standards."
+                    ],
+                    "solution": [
+                        "Published policies and procedures, transparency reports.",
+                        "Regulatory audit reports, compliance certificates.",
+                        "Performance metrics, incident response reports."
+                    ],
+                    "strategy": "Confidence in the regulated security and resilience can be provided by demonstrating transparency, compliance, and performance.",
+                    "block": "Decomposition",
+                    "goal": "ARO provides other stakeholders with justified confidence in the regulated security and resilience",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "ARO provides evidence that the regulated security and resilience is adequate."
+                    ],
+                    "solution": [
+                        "ARO provides evidence that the regulated security and resilience is adequate."
+                    ],
+                    "strategy": "ARO provides other stakeholders with justified confidence in the regulated security and resilience by providing evidence that the regulated security and resilience is adequate.",
+                    "block": "Decomposition",
+                    "goal": "ARO provides other stakeholders with justified confidence in the regulated security and resilience",
+                    "similarity": 60
+                }
+            ]
+        }
+    },
+    "Provides confidence existing system secure and resilient": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Confidence communicated",
+                        "ARO has justiifed confidence in overall system"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system has implemented strong access control measures.",
+                        "The system has a robust backup and recovery plan.",
+                        "The system has undergone penetration tests to identify vulnerabilities."
+                    ],
+                    "solution": [
+                        "Security logs, access control policy documentation.",
+                        "Disaster recovery plans, backup system documentation.",
+                        "Penetration test reports, vulnerability assessment reports."
+                    ],
+                    "strategy": "The confidence in the existing system's security and resilience can be supported by examining its security measures and its ability to withstand potential threats.",
+                    "block": "Evidence Incorporation, Decomposition",
+                    "goal": "Provides confidence existing system secure and resilient",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system can withstand cyber attacks.",
+                        "The system can recover quickly from attacks.",
+                        "The system complies with recognized security standards."
+                    ],
+                    "solution": [
+                        "Penetration test results, vulnerability assessments.",
+                        "Disaster recovery test results, incident response plans.",
+                        "Security certification documents, compliance audit results."
+                    ],
+                    "strategy": "Confidence in system security and resilience can be evaluated by examining the system's ability to withstand attacks, its ability to recover from attacks, and its adherence to security standards.",
+                    "block": "Decomposition",
+                    "goal": "Provides confidence existing system secure and resilient",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The existing system is secure.",
+                        "The existing system is resilient."
+                    ],
+                    "solution": [
+                        "Security audit reports, penetration testing results.",
+                        "System uptime reports, disaster recovery plans."
+                    ],
+                    "strategy": "The existing system is secure and resilient.",
+                    "block": "Decomposition",
+                    "goal": "Provides confidence existing system secure and resilient",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "Sources of doubt actively managed - actual and perceived risks": {
+        "domain": "CyberSecurity",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Incident response and resilience including rebuttals are performed",
+                        "Technical evaluations are conducted",
+                        "Organisational complexity is addressed"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Actual risks are identified and mitigated.",
+                        "Perceived risks are addressed through communication and transparency."
+                    ],
+                    "solution": [
+                        "Risk assessment reports, risk mitigation strategies.",
+                        "Clear communication channels, regular updates to stakeholders."
+                    ],
+                    "strategy": "The sources of doubt can be divided into actual risks and perceived risks.",
+                    "block": "Decomposition",
+                    "goal": "Sources of doubt actively managed - actual and perceived risks.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Actual risks are identified and managed.",
+                        "Perceived risks are identified and managed."
+                    ],
+                    "solution": [
+                        "Risk assessment reports, mitigation plans.",
+                        "Stakeholder surveys, communication strategy."
+                    ],
+                    "strategy": "Actively managing sources of doubt can be achieved by identifying and mitigating actual and perceived risks.",
+                    "block": "Decomposition",
+                    "goal": "Sources of doubt actively managed - actual and perceived risks",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "Actual risks are identified and addressed.",
+                        "Perceived risks are identified and addressed."
+                    ],
+                    "solution": [
+                        "Risk assessments, incident reports.",
+                        "Customer surveys, feedback analysis."
+                    ],
+                    "strategy": "To actively manage sources of doubt, both actual and perceived risks must be identified and addressed.",
+                    "block": "Decomposition",
+                    "goal": "Sources of doubt actively managed - actual and perceived risks",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "The vehicle is acceptably safe": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Argument over the implementation of safety requirements during product development",
+                        "Argument over the implementation of safety requirements post product development"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The vehicle's structural integrity meets safety standards.",
+                        "The braking system is reliable and effective.",
+                        "The crash avoidance features function properly."
+                    ],
+                    "solution": [
+                        "Crash test results, structural integrity analysis.",
+                        "Braking system performance tests, manufacturer test reports.",
+                        "Crash avoidance system evaluations, real-world incident data."
+                    ],
+                    "strategy": "The safety of the vehicle can be determined by examining its structural integrity, braking system, and crash avoidance features.",
+                    "block": "Decomposition",
+                    "goal": "The vehicle is acceptably safe.",
+                    "similarity": 60
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The mechanical systems of the vehicle are functioning properly.",
+                        "The electrical systems of the vehicle are functioning properly.",
+                        "The vehicle's structural integrity is sound."
+                    ],
+                    "solution": [
+                        "Vehicle maintenance records, mechanic inspection reports.",
+                        "Electrical system test results, technician inspection reports.",
+                        "Vehicle inspection reports, structural integrity assessments."
+                    ],
+                    "strategy": "The vehicle's safety can be determined by examining its mechanical, electrical and structural integrity.",
+                    "block": "Decomposition",
+                    "goal": "The vehicle is acceptably safe",
+                    "similarity": 40
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The navigation algorithm is accurate.",
+                        "The emergency systems function correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The safety of the vehicle can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The vehicle is acceptably safe",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "Argument over the implementation of safety requirements during product development": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The vehicle satisfies its Pre-defined Safety Requirements",
+                        "System is acceptably safe to operate in the specified environment"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The safety requirements are clearly defined.",
+                        "The safety requirements are properly implemented.",
+                        "The safety requirements are adequately tested."
+                    ],
+                    "solution": [
+                        "Safety requirement documentation, industry standards.",
+                        "Code reviews, inspections, verification and validation processes.",
+                        "Test plans, test results, safety audits."
+                    ],
+                    "strategy": "The argument can be broken down into sub-arguments that focus on different aspects of safety requirements implementation.",
+                    "block": "Decomposition",
+                    "goal": "Argument over the implementation of safety requirements during product development",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Safety requirements are clearly defined and understood.",
+                        "The design of the product incorporates the safety requirements.",
+                        "The product has been implemented according to the design.",
+                        "The product has been verified to meet the safety requirements."
+                    ],
+                    "solution": [
+                        "Requirement specifications, consultation records.",
+                        "Design documents, safety analysis reports.",
+                        "Implementation records, code reviews.",
+                        "Verification reports, third-party audits."
+                    ],
+                    "strategy": "The implementation of safety requirements can be examined by looking at the requirement specifications, design, implementation, and verification stages.",
+                    "block": "Decomposition",
+                    "goal": "Argument over the implementation of safety requirements during product development",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The safety requirements are clearly defined and understood by all stakeholders.",
+                        "The safety requirements are feasible to implement within the project's constraints.",
+                        "The safety requirements are implemented correctly in the product."
+                    ],
+                    "solution": [],
+                    "strategy": "The argument over the implementation of safety requirements during product development can be broken down into the following sub-goals: 1. The safety requirements are clearly defined and understood by all stakeholders. 2. The safety requirements are feasible to implement within the project's constraints. 3. The safety requirements are implemented correctly in the product.",
+                    "block": "Decomposition",
+                    "goal": "Argument over the implementation of safety requirements during product development",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "Argument over the implementation of safety requirements post product development": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The vehicle is free from faults when built",
+                        "The vehicle is subject to in-use monitoring,service updates and prescribed in-use maintenance"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The safety requirements are clearly defined.",
+                        "The safety requirements are correctly implemented.",
+                        "The safety requirements are effectively enforced."
+                    ],
+                    "solution": [
+                        "Safety requirement documentation, regulatory standards.",
+                        "Inspection reports, quality assurance processes.",
+                        "Compliance audits, regular safety assessments."
+                    ],
+                    "strategy": "The argument can be decomposed into sub-arguments related to different aspects of safety requirements implementation.",
+                    "block": "Decomposition",
+                    "goal": "Argument over the implementation of safety requirements post product development",
+                    "similarity": 66
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The product design incorporates all safety features.",
+                        "The product has passed all safety tests.",
+                        "The product complies with all regulatory safety requirements."
+                    ],
+                    "solution": [
+                        "Product design documents, safety feature checklists.",
+                        "Test results, test procedure documents.",
+                        "Regulatory compliance certificates, safety regulation documents."
+                    ],
+                    "strategy": "The implementation of safety requirements can be evaluated by reviewing the product's design, the testing procedures, and the compliance documentation post development.",
+                    "block": "Decomposition",
+                    "goal": "Argument over the implementation of safety requirements post product development",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The safety requirements are clearly defined and understood by all stakeholders.",
+                        "The safety requirements are feasible to implement.",
+                        "The safety requirements are cost-effective to implement.",
+                        "The safety requirements do not adversely affect the product's performance or usability."
+                    ],
+                    "solution": [],
+                    "strategy": "The argument over the implementation of safety requirements post product development can be broken down into the following sub-goals: 1. The safety requirements are clearly defined and understood by all stakeholders. 2. The safety requirements are feasible to implement. 3. The safety requirements are cost-effective to implement. 4. The safety requirements do not adversely affect the product's performance or usability.",
+                    "block": "Decomposition",
+                    "goal": "Argument over the implementation of safety requirements post product development",
+                    "similarity": 50
+                }
+            ]
+        }
+    },
+    "The vehicle satisfies its Pre-defined Safety Requirements": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The pre-crash attributes of the vehicle have been met",
+                        "The crashworthiness attributes of the vehicle have been met",
+                        "The post-crash attributes of the vehicle have been met"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The vehicle's braking system is reliable.",
+                        "The vehicle's stability control system functions correctly.",
+                        "The vehicle's airbag system operates as intended."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Vehicle performance simulations.",
+                        "Crash tests, safety certification reports."
+                    ],
+                    "strategy": "The safety of the vehicle can be determined by examining its adherence to pre-defined safety requirements.",
+                    "block": "Decomposition",
+                    "goal": "The vehicle satisfies its Pre-defined Safety Requirements",
+                    "similarity": 60
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The vehicle's design follows safety standards.",
+                        "The manufacturing process adheres to quality controls.",
+                        "Regular maintenance is conducted to ensure safety."
+                    ],
+                    "solution": [
+                        "Design blueprints, safety testing results.",
+                        "Manufacturing quality control reports, third-party inspections.",
+                        "Maintenance logs, vehicle check-up records."
+                    ],
+                    "strategy": "The vehicle's safety can be ensured by checking its design, manufacturing, and maintenance processes.",
+                    "block": "Decomposition",
+                    "goal": "The vehicle satisfies its Pre-defined Safety Requirements",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The braking system satisfies its pre-defined safety requirements.",
+                        "The steering system satisfies its pre-defined safety requirements.",
+                        "The suspension system satisfies its pre-defined safety requirements."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The vehicle satisfies its pre-defined safety requirements if each of its sub-systems satisfies its pre-defined safety requirements.",
+                    "block": "Decomposition",
+                    "goal": "The vehicle satisfies its Pre-defined Safety Requirements",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "System is acceptably safe to operate in the specified environment": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The residual risk associated with the identified system hazards has been reduced to an acceptable level"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The hardware components are reliable.",
+                        "The software components are secure.",
+                        "The operational procedures are followed correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, vulnerability scans.",
+                        "Training records, compliance audits."
+                    ],
+                    "strategy": "The safety of the system can be determined by examining its hardware, software, and operational procedures.",
+                    "block": "Decomposition",
+                    "goal": "System is acceptably safe to operate in the specified environment",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system's structural integrity is sound.",
+                        "The system's fail-safe mechanisms are effective.",
+                        "The system's human-machine interface is user-friendly and intuitive."
+                    ],
+                    "solution": [
+                        "Inspection reports, material strength tests.",
+                        "Safety system testing, fail safe mechanism testing.",
+                        "User feedback surveys, ergonomic assessments."
+                    ],
+                    "strategy": "The safety of the system can be determined by examining its structural integrity, fail-safe mechanisms, and human-machine interface.",
+                    "block": "Decomposition",
+                    "goal": "System is acceptably safe to operate in the specified environment",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The system meets all applicable safety standards.",
+                        "The system meets all applicable safety regulations."
+                    ],
+                    "solution": [
+                        "List of applicable safety standards and compliance reports.",
+                        "List of applicable safety regulations and compliance reports."
+                    ],
+                    "strategy": "The system is acceptably safe to operate in the specified environment if it meets all applicable safety standards and regulations.",
+                    "block": "Decomposition",
+                    "goal": "System is acceptably safe to operate in the specified environment",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "The residual risk associated with the identified system hazards has been reduced to an acceptable level": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Physical safety: The residual risk of (hazard S) is acceptable",
+                        "Functional Safety: The residual risk of (hazard T) is acceptable"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Identify and assess system hazards.",
+                        "Implement risk mitigation measures for each identified hazard.",
+                        "Ensure the residual risk is reduced to an acceptable level."
+                    ],
+                    "solution": [
+                        "Hazard analysis reports, risk assessments.",
+                        "Risk mitigation plans, safety procedures.",
+                        "Verification and validation activities, compliance with safety standards."
+                    ],
+                    "strategy": "The residual risk can be reduced by addressing individual system hazards and implementing suitable risk mitigation measures.",
+                    "block": "Decomposition",
+                    "goal": "The residual risk associated with the identified system hazards has been reduced to an acceptable level.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "All system hazards have been identified.",
+                        "Effective safeguards are in place for each identified hazard.",
+                        "The system is continually monitored for new risks."
+                    ],
+                    "solution": [
+                        "Risk assessment reports, hazard logs.",
+                        "Safety measures documentation, third-party evaluations.",
+                        "Monitoring reports, audit logs."
+                    ],
+                    "strategy": "The residual risk can be reduced by identifying hazards, implementing safeguards, and monitoring the system.",
+                    "block": "Decomposition",
+                    "goal": "The residual risk associated with the identified system hazards has been reduced to an acceptable level",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The system hazards have been identified.",
+                        "The residual risks associated with the system hazards have been assessed.",
+                        "Appropriate risk mitigation measures have been implemented.",
+                        "The residual risks associated with the system hazards have been reduced to an acceptable level."
+                    ],
+                    "solution": [
+                        "Hazard identification reports, system safety analysis reports.",
+                        "Risk assessment reports.",
+                        "Risk mitigation plans, implementation reports.",
+                        "Residual risk assessment reports."
+                    ],
+                    "strategy": "The residual risk associated with the identified system hazards can be reduced to an acceptable level by implementing appropriate risk mitigation measures.",
+                    "block": "Decomposition",
+                    "goal": "The residual risk associated with the identified system hazards has been reduced to an acceptable level.",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "Functional Safety: The residual risk of (hazard T) is acceptable": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Elimination: Implementation of Safety Goal U has eliminated hazard T causes",
+                        "Mitigation: Implementation of Safety Goal U has reduced the occurrence or propagation of hazard T causes",
+                        "Minimisation: Notification and/or emergency procedures for Safety Goal U have been developed"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The severity of hazard T is within acceptable limits.",
+                        "The probability of hazard T occurring is within acceptable limits.",
+                        "The safety measures implemented effectively mitigate the risk of hazard T."
+                    ],
+                    "solution": [
+                        "Risk assessment reports, hazard analysis.",
+                        "Probability calculations, historical data.",
+                        "Safety validation test results, safety certification documentation."
+                    ],
+                    "strategy": "The acceptability of the residual risk can be determined by examining the severity and probability of hazard T, as well as the effectiveness of safety measures.",
+                    "block": "Decomposition",
+                    "goal": "Functional Safety: The residual risk of (hazard T) is acceptable",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The probability of hazard T occurring is low.",
+                        "The mitigations in place for hazard T are effective."
+                    ],
+                    "solution": [
+                        "Risk assessments, incident reports.",
+                        "Safety protocols, training records, incident response reports."
+                    ],
+                    "strategy": "The residual risk can be considered acceptable if the hazard's probability is low and the mitigations in place are effective.",
+                    "block": "Decomposition",
+                    "goal": "Functional Safety: The residual risk of (hazard T) is acceptable",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The likelihood of (hazard T) is low.",
+                        "The severity of (hazard T) is low.",
+                        "The safety measures in place are effective."
+                    ],
+                    "solution": [
+                        "Risk assessment reports, historical data.",
+                        "Hazard analysis reports, industry standards.",
+                        "Test reports, certification documents."
+                    ],
+                    "strategy": "The residual risk of (hazard T) can be determined by considering the likelihood and severity of the hazard, as well as the effectiveness of the safety measures in place.",
+                    "block": "Decomposition",
+                    "goal": "Functional Safety: The residual risk of (hazard T) is acceptable",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "Mitigation: Implementation of Safety Goal U has reduced the occurrence or propagation of hazard T causes": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Detection and Diagnostics: Argument by appeal to detection and diagnostics of systematic and random failures within the design",
+                        "System Degradation: Argument by appeal over the transition to a safe system state in an appropriate time"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Safety Goal U has been implemented.",
+                        "The occurrence of hazard T has reduced.",
+                        "The propagation of hazard T has reduced."
+                    ],
+                    "solution": [
+                        "Documentation of the implementation of Safety Goal U.",
+                        "Data showing a decrease in the occurrence of hazard T.",
+                        "Data showing a decrease in the propagation of hazard T."
+                    ],
+                    "strategy": "The reduction in occurrence or propagation of hazard T can be determined by examining the implementation of Safety Goal U and its effects.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "Mitigation: Implementation of Safety Goal U has reduced the occurrence or propagation of hazard T causes",
+                    "similarity": 60
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The frequency of hazard T occurrence has decreased.",
+                        "Safety measure U is effectively implemented."
+                    ],
+                    "solution": [
+                        "Incident reports, hazard logs.",
+                        "Safety audits, process reviews."
+                    ],
+                    "strategy": "The mitigation can be determined by examining the frequency of hazard occurrence and the effectiveness of the safety measures.",
+                    "block": "Decomposition",
+                    "goal": "Mitigation: Implementation of Safety Goal U has reduced the occurrence or propagation of hazard T causes",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The navigation algorithm is accurate.",
+                        "The emergency systems function correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The safety of the self-driving car can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The self-driving car is safe to operate on public roads.",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "Detection and Diagnostics: Argument by appeal to detection and diagnostics of systematic and random failures within the design": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Systematic Failures: The impact of systematic failures which can invalidate the Safety Goal U have been adequately managed",
+                        "Random Failures: The impact of random failures which can invalidate the Safety Goal U have been adequately managed"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Comprehensive testing is conducted to detect systematic failures.",
+                        "Monitoring systems are in place to detect random failures."
+                    ],
+                    "solution": [
+                        "Test plans, test results, test coverage metrics.",
+                        "Monitoring logs, system health reports."
+                    ],
+                    "strategy": "The detection and diagnostics of systematic and random failures can be achieved through comprehensive testing and monitoring.",
+                    "block": "Decomposition, Concretion",
+                    "goal": "Detection and Diagnostics: Argument by appeal to detection and diagnostics of systematic and random failures within the design.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system can detect and diagnose systematic failures.",
+                        "The system can detect and diagnose random failures."
+                    ],
+                    "solution": [
+                        "Test results showing detection of systematic failures, documentation of diagnostic processes.",
+                        "Test results showing detection of random failures, documentation of diagnostic processes."
+                    ],
+                    "strategy": "The detection and diagnostics of failures can be determined by examining the system's ability to detect and respond to both systematic and random failures.",
+                    "block": "Decomposition",
+                    "goal": "Detection and Diagnostics: Argument by appeal to detection and diagnostics of systematic and random failures within the design",
+                    "similarity": 100
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The new drug reduces the severity of the symptoms.",
+                        "The new drug reduces the frequency of the symptoms.",
+                        "The new drug does not cause any adverse side effects."
+                    ],
+                    "solution": [
+                        "Clinical trial results, patient testimonials.",
+                        "Clinical trial results, patient testimonials.",
+                        "Clinical trial results, patient testimonials."
+                    ],
+                    "strategy": "The effectiveness of the new drug can be determined by examining its impact on the symptoms of the disease.",
+                    "block": "Decomposition",
+                    "goal": "The new drug is effective in treating the disease.",
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "System Degradation: Argument by appeal over the transition to a safe system state in an appropriate time": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "A justified system safe state has been developed"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system can detect failures within a reasonable time.",
+                        "The system can initiate a safe state transition within an appropriate time."
+                    ],
+                    "solution": [
+                        "Failure detection logs, system monitoring data.",
+                        "Safe state transition logs, system response time analysis."
+                    ],
+                    "strategy": "The system degradation can be evaluated by examining the time taken to transition to a safe state during failures.",
+                    "block": "Evidence Incorporation",
+                    "goal": "System Degradation: Argument by appeal over the transition to a safe system state in an appropriate time",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The system can effectively detect any malfunction or degradation.",
+                        "The system can successfully transition to a safe state within an appropriate time after detecting a malfunction."
+                    ],
+                    "solution": [
+                        "System test reports, error log analysis.",
+                        "Recovery procedure documents, system logs showing transition times."
+                    ],
+                    "strategy": "The system's ability to transition to a safe state can be determined by evaluating its error detection capability and recovery procedures.",
+                    "block": "Decomposition",
+                    "goal": "System Degradation: Argument by appeal over the transition to a safe system state in an appropriate time",
+                    "similarity": 70
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The drug reduces tumor size by at least 50% in 50% of patients."
+                    ],
+                    "solution": [
+                        "Clinical trial results, patient testimonials."
+                    ],
+                    "strategy": "Effectiveness in this context means that the drug reduces tumor size by at least 50% in 50% of patients.",
+                    "block": "Concretion",
+                    "goal": "The new drug is effective in treating cancer.",
+                    "similarity": 12
+                }
+            ]
+        }
+    },
+    "Random Failures: The impact of random failures which can invalidate the Safety Goal U have been adequately managed": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Undetectable Failures: Argument by appeal to the management of undetectable failures",
+                        "Detectable failures: Argument by appeal to the management of detectable failures"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system has fault tolerance mechanisms in place.",
+                        "The system has effective mitigation strategies for random failures."
+                    ],
+                    "solution": [
+                        "System documentation, design specifications showing fault tolerance mechanisms.",
+                        "Risk assessments, contingency plans showing mitigation strategies."
+                    ],
+                    "strategy": "The impact of random failures can be determined by analyzing the system's fault tolerance measures and mitigation strategies.",
+                    "block": "Evidence Incorporation",
+                    "goal": "Random Failures: The impact of random failures which can invalidate the Safety Goal U have been adequately managed",
+                    "similarity": 50
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Potential random failures have been identified.",
+                        "The impact of potential random failures has been assessed.",
+                        "Measures to mitigate the impact of potential random failures have been implemented."
+                    ],
+                    "solution": [
+                        "Failure Mode and Effects Analysis (FMEA) reports.",
+                        "Risk assessment documents.",
+                        "Documentation of implemented mitigation measures."
+                    ],
+                    "strategy": "Managing the impact of random failures involves identifying potential failures, assessing their impact, and implementing measures to mitigate them.",
+                    "block": "Decomposition",
+                    "goal": "Random Failures: The impact of random failures which can invalidate the Safety Goal U have been adequately managed",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The potential failure modes of the system have been identified.",
+                        "The likelihood and severity of each failure mode has been assessed.",
+                        "Mitigations have been implemented to reduce the risk of each failure mode."
+                    ],
+                    "solution": [
+                        "Failure Mode and Effects Analysis (FMEA) report.",
+                        "Risk assessment report.",
+                        "Mitigation plan."
+                    ],
+                    "strategy": "The impact of random failures can be managed by identifying potential failure modes, assessing their likelihood and severity, and implementing mitigations to reduce the risk.",
+                    "block": "Decomposition",
+                    "goal": "Random Failures: The impact of random failures which can invalidate the Safety Goal U have been adequately managed",
+                    "similarity": 50
+                }
+            ]
+        }
+    },
+    "A justified system safe state has been developed": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Restriction: Vehicle functionality has been restricted",
+                        "Prevention: Vehicle use has been prevented"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system components are functioning correctly.",
+                        "The interactions between system components are reliable."
+                    ],
+                    "solution": [
+                        "Component test reports, verification and validation results.",
+                        "Documentation of system architecture, analysis of system behavior."
+                    ],
+                    "strategy": "The justified system safe state can be achieved by ensuring the correctness of system components and their interactions.",
+                    "block": "Decomposition",
+                    "goal": "A justified system safe state has been developed.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "A clear definition of the system safe state is provided.",
+                        "The implementation of the system safe state is correct.",
+                        "The system safe state has been thoroughly tested."
+                    ],
+                    "solution": [
+                        "System specifications, design documents.",
+                        "Code reviews, design reviews.",
+                        "Test results, independent assessments."
+                    ],
+                    "strategy": "The justification of a system safe state can be determined by evaluating its definition, implementation, and testing.",
+                    "block": "Decomposition",
+                    "goal": "A justified system safe state has been developed",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The system safe state has been analyzed and shown to be safe."
+                    ],
+                    "solution": [
+                        "Analysis reports, test results."
+                    ],
+                    "strategy": "A justified system safe state is one that has been shown to be safe through analysis and testing.",
+                    "block": "Concretion",
+                    "goal": "A justified system safe state has been developed",
+                    "similarity": 60
+                }
+            ]
+        }
+    },
+    "Restriction: Vehicle functionality has been restricted": {
+        "domain": "Automobile",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "System faults detected while engine running will deactivate the system and leave it running",
+                        "System faults detected while engine is off will take the system out of operation requiring a key start"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The speed of the vehicle is limited.",
+                        "The acceleration of the vehicle is limited.",
+                        "The access to certain features is restricted."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, speed limit control system documentation.",
+                        "Manufacturer test reports, acceleration control system documentation.",
+                        "Documentation on feature access control mechanisms."
+                    ],
+                    "strategy": "The restriction of vehicle functionality can be examined by analyzing specific components and features.",
+                    "block": "Decomposition",
+                    "goal": "Restriction: Vehicle functionality has been restricted",
+                    "similarity": 25
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Engine performance has been limited.",
+                        "Vehicle speed has been capped.",
+                        "Certain automated features have been deactivated."
+                    ],
+                    "solution": [
+                        "Engine performance data, maintenance reports.",
+                        "Vehicle speed data, GPS tracking reports.",
+                        "Automated features checklist, software setting screenshots."
+                    ],
+                    "strategy": "Vehicle functionality restriction can be addressed by looking at the areas where the functionalities have been limited.",
+                    "block": "Decomposition",
+                    "goal": "Restriction: Vehicle functionality has been restricted",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The navigation algorithm is accurate.",
+                        "The emergency systems function correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The safety of the self-driving car can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The self-driving car is safe to operate on public roads.",
+                    "similarity": 60
+                }
+            ]
+        }
+    },
+    "The implemented pacemaker software is acceptably safe to operate in VVI mode": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The implementation satisfies all the desired safety properties within acceptable timing tolerances"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The software accurately detects ventricular events.",
+                        "The software properly adjusts pacing mode.",
+                        "The software is resilient to external interference."
+                    ],
+                    "solution": [
+                        "Verification test reports, clinical studies.",
+                        "Software analysis, simulation results.",
+                        "Interference testing, system robustness evaluation."
+                    ],
+                    "strategy": "The safety of the pacemaker software can be determined by examining its functionality and performance in VVI mode.",
+                    "block": "Evidence Incorporation, Decomposition",
+                    "goal": "The implemented pacemaker software is acceptably safe to operate in VVI mode.",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The software performs the intended function correctly in VVI mode.",
+                        "The software manages battery usage efficiently.",
+                        "The software handles exceptional cases reliably."
+                    ],
+                    "solution": [
+                        "Routine performance test results, clinical trial data.",
+                        "Battery usage reports, design specifications.",
+                        "Test scenarios, independent assessments of exception handling."
+                    ],
+                    "strategy": "The safety of the pacemaker software operating in VVI mode can be determined by examining the software's routine performance, battery management, and its ability to handle exceptional cases.",
+                    "block": "Decomposition",
+                    "goal": "The implemented pacemaker software is acceptably safe to operate in VVI mode",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The hardware components used in the pacemaker are safe.",
+                        "The software components used in the pacemaker are safe."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results."
+                    ],
+                    "strategy": "The safety of the pacemaker software in VVI mode can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The implemented pacemaker software is acceptably safe to operate in VVI mode",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "The implementation satisfies all the desired safety properties within acceptable timing tolerances": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The model satisfies all the desired properties",
+                        "The code generation process transforms the model into the code correctly",
+                        "The synthesized code satisfies all the desired properties with the timing tolerance"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "All safety properties are identified.",
+                        "Each safety property is evaluated for compliance within acceptable timing tolerances."
+                    ],
+                    "solution": [
+                        "Safety property identification documentation, safety analysis reports.",
+                        "Timing analysis reports, performance testing results."
+                    ],
+                    "strategy": "The safety properties can be decomposed into individual properties and each property can be evaluated for compliance within acceptable timing tolerances.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "The implementation satisfies all the desired safety properties within acceptable timing tolerances.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "All safety features are implemented correctly",
+                        "All safety features respond within the acceptable timing tolerances"
+                    ],
+                    "solution": [
+                        "Safety feature testing reports, code review reports.",
+                        "Time performance testing reports, real-time monitoring data."
+                    ],
+                    "strategy": "To satisfy this goal, we must verify that the safety features are functioning as desired and within the required time frame.",
+                    "block": "Decomposition",
+                    "goal": "The implementation satisfies all the desired safety properties within acceptable timing tolerances",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The implementation satisfies all the desired safety properties.",
+                        "The timing tolerances are acceptable."
+                    ],
+                    "solution": [
+                        "Formal verification reports, test results.",
+                        "Performance benchmarks, user feedback."
+                    ],
+                    "strategy": "The implementation satisfies all the desired safety properties and the timing tolerances are acceptable.",
+                    "block": "Decomposition",
+                    "goal": "The implementation satisfies all the desired safety properties within acceptable timing tolerances",
+                    "similarity": 50
+                }
+            ]
+        }
+    },
+    "The model satisfies all the desired properties": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The model satisfies deadlock -freeness property",
+                        "The model satisfies the property PropLRI",
+                        "The model satisfies the property PropHRI",
+                        "The model satisfies the property PropVRP"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Sub-property 1 is satisfied.",
+                        "Sub-property 2 is satisfied.",
+                        "Sub-property 3 is satisfied."
+                    ],
+                    "solution": [
+                        "Test results showing satisfaction of sub-property 1.",
+                        "Validation data confirming satisfaction of sub-property 2.",
+                        "Simulation results demonstrating satisfaction of sub-property 3."
+                    ],
+                    "strategy": "The desired properties can be broken down into individual sub-properties and each sub-property can be evaluated separately.",
+                    "block": "Decomposition",
+                    "goal": "The model satisfies all the desired properties.",
+                    "similarity": 60
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The model is accurate.",
+                        "The model is efficient.",
+                        "The model is robust.",
+                        "The model is interpretable."
+                    ],
+                    "solution": [
+                        "Comparative studies, validation data.",
+                        "Computational time, Memory utilization.",
+                        "Stress testing reports, fault injection tests.",
+                        "Feature importance analysis, partial dependency plots."
+                    ],
+                    "strategy": "The model's properties can be examined individually to ensure they meet the desired standards.",
+                    "block": "Decomposition",
+                    "goal": "The model satisfies all the desired properties",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "Sub-model 1 satisfies properties P1 and P2.",
+                        "Sub-model 2 satisfies properties P3 and P4."
+                    ],
+                    "solution": [
+                        "Model documentation, simulation results.",
+                        "Model documentation, simulation results."
+                    ],
+                    "strategy": "The model can be decomposed into smaller sub-models, each of which satisfies a subset of the desired properties.",
+                    "block": "Decomposition",
+                    "goal": "The model satisfies all the desired properties",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "The code generation process transforms the model into the code correctly": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Argument by use of a reliable tool set",
+                        "Argument by harmless manual modification"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The model transformation process accurately translates the model into code.",
+                        "The code generation process generates code from the transformed model.",
+                        "The code verification process ensures the generated code is correct."
+                    ],
+                    "solution": [
+                        "Model-to-code mapping verification, comparison between the model and the generated code.",
+                        "Code generation tool verification, code quality metrics.",
+                        "Code review, code testing, formal verification techniques."
+                    ],
+                    "strategy": "The code generation process can be decomposed into three sub-processes: model transformation, code generation, and code verification.",
+                    "block": "Decomposition",
+                    "goal": "The code generation process transforms the model into the code correctly.",
+                    "similarity": 50
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The syntax of the code is correct.",
+                        "The semantics of the code matches the model.",
+                        "The structure of the code corresponds to the model."
+                    ],
+                    "solution": [
+                        "Automated syntax checking tools.",
+                        "Model-code comparison and analysis.",
+                        "Code structural analysis tools."
+                    ],
+                    "strategy": "The process of code generation can be verified by checking the syntax, semantics, and structure of the generated code.",
+                    "block": "Decomposition",
+                    "goal": "The code generation process transforms the model into the code correctly",
+                    "similarity": 50
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The parser correctly parses the model.",
+                        "The code generator generates the correct code.",
+                        "The compiler correctly compiles the code."
+                    ],
+                    "solution": [
+                        "Unit tests for the parser.",
+                        "Unit tests for the code generator.",
+                        "Unit tests for the compiler."
+                    ],
+                    "strategy": "The code generation process can be decomposed into the following steps: parsing the model, generating the code, and compiling the code.",
+                    "block": "Decomposition",
+                    "goal": "The code generation process transforms the model into the code correctly",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "The synthesized code satisfies all the desired properties with the timing tolerance": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The code satisfies deadlock -freeness property",
+                        "The code satisfies the property PropLRI with timing tolerance",
+                        "The model satisfies the property PropHRI with timing tolerance",
+                        "The code satisfies the property PropVRP"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "Each desired property is satisfied.",
+                        "The timing tolerance is defined precisely."
+                    ],
+                    "solution": [
+                        "Verification reports for each desired property.",
+                        "Timing specification documents."
+                    ],
+                    "strategy": "The goal can be decomposed into sub-goals that verify each desired property individually and concretely define the timing tolerance.",
+                    "block": "Decomposition, Concretion",
+                    "goal": "The synthesized code satisfies all the desired properties with the timing tolerance.",
+                    "similarity": 50
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The code executes within the specified timing tolerance.",
+                        "The code meets the desired functionality requirements.",
+                        "The code meets the desired security requirements."
+                    ],
+                    "solution": [
+                        "Timing analysis reports, test results.",
+                        "Functionality test results, code inspection reports.",
+                        "Security analysis reports, third-party security evaluations."
+                    ],
+                    "strategy": "The code's properties can be evaluated individually to ensure they meet the desired criteria and the timing tolerance.",
+                    "block": "Decomposition",
+                    "goal": "The synthesized code satisfies all the desired properties with the timing tolerance",
+                    "similarity": 50
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The control flow graph of the synthesized code is correct.",
+                        "The data flow graph of the synthesized code is correct.",
+                        "The timing constraints of the synthesized code are met."
+                    ],
+                    "solution": [
+                        "Code inspection reports, simulation results.",
+                        "Code inspection reports, simulation results.",
+                        "Timing analysis reports."
+                    ],
+                    "strategy": "The synthesized code can be decomposed into its components, and each component can be checked to ensure that it satisfies the desired properties with the timing tolerance.",
+                    "block": "Decomposition",
+                    "goal": "The synthesized code satisfies all the desired properties with the timing tolerance",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "Argument by use of a reliable tool set": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The code synthesis of the Times tool for the verified model is correct"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The individual modules of the software system are reliable.",
+                        "The interactions between the modules are reliable."
+                    ],
+                    "solution": [
+                        "Unit testing results, code review reports.",
+                        "Integration testing results, system logs."
+                    ],
+                    "strategy": "The reliability of the software system can be determined by examining its components and their interactions.",
+                    "block": "Decomposition",
+                    "goal": "The software system is reliable.",
+                    "similarity": 70
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The tool set consistently performs its functions.",
+                        "The results produced by the tool set are accurate."
+                    ],
+                    "solution": [
+                        "Performance records, user feedback.",
+                        "Data comparison, validation with other tools."
+                    ],
+                    "strategy": "The reliability of the tool set can be determined by its consistent performance and the accuracy of its results.",
+                    "block": "Decomposition",
+                    "goal": "Argument by use of a reliable tool set",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The tool set has been used successfully in similar projects."
+                    ],
+                    "solution": [
+                        "Case studies, testimonials from previous clients."
+                    ],
+                    "strategy": "The tool set is reliable if it has been used successfully in similar projects.",
+                    "block": "",
+                    "goal": "Argument by use of a reliable tool set",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "Argument by harmless manual modification": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The manual modifications are confined to platform specific parts",
+                        "The manual modifications confined to platform-specific parts do not harm the correctness of the Times code generation"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The original argument is valid and reliable.",
+                        "The manual modifications made to the argument are harmless."
+                    ],
+                    "solution": [
+                        "Reviewing the sources and evidence used in the original argument.",
+                        "Analyzing the impact of the manual modifications on the original argument."
+                    ],
+                    "strategy": "The argument by harmless manual modification can be broken down into verifying the integrity of the original argument and the manual modifications made.",
+                    "block": "Decomposition",
+                    "goal": "Argument by harmless manual modification",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The original product is safe.",
+                        "The modification does not alter the safety characteristics of the original product."
+                    ],
+                    "solution": [
+                        "Safety certifications for the original product.",
+                        "Tests, evaluations or inspections showing the modification has not affected safety features."
+                    ],
+                    "strategy": "The modification has not changed the essential characteristics of the product, making it as safe as the original.",
+                    "block": "Substitution",
+                    "goal": "Argument by harmless manual modification",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The navigation algorithm is accurate.",
+                        "The emergency systems function correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The safety of the self-driving car can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "The self-driving car is safe to operate on public roads.",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "The code satisfies the property PropLRI with timing tolerance": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Software test result for the PropLRI showed no violation when the corresponding guard is relaxed"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The code meets the functional requirements of PropLRI.",
+                        "The code meets the timing requirements of PropLRI."
+                    ],
+                    "solution": [
+                        "Functional test cases, code reviews.",
+                        "Timing analysis, simulation results."
+                    ],
+                    "strategy": "The property PropLRI can be satisfied by ensuring the code meets certain timing requirements.",
+                    "block": "Decomposition",
+                    "goal": "The code satisfies the property PropLRI with timing tolerance.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The logical correctness of the code is verified.",
+                        "The resource usage of the code is within the expected range.",
+                        "The code operates within the set timing tolerance."
+                    ],
+                    "solution": [
+                        "Code reviews, automated testing results.",
+                        "Resource utilization logs, performance testing results.",
+                        "Performance testing results, timing logs."
+                    ],
+                    "strategy": "The code's satisfaction of the property PropLRI can be verified by verifying its logical correctness, its resource usage, and its condition within the set timing tolerance.",
+                    "block": "Decomposition",
+                    "goal": "The code satisfies the property PropLRI with timing tolerance",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The code satisfies the property PropLR1.",
+                        "The code satisfies the property PropLR2.",
+                        "The code satisfies the property PropLR3."
+                    ],
+                    "solution": [
+                        "Code reviews, test results.",
+                        "Code reviews, test results.",
+                        "Code reviews, test results."
+                    ],
+                    "strategy": "The code satisfies the property PropLRI if it satisfies the sub-properties PropLR1, PropLR2, and PropLR3.",
+                    "block": "Decomposition",
+                    "goal": "The code satisfies the property PropLRI with timing tolerance",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "The model satisfies the property PropHRI with timing tolerance": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Software test result for the PropHRI showed no violation when the corresponding guard is relaxed"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The model meets the timing requirements specified by PropHRI.",
+                        "The model satisfies the functional requirements specified by PropHRI."
+                    ],
+                    "solution": [
+                        "Timing analysis, simulation results.",
+                        "Functional verification, test scenarios."
+                    ],
+                    "strategy": "The satisfaction of PropHRI can be determined by examining the timing behavior of the model.",
+                    "block": "Decomposition",
+                    "goal": "The model satisfies the property PropHRI with timing tolerance.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The design of the model allows for timing tolerance.",
+                        "The implementation of the model is in line with its design."
+                    ],
+                    "solution": [
+                        "Design documents, technical specifications.",
+                        "Code review reports, testing results."
+                    ],
+                    "strategy": "The model's satisfaction of PropHRI with timing tolerance can be analyzed by looking at its design and implementation.",
+                    "block": "Decomposition",
+                    "goal": "The model satisfies the property PropHRI with timing tolerance",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The model satisfies the property PropHRI1.",
+                        "The model satisfies the property PropHRI2.",
+                        "The model satisfies the property PropHRI3."
+                    ],
+                    "solution": [
+                        "Simulation results showing that the model satisfies PropHRI1.",
+                        "Analytical results showing that the model satisfies PropHRI2.",
+                        "Experimental results showing that the model satisfies PropHRI3."
+                    ],
+                    "strategy": "The model satisfies the property PropHRI if it satisfies the following sub-properties: PropHRI1, PropHRI2, and PropHRI3.",
+                    "block": "Decomposition",
+                    "goal": "The model satisfies the property PropHRI with timing tolerance",
+                    "similarity": 60
+                }
+            ]
+        }
+    },
+    "The code satisfies the property PropVRP": {
+        "domain": "Pacemaker",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Software test result for the PropVRP showed no violation"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The code passes all verification tests for PropVRP.",
+                        "The code passes all validation tests for PropVRP."
+                    ],
+                    "solution": [
+                        "Formal verification reports, test results from verification suite.",
+                        "Validation test reports, feedback from users confirming satisfaction of PropVRP."
+                    ],
+                    "strategy": "The code is verified and validated to ensure it satisfies the property PropVRP.",
+                    "block": "Evidence Incorporation",
+                    "goal": "The code satisfies the property PropVRP.",
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The code meets the requirement R1 of PropVRP.",
+                        "The code meets the requirement R2 of PropVRP.",
+                        "The code meets the requirement R3 of PropVRP."
+                    ],
+                    "solution": [
+                        "Code review reports confirming the code meets requirement R1.",
+                        "Simulation results showing the code meets requirement R2.",
+                        "Automated testing logs showing the code meets requirement R3."
+                    ],
+                    "strategy": "The code property PropVRP can be satisfied by verifying the code against the requirements of PropVRP.",
+                    "block": "Calculation or proof",
+                    "goal": "The code satisfies the property PropVRP",
+                    "similarity": 60
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The code satisfies the property PropVRP1.",
+                        "The code satisfies the property PropVRP2.",
+                        "The code satisfies the property PropVRP3."
+                    ],
+                    "solution": [
+                        "Code reviews, test results.",
+                        "Code reviews, test results.",
+                        "Code reviews, test results."
+                    ],
+                    "strategy": "The property PropVRP can be decomposed into sub-properties PropVRP1, PropVRP2, and PropVRP3.",
+                    "block": "Decomposition",
+                    "goal": "The code satisfies the property PropVRP",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "Detect runway incursions or report failure": {
+        "domain": "Aircraft",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "RSM functionality is implemented with required dependability",
+                        "RSM timing is implemented with required dependability",
+                        "RSM data inadequacy detection is implemented with required dependability",
+                        "Functionality, timing, and error detection assurance are independent"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The sensor system can detect runway incursions.",
+                        "The communication system can report failure."
+                    ],
+                    "solution": [
+                        "Sensor test reports, validation against known incursion scenarios.",
+                        "Communication system logs, failure reports from pilots or air traffic controllers."
+                    ],
+                    "strategy": "The goal of detecting runway incursions or reporting failure can be achieved by examining the various components of the system.",
+                    "block": "Decomposition",
+                    "goal": "Detect runway incursions or report failure.",
+                    "similarity": 12
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The detection system is able to identify runway incursions.",
+                        "The reporting system is able to indicate system failure."
+                    ],
+                    "solution": [
+                        "Simulation results, field testing records.",
+                        "System logs, testing records."
+                    ],
+                    "strategy": "The goal can be achieved through the proper functioning of detection system and reporting system.",
+                    "block": "Decomposition",
+                    "goal": "Detect runway incursions or report failure",
+                    "similarity": 25
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "Monitor the aircraft's position and speed.",
+                        "Check if the aircraft is within the runway's boundaries."
+                    ],
+                    "solution": [
+                        "Use radar or GPS to track the aircraft's position and speed.",
+                        "Use a geofence to define the runway's boundaries."
+                    ],
+                    "strategy": "To detect runway incursions or report failure, we can monitor the aircraft's position and speed, and check if it is within the runway's boundaries.",
+                    "block": "Decomposition",
+                    "goal": "Detect runway incursions or report failure",
+                    "similarity": 12
+                }
+            ]
+        }
+    },
+    "RSM data inadequacy detection is implemented with required dependability": {
+        "domain": "Aircraft",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Ownship runway locator reports failure with p>=p2 if quality of information is inaccurate",
+                        "Conflict detector reports failure with p>=p3 if quality of information is inadequate",
+                        "RSM detects and reports failures in called functions with p>=p4"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The system detects missing data.",
+                        "The system detects inconsistent data.",
+                        "The system detects incorrect data.",
+                        "The system provides reliable and accurate detection results."
+                    ],
+                    "solution": [
+                        "Data validation algorithms, missing data detection techniques.",
+                        "Data consistency checks, inconsistency detection methods.",
+                        "Data verification techniques, error detection mechanisms.",
+                        "Validation against ground truth data, performance evaluation, statistical analysis."
+                    ],
+                    "strategy": "The goal can be achieved by decomposing it into sub-goals that address different aspects of data inadequacy detection and by concretely defining the required level of dependability.",
+                    "block": "Decomposition, Concretion",
+                    "goal": "RSM data inadequacy detection is implemented with required dependability.",
+                    "similarity": 40
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The performance of the RSM data inadequacy detection meets the requirement.",
+                        "The reliability of the RSM data inadequacy detection meets the requirement.",
+                        "The integrity of the RSM data inadequacy detection meets the requirement."
+                    ],
+                    "solution": [
+                        "Performance test results, benchmarking reports.",
+                        "Reliability test reports, fault-tolerance evaluations.",
+                        "Data integrity checks, audit logs."
+                    ],
+                    "strategy": "The dependability of the RSM data inadequacy detection can be determined by its performance, reliability, and integrity.",
+                    "block": "Decomposition",
+                    "goal": "RSM data inadequacy detection is implemented with required dependability",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor system is reliable.",
+                        "The data processing algorithm is accurate.",
+                        "The alarm system functions correctly."
+                    ],
+                    "solution": [
+                        "Manufacturer test reports, third-party evaluations.",
+                        "Code audits, simulation results.",
+                        "Test scenarios, independent assessments."
+                    ],
+                    "strategy": "The dependability of RSM data inadequacy detection can be determined by examining its hardware and software components.",
+                    "block": "Decomposition",
+                    "goal": "RSM data inadequacy detection is implemented with required dependability",
+                    "similarity": 60
+                }
+            ]
+        }
+    },
+    "Ownship runway locator reports failure with p>=p2 if quality of information is inaccurate": {
+        "domain": "Aircraft",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Ownship runway locator detects & reports failures in itself and in called functions with p>=p5",
+                        "Runway database reports failure with p>=p6 if it can't locate the runway",
+                        "Ownship position component reports failure with p>=p7 if quality of information is inadequate",
+                        "Runway model reports failure with p>=p8 if quality of information is inadequate"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The ownship runway locator receives accurate information.",
+                        "The failure probability is less than or equal to p2."
+                    ],
+                    "solution": [
+                        "Accuracy assessments of the information received by the ownship runway locator.",
+                        "Failure probability analysis, historical failure data."
+                    ],
+                    "strategy": "The failure probability of the ownship runway locator can be determined by examining the accuracy of the information it receives.",
+                    "block": "Decomposition, Evidence Incorporation",
+                    "goal": "Ownship runway locator reports failure with p>=p2 if quality of information is inaccurate.",
+                    "similarity": 0
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The provided coordinates are accurate.",
+                        "The data integrity check passes.",
+                        "The data update frequency is within acceptable range."
+                    ],
+                    "solution": [
+                        "Cross-checking with ground control data, GPS testing records.",
+                        "Data integrity check logs.",
+                        "System timestamps, network performance reports."
+                    ],
+                    "strategy": "The failure of the ownship runway locator can be analyzed by evaluating the quality of the information it is receiving.",
+                    "block": "Decomposition",
+                    "goal": "Ownship runway locator reports failure with p>=p2 if quality of information is inaccurate",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensors used by the ownship runway locator are accurate.",
+                        "The data processing algorithms used by the ownship runway locator are accurate."
+                    ],
+                    "solution": [
+                        "Sensor calibration reports, third-party evaluations.",
+                        "Code audits, simulation results."
+                    ],
+                    "strategy": "The quality of information provided by the ownship runway locator can be determined by examining its sensors and data processing algorithms.",
+                    "block": "Decomposition",
+                    "goal": "Ownship runway locator reports failure with p>=p2 if quality of information is inaccurate",
+                    "similarity": 70
+                }
+            ]
+        }
+    },
+    "Conflict detector reports failure with p>=p3 if quality of information is inadequate": {
+        "domain": "Aircraft",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Ownship position component reports failure with p>=p7 if quality of information is inadequate",
+                        "Runway model reports failure with p>=p8 if quality of information is inadequate",
+                        "Traffic positions component reports failure with p>=9 if quality of information is inadequate",
+                        "Conflict detector detects and reports failures in itself and in called functions with p>=p10"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The information is accurate.",
+                        "The information is complete.",
+                        "The information is timely."
+                    ],
+                    "solution": [
+                        "Data validation reports, comparison with trusted sources.",
+                        "Checklists, data inventory.",
+                        "Timestamps, delivery records."
+                    ],
+                    "strategy": "The quality of information can be determined by examining its accuracy, completeness, and timeliness.",
+                    "block": "Decomposition",
+                    "goal": "Conflict detector reports failure with p>=p3 if quality of information is inadequate.",
+                    "similarity": 0
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "Information is derived from a credible source.",
+                        "Information is reliable.",
+                        "Information is current."
+                    ],
+                    "solution": [
+                        "Source verification, third-party evaluations.",
+                        "Data integrity checks, historical data comparison.",
+                        "Timestamps, system logs."
+                    ],
+                    "strategy": "The quality of information can be determined by examining its source, reliability and currentness.",
+                    "block": "Decomposition",
+                    "goal": "Conflict detector reports failure with p>=p3 if quality of information is inadequate",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The quality of information is inadequate."
+                    ],
+                    "solution": [
+                        "The data sources are unreliable, the data is incomplete or inconsistent."
+                    ],
+                    "strategy": "The conflict detector reports failure if the quality of information is inadequate.",
+                    "block": "Decomposition",
+                    "goal": "Conflict detector reports failure with p>=p3 if quality of information is inadequate",
+                    "similarity": 100
+                }
+            ]
+        }
+    },
+    "Traffic positions component reports failure with p>=9 if quality of information is inadequate": {
+        "domain": "Aircraft",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "Data errors not caught by reasonableness checks occur with p<=p11",
+                        "Transmission errors not caught by error detection protocol occur with p<=p12",
+                        "Probability of uncaught data and transmission errors are uncorrelated",
+                        "Traffic positions component correctly implements reasonableness checks and error detection protocol"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The information received by the traffic positions component is of adequate quality."
+                    ],
+                    "solution": [
+                        "Data validation reports, accuracy assessments of the information received."
+                    ],
+                    "strategy": "The failure of the traffic positions component can be determined by examining the quality of the information it receives.",
+                    "block": "Decomposition",
+                    "goal": "Traffic positions component reports failure with p>=9 if quality of information is inadequate",
+                    "similarity": 0
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The component accurately measures the quality of information.",
+                        "The component correctly reports failure with p>=9 when the quality of information is inadequate."
+                    ],
+                    "solution": [
+                        "Simulation results, third-party evaluations.",
+                        "Failure logs, diagnostic reports."
+                    ],
+                    "strategy": "The traffic positions component's failure reporting is dependent on the quality of information received.",
+                    "block": "Concretion",
+                    "goal": "Traffic positions component reports failure with p>=9 if quality of information is inadequate",
+                    "similarity": 0
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The sensor is able to detect failures.",
+                        "The processor is able to process the data from the sensor.",
+                        "The transmitter is able to transmit the data to the appropriate destination."
+                    ],
+                    "solution": [
+                        "Sensor specifications, test results.",
+                        "Processor specifications, test results.",
+                        "Transmitter specifications, test results."
+                    ],
+                    "strategy": "The traffic positions component can be decomposed into its sub-components: sensor, processor, and transmitter.",
+                    "block": "Decomposition",
+                    "goal": "Traffic positions component reports failure with p>=9 if quality of information is inadequate",
+                    "similarity": 0
+                }
+            ]
+        }
+    },
+    "Traffic positions component correctly implements reasonableness checks and error detection protocol": {
+        "domain": "Aircraft",
+        "subgoal": {
+            "Human": [
+                {
+                    "subgoal": [
+                        "The specification of the traffic positions component is correct",
+                        "The source code of the traffic positions component meets the specification",
+                        "The compiler correctly translates source code to object code",
+                        "The linker correctly translates object code to machine code",
+                        "The libraries used are fully verified",
+                        "The hardware used is fully verified"
+                    ],
+                    "similarity": 100
+                }
+            ],
+            "ChatGPT-3.5": [
+                {
+                    "subgoal": [
+                        "The reasonableness checks are implemented correctly.",
+                        "The error detection protocol is implemented correctly."
+                    ],
+                    "solution": [
+                        "Code reviews, unit tests.",
+                        "Simulation results, test scenarios."
+                    ],
+                    "strategy": "The correctness of the traffic positions component can be determined by examining its reasonableness checks and error detection protocol.",
+                    "block": "Decomposition",
+                    "goal": "Traffic positions component correctly implements reasonableness checks and error detection protocol.",
+                    "similarity": 75
+                }
+            ],
+            "ChatGPT-4": [
+                {
+                    "subgoal": [
+                        "The reasonableness checks are correctly implemented.",
+                        "The error detection protocol is correctly implemented."
+                    ],
+                    "solution": [
+                        "Code audits, system testing results.",
+                        "Protocol test scenarios, independent assessments."
+                    ],
+                    "strategy": "The correct implementation of the traffic positions component can be determined by examining its reasonableness checks and error detection protocol separately.",
+                    "block": "Decomposition",
+                    "goal": "Traffic positions component correctly implements reasonableness checks and error detection protocol",
+                    "similarity": 75
+                }
+            ],
+            "PaLM 2": [
+                {
+                    "subgoal": [
+                        "The reasonableness checks are correctly implemented.",
+                        "The error detection protocol is correctly implemented."
+                    ],
+                    "solution": [
+                        "Code reviews, unit tests.",
+                        "Code reviews, unit tests."
+                    ],
+                    "strategy": "The traffic positions component can be broken down into its subcomponents: reasonableness checks and error detection protocol.",
+                    "block": "Decomposition",
+                    "goal": "Traffic positions component correctly implements reasonableness checks and error detection protocol",
+                    "similarity": 75
+                }
+            ]
+        }
+    }
+}

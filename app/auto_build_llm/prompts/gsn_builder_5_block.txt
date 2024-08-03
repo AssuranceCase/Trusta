@@ -1,0 +1,65 @@
+You are an expert proficient in the Assurance Case.
+Your answers always need to follow the following output format and you always have to try to provide a set of sub-goals. You may repeat your answers.
+Break down the following goal into several sub-goals, these sub-goals should be able to support the parent goal, and explain the reasoning behind the breakdown. Finally, provide solutions that support these sub-goals.
+
+Goal(claim): A goal is a claim in the argument, usually supported by sub-goals(sub-claims), strategies(arguments) or solutions(evidences). Goals describe assertions about system characteristics, performance, safety, etc.
+Strategy(argument): A strategy describes the reasoning relationship between a goal and its supporting goals. Strategies clarify how to satisfy a higher-level goal through sub-goals, solutions, or other evidence.
+Solution(evidence): A solution provides references to evidence items. Evidence can be experimental data, historical records, analytical reports, simulation results, or other materials supporting the argument.
+
+The five basic CAE(claim-argument-evidence) building blocks that we have identified are:
+1. Decomposition: partitions some aspect of the claim.
+2. Substitution: refines a claim about an object into another claim about an equivalent object.
+3. Concretion: gives a more precise definition to some aspect of the claim.
+4. Calculation or proof: used when some value of the claim can be computed or proved.
+5. Evidence incorporation: incorporates evidence that directly supports the claim.
+In practice, some of the basic blocks are often merged together into composite blocks.
+
+Goal G1: The self-driving car is safe to operate on public roads.
+Building Blocks: Decomposition
+Break down Strategy: {"strategy": "The safety of the self-driving car can be determined by examining its hardware and software components."}
+Sub-goals dictionary: {"G1.1": "The sensor system is reliable.", "G1.2": "The navigation algorithm is accurate.", "G1.3": "The emergency systems function correctly."}
+Solutions dictionary: {"Sn1.1": "Manufacturer test reports, third-party evaluations.", "Sn1.2": "Code audits, simulation results.", "Sn1.3": "Test scenarios, independent assessments."}
+Explanation: G1.1, G1.2 and G1.3 can support G1, Sn1.1 can support G1.1, Sn1.2 can support G1.2, Sn1.3 can support G1.3.
+FINISH
+
+Goal G1: The new version of the medical device is safe.
+Building Blocks: Substitution
+Break down Strategy: {"strategy": "The new version is equivalent to the old version in terms of safety features."}
+Sub-goals dictionary: {"G1.1": "The old version of the medical device is safe."}
+Solutions dictionary: {"Sn1.1": "Prior safety certification for the old version, documentation showing equivalence of safety features between old and new versions."}
+Explanation: G1.1 can support G1, Sn1.1 can support G1.1.
+FINISH
+
+Goal G1: The banking app's data encryption is secure.
+Building Blocks: Evidence Incorporation
+Break down Strategy: {"strategy": "The encryption algorithm used is up to industry standards."}
+Sub-goals dictionary: {"G1.1": "The app uses AES-256 encryption."}
+Solutions dictionary: {"Sn1.1": "Code review reports, security assessments confirming AES-256 encryption."}
+Explanation: G1.1 can support G1, Sn1.1 can support G1.1.
+FINISH
+
+Goal G1: The airline's booking system is highly reliable.
+Building Blocks: Concretion
+Break down Strategy: {"strategy": "'High reliability' in this context means 99.99% uptime."}
+Sub-goals dictionary: {"G1.1": "The system has 99.99% uptime."}
+Solutions dictionary: {"Sn1.1": "System logs, third-party uptime monitoring reports."}
+Explanation: G1.1 can support G1, Sn1.1 can support G1.1.
+FINISH
+
+Goal G1: The emergency hotline's average response time is less than 30 seconds.
+Building Blocks: Calculation
+Break down Strategy: {"strategy": "The average response time can be calculated from the time taken to pick up the call and the time taken to dispatch emergency services."}
+Sub-goals dictionary: {"G1.1": "The time taken to pick up the call is less than 10 seconds.", "G1.2": "The time taken to dispatch emergency services is less than 20 seconds."}
+Solutions dictionary: {"Sn1.1": "Call logs, staff rosters.", "Sn1.2": "Dispatch records, GPS logs from emergency vehicles."}
+Explanation: G1.1 and G1.2 can support G1, Sn1.1 can support G1.1, Sn1.2 can support G1.2.
+FINISH
+
+Tips: Please add the following in strict format, including "Goal G1:", "Break down Strategy:", "Sub-goals dictionary:", "Solutions dictionary:", "Explanation:". 
+
+Goal G1: <A_NEW_GOAL>
+Building Blocks: 
+Break down Strategy: 
+Sub-goals dictionary:
+Solutions dictionary: 
+Explanation: 
+FINISH

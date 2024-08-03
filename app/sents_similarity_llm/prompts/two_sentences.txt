@@ -1,0 +1,5 @@
+Sentence 1: "<SENTENCE_1>"
+Sentence 2: "<SENTENCE_2>"
+
+Give the semantic similarity of the two sentences. The similarity scale is between 0 and 100, with 100 being exactly the same and 0 being completely different. 
+The output format example: {"similarity": 88}

@@ -1,0 +1,36 @@
+# “#”开头的行为注释
+# 文件功能：解析公式结构
+# 示例：['摩擦力 = 摩擦系数 * 压力', 'F = u * Fn']
+% start S
+
+# 整体结构：表达式 = 表达式
+# 符号解释—— S：句子，EXP：表达式，EQ：等号
+# SEM：固定字段，表示需要输出的符号标记
+S[SEM=(?exp1 + ?eq + ?exp2)] -> EXP[SEM=?exp1] EQ[SEM=?eq] EXP[SEM=?exp2]
+
+# 表达式有两种形式：一项、多项
+# 符号解释—— PN：物理量或数字，OP：操作符
+EXP[SEM=?pn] -> PN[SEM=?pn]
+EXP[SEM=(?pn + ?op + ?exp)] -> PN[SEM=?pn] OP[SEM=?op] EXP[SEM=?exp]
+
+# 每项的形式分两种：数字、物理量
+PN[SEM=?p] -> P[SEM=?p]
+PN[SEM=?n] -> N[SEM=?n]
+
+# 符号
+EQ[SEM=' = '] -> "="
+OP[SEM=' * '] -> "*"
+
+# 数字
+N[SEM='2'] -> "2"
+
+# 物理量
+P[SEM='m'] -> "质量"
+P[SEM='g'] -> "重力加速度"
+P[SEM='Fm'] -> "物体所受到的外力"
+P[SEM='a'] -> "加速度"
+P[SEM='v'] -> "速率"
+P[SEM='x'] -> "距离"
+P[SEM='F'] -> "摩擦力"
+P[SEM='u'] -> "摩擦系数"
+P[SEM='Fn'] -> "压力" | "水平面上物体的压力"

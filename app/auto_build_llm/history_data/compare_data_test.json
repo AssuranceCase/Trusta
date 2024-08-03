@@ -1,0 +1,215 @@
+{
+    "goal content.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [],
+                    "similarity": 100
+                }
+            ],
+            "gpt-3.5": [
+                {
+                    "subgoal": [],
+                    "similarity": 75
+                }
+            ]
+        }
+    },
+    "System remains functional for intended radiation environment(NASA R&M mod) in order to complete science mission objective: Record the number of upsets in 28nm bulk SRAM in LEO for a period of 1 year.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).",
+                        "System is tolerant to radiation-induced faults and failures (NASA R&M mod)."
+                    ],
+                    "similarity": -1
+                }
+            ],
+            "gpt-3.5": [
+                {
+                    "subgoal": [
+                        "The hardware components are radiation-hardened.",
+                        "The system can withstand the radiation environment without experiencing functional failures."
+                    ],
+                    "similarity": 93
+                }
+            ]
+        }
+    },
+    "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "Perform proton SEL characterization tests on system parts.",
+                        "Effects of SEL are mitigated on system parts."
+                    ],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "System is tolerant to radiation-induced faults and failures (NASA R&M mod).": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M)."
+                    ],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "Physical and functional pathways for SEL fault propagation or combination are limited (NASA R&M).",
+                        "System recovers from SELs.",
+                        "System detects SEFI in microcontroller.",
+                        "System recovers from SEFI in the microcontroller."
+                    ],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "FRAM (FM24V10-GTR) passes SEL mission requirement."
+                    ],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "Physical and functional pathways for SEL fault propagation or combination are limited (NASA R&M).": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "System recovers from SELs.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "System detects SEFI in microcontroller.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "FRAM (FM24V10-GTR) passes SEL mission requirement.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "Results from IUCF: No latch-up seen on FRAM(FM24CI6B) up to 6.2e9 protons/cm2 for 200 MeV protons."
+                    ],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "System recovers from SEFI in the microcontroller.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "Perform proton SEL characterization tests on system parts.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons."
+                    ],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "Effects of SEL are mitigated on system parts.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "System recovers from SELs."
+                    ],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "Results from IUCF: No latch-up seen on FRAM(FM24CI6B) up to 6.2e9 protons/cm2 for 200 MeV protons.": {
+        "domain": "CubeSat",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [],
+                    "similarity": -1
+                }
+            ]
+        }
+    },
+    "The automatic guided trolley can stop safely when encountering obstacles.": {
+        "domain": "AGV",
+        "subgoal": {
+            "person": [
+                {
+                    "subgoal": [
+                        "The sensor system can detect obstacles accurately.[P]",
+                        "The control algorithm can initiate safe stopping maneuvers.[P]"
+                    ],
+                    "similarity": -1
+                }
+            ],
+            "gpt-3.5": [
+                {
+                    "subgoal": [
+                        "The sensor system can detect obstacles accurately.",
+                        "The control algorithm can initiate safe stopping maneuvers."
+                    ],
+                    "similarity": 100
+                }
+            ]
+        }
+    }
+}

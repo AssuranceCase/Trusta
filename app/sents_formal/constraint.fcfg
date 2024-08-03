@@ -1,0 +1,62 @@
+# “#”开头的行为注释
+# 文件功能：解析约束句子结构
+# 示例1：['制动反应时间小于0.1秒', '制动反应时间 小于 0.1 秒', 'dt < 0.1']
+# 示例2：['货物质量为1千克', '货物 质量 为 1 千克', 'm = 1']
+# 示例3：['小车的速度小于等于1米/秒', '小车 的 速度 小于等于 1 米/秒', 'v <= 1']
+% start S
+
+# 整体结构：XX 的 YY 等于 1 单位
+# 符号解释—— S：句子，SUB：主语，CMP：比较，NUM：数字，UNT：单位，P：物理量，ADJ：形容词，OF：的，NU：数字+单位
+# SEM：固定字段，表示需要输出的符号标记
+S[SEM=(?sub + ?cmp + ?nu)] -> SUB[SEM=?sub] CMP[SEM=?cmp] NU[SEM=?nu]
+
+SUB[SEM=(?p)] -> P[SEM=?p]
+SUB[SEM=(?p + ?adj)] -> ADJ[SEM=?adj] P[SEM=?p]
+SUB[SEM=(?p + ?adj)] -> ADJ[SEM=?adj] OF[SEM=?of] P[SEM=?p]
+
+NU[SEM=?num] -> NUM[SEM=?num]
+NU[SEM=?num] -> NUM[SEM=?num] UNT[SEM=?unt]
+
+ADJ[SEM=''] -> "障碍物检测"
+ADJ[SEM=''] -> "小车"
+ADJ[SEM='d'] -> "制动反应"
+ADJ[SEM=''] -> "货物和货架之间"
+ADJ[SEM='n'] -> "货物对货架"
+ADJ[SEM=''] -> "货物"
+ADJ[SEM='m'] -> "制动时货物产生"
+ADJ[SEM=''] -> "货架能给到货物"
+
+OF[SEM=''] -> "的"
+
+P[SEM='s'] -> "距离"
+P[SEM='v'] -> "速度"
+P[SEM='a'] -> "加速度"
+P[SEM='u'] -> "摩擦系数"
+P[SEM='m'] -> "质量"
+P[SEM='F'] -> "压力"
+P[SEM='g'] -> "重力加速度"
+P[SEM='F'] -> "摩擦力"
+P[SEM='T'] -> "时间"
+
+CMP[SEM=' = '] -> "为"
+CMP[SEM=' <= '] -> "小于等于"
+CMP[SEM=' >= '] -> "大于等于"
+CMP[SEM=' > '] -> "大于"
+CMP[SEM=' < '] -> "小于"
+
+NUM[SEM='0'] -> "0"
+NUM[SEM='0.1'] -> "0.1"
+NUM[SEM='0.18'] -> "0.18"
+NUM[SEM='0.2'] -> "0.2"
+NUM[SEM='0.5'] -> "0.5"
+NUM[SEM='1'] -> "1"
+NUM[SEM='3'] -> "3"
+NUM[SEM='9.8'] -> "9.8"
+
+UNT[SEM=''] -> "米"
+UNT[SEM=''] -> "秒"
+UNT[SEM=''] -> "米/秒"
+UNT[SEM=''] -> "米/秒^2"
+UNT[SEM=''] -> "千克"
+UNT[SEM=''] -> "牛顿"
+UNT[SEM=''] -> "牛顿/千克"

@@ -1,0 +1,86 @@
+
+You are an expert in Assurance Cases. Let us create an evaluation for a segment of an Assurance Case (the case to be evaluated is provided in YAML format at the end). Rate it from 1 to 10 based on the following aspects:
+
+Structure: Is it compliant with standards? Is the layout logical?
+Content: Are there any grammar, spelling, or punctuation errors? Is the description clear? Are there any ambiguities?
+Logic: Is the case comprehensive? Are there redundancies? Are there contradictions?
+The Assurance Case is created in GSN (Goal Structuring Notation) format, which covers Goals(G), Strategies(S), Solutions(Sn), Context(C), Assumptions(A), and Justifications(J), with each element comprising several natural language statements. 
+
+In the YAML file, the Sn element's attributes can only include text and url. The supportedBy attribute can only contain elements of type G, S, and Sn, and the inContextOf attribute can only contain elements of type C, J, and A. G and S type without child nodes, need to set the attribute "undeveloped: true". S type supportedBy is the G type.
+V01: All IDs must either start with a known prefix or a node_type must explicitly set.
+V02: All Goals and Strategies must be either marked with undeveloped: true or have supporting Goals, Strategies or Solutions.
+V03: Goals and Strategies marked as undeveloped, must have no supporting arguments.
+V04: All elements listed under supportedBy and inContextOf must be known elements types and semantically sensible (e.g. a Justification cannot be listed under supportedBy).
+V05: All referenced elements in supportedBy and inContextOf must be unique i.e., no duplicates in the list.
+V06: All referenced elements in supportedBy and inContextOf must not refer to the element itself.
+V07: All elements listed as extending other elements must be known elements of the current module and semantically sensible (see V04).
+V08: The IDs start contradicts the type of the element set with node_type.
+C01: There should be only one but must be at least one top-level element (G,S,C,J,A,Sn) unreferenced.
+C02: The top-level element must be a Goal. A top-level element is an element that is not referenced by any other element.
+C03: All referenced elements in supportedBy and inContextOf must exist.
+C04: There must be no circular supportedBy references.
+C05: There should be more than one usage of the same level.
+C06: All module names must be unique.
+C07: All IDs must be unique across all modules.
+C08: All elements must be reachable from the root elements. This message can e.g. happen if there are multiple independent graphs where one contains circular references only.
+C09: All extended modules must exist.
+C10: All extended elements must exist in the named module and must be undeveloped.
+
+Please provide constructive feedback and suggestions to improve the Assurance Case while maintaining the meaning of its argument goal unchanged. Your improved Assurance Case can modify, add, or delete elements or statements from it. Finally, present the improved Assurance Case in YAML format.
+
+The output format should include the following two parts:
+!!Output Starts!!
+Rating, reasons, and suggestions:
+```json
+{
+    "Ratings": {
+        "Structure Rating": {
+            "Evaluation Rating": "7/10",
+            "Reasons for Rating": [
+                "Compliance: ...",
+                "Layout Rationality: ..."
+            ],
+            "Suggestions for Improvement": [
+                "Suggestion 1: ...",
+                "Suggestion 2: ..."
+            ]
+        },
+        
+        "Content Rating": {
+            "Evaluation Rating": "6/10",
+            "Reasons for Rating": [
+                "Grammar, Spelling, and Punctuation: ...",
+                "Clarity and Ambiguity: ..."
+            ],
+            "Suggestions for Improvement": [
+                "Suggestion 1: ...",
+                "Suggestion 2: ..."
+            ]
+        },
+        
+        "Logic Rating": {
+            "Evaluation Rating": "5/10",
+            "Reasons for Rating": [
+                "Comprehensiveness: ...",
+                "Redundancy: ...",
+                "Contradiction: ..."
+            ],
+            "Suggestions for Improvement": [
+                "Suggestion 1: ...",
+                "Suggestion 2: ...",
+                "Suggestion 3: ..."
+            ]
+        }
+    }
+}
+```
+Improved Assurance Case:
+```yaml
+
+```
+!!Output Ends!!
+
+Now, provide the Assurance Case to be evaluated.
+```yaml
+<ASSURANCE_CASES_TO_BE_EVALUATED>
+```

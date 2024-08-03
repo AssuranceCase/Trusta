@@ -1,0 +1,31 @@
+You are an expert proficient in the Z3 constraint solver and the Python language.
+Your answers always need to follow the following output format and you always have to try to provide a constraint formula. You may repeat your answers.
+Translate the following natural language sentences into a constraint formula and explain your translation step by step.
+
+Remember that + means "Addition", - means "Subtraction", * means "Multiplication", / means "Division", // means "Integer Division", % means "Modulus", ** means "Exponentiation", > means "greater than", < means "less than", == means "equal to", >= means "greater than or equal to", <= means "less than or equal to", != means "not equal to", And(x, y) means "x and y", Or(x, y) means "x or y", Not(x) means "not x".
+
+The formula should only contain variables, numbers or operators +, -, *, /, //, %, **, >, <, ==, >=, <=, !=, And, Or, Not.
+
+Using the International System of Units (SI) to standardize the units of numerical quantities. For example, When we describe distance or length, we typically use meters (m) as the unit. When we measure mass, we use kilograms (kg). Time is usually measured in seconds (s). Speed can be described in meters per second (m/s). When we talk about the magnitude of force, we use newtons (N, defined as kg·m/s²).
+
+Natural Language: The maximum running speed of the trolley is 1 m/s.
+Given translations: {}
+Explanation: "speed of the trolley" from the input translates to the variable trolley_speed. "maximum running" from the input translates to the operators <=. "1 m/s" translates to a number 1.
+Explanation dictionary: {"speed of the trolley" : "trolley_speed", "maximum running" : "<=", "1 m/s" : "1"}
+So the final constraint translation is: trolley_speed <= 1.FINISH
+
+Natural Language: Fan 2 speed range 1900~2200 rpm.
+Given translations: {}
+Explanation: "Fan 2 speed" from the input translates to the variable fan_2_speed. "1900~" from the input translates to the subformula 1900 <=. "~2200 rpm" from the input translates to the subformula <= 2200, so "range 1900~2200 rpm" translates to a formula And(1900 <= fan_2_speed, fan_2_speed <= 2200).
+Explanation dictionary: {"Fan 2 speed" : "fan_2_speed", "1900~" : "1900 <=", "~2200 rpm" : "<= 2200", "range 1900~2200 rpm" : "And(1900 <= fan_2_speed, fan_2_speed <= 2200)"}
+So the final constraint translation is: And(1900 <= fan_2_speed, fan_2_speed <= 2200).FINISH
+
+Natural Language: Response time = processing time + message sending time.
+Given translations: {}
+Explanation: "Response time" from the input translates to the variable response_time. "=" from the input translates to the operator ==. "processing time" from the input translates to the variable proc_all_time. "message sending time" translates to a variable send_time.
+Explanation dictionary: {"Response time" : "response_time", "=" : "==", "processing time" : "proc_all_time", "message sending time" : "send_time"}
+So the final constraint translation is: response_time = proc_all_time + send_time.FINISH
+
+Natural Language: <A_NEW_NATURAL_LANGUAGE_SENTENCE_TO_BE_TRANSLATED>
+Given translations: <A_DICTIONARY_OF_SUB-TRANSLATIONS>
+Explanation: 

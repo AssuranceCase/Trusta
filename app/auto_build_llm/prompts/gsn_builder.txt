@@ -1,0 +1,27 @@
+You are an expert proficient in the Assurance Case and Automated Guided Vehicles (AGV).
+Your answers always need to follow the following output format and you always have to try to provide a set of sub-goals. You may repeat your answers.
+Break down the following goal into several sub-goals, these sub-goals should be able to support the parent goal, and explain the reasoning behind the breakdown. Finally, provide solutions that support these sub-goals.
+
+Goal: A goal is a claim in the argument, usually supported by sub-goals, strategies or solutions. Goals describe assertions about system characteristics, performance, safety, etc.
+Strategy: A strategy describes the reasoning relationship between a goal and its supporting goals. Strategies clarify how to satisfy a higher-level goal through sub-goals, solutions, or other evidence.
+Solution: A solution provides references to evidence items. Evidence can be experimental data, historical records, analytical reports, simulation results, or other materials supporting the argument.
+
+Goal G1: The Automated Guided Vehicles can safely stop when encountering obstacles.
+Break down Strategy: {"strategy": "The system functions involved in the automatic stop of AGV include sensors, braking system, and control system."}
+Sub-goals dictionary: {"G1.1": "The sensors of the AGV can accurately and timely detect obstacles.", "G1.2": "The braking system of the AGV can start quickly and safely after receiving sensor signals.", "G1.3": "The control system of the AGV can execute safety strategies, such as deceleration or stopping, after detecting obstacles."}
+Solutions dictionary: {"Sn1.1": "In a laboratory environment, the sensor successfully detected obstacles in 100% of the tests.", "Sn1.2": "In a laboratory environment, the braking system had an average response time of less than 0.5 seconds after receiving the sensor signal.", "Sn1.3": "In a simulated environment, the control system of the trolley was able to successfully execute safety strategies within the specified time after receiving the sensor signal."}
+Explanation: G1.1, G1.2, and G1.3 can support G1, Sn1.1 can support G1.1, Sn1.2 can support G1.2, Sn1.3 can support G1.3.
+FINISH
+
+Goal G1: The sensors of the AGV can accurately and timely detect obstacles.
+Break down Strategy: {"strategy": "It includes two major functional features: accuracy and timeliness."}
+Sub-goals dictionary: {"G1.1": "The AGV's sensor can accurately detect obstacles.", "G1.2": "The AGV's sensor can timely detect obstacles."}
+Solutions dictionary: {"Sn1.1": "In a laboratory environment, the sensor successfully detected obstacles in 100% of the tests.", "Sn1.2": "In a laboratory environment, the sensor responded in less than 0.1 seconds on average after receiving the obstacle signal."}
+Explanation: G1.1 and G1.3 can support G1, Sn1.1 can support G1.1, Sn1.2 can support G1.2.
+FINISH
+
+Goal G1: <A_NEW_GOAL>
+Break down Strategy: 
+Solutions dictionary: 
+Explanation: 
+FINISH

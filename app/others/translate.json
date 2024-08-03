@@ -1,0 +1,3098 @@
+[
+    {
+        "en": "The response time of module A to class C requests is less than 2ms, and that of module A to class B requests is less than 3ms",
+        "zh": "模块A对C类请求的响应时间小于2ms，模块A对B类请求的反应时间小于3ms"
+    },
+    {
+        "en": "Response time = processing time + message sending time",
+        "zh": "响应时间=处理时间+消息发送时间"
+    },
+    {
+        "en": "The processing time of module A for class C requests is less than 1ms. Processing time = instruction processing time * number of instructions",
+        "zh": "模块A对C类请求的处理时间小于1ms。处理时间=指令处理时间*指令数"
+    },
+    {
+        "en": "Message sending time of module A<0.5ms",
+        "zh": "模块A报文发送时间＜0.5ms"
+    },
+    {
+        "en": "The total number of instructions processed by module A for class C requests<2000",
+        "zh": "模块A处理的C类请求的指令总数<2000"
+    },
+    {
+        "en": "The processing time of each instruction in Module A is 10 ^ (- 9) s",
+        "zh": "模块A中每条指令的处理时间为10^（-9）s"
+    },
+    {
+        "en": "Response time of module A to request b<2ms",
+        "zh": "模块A对请求b的响应时间<2ms"
+    },
+    {
+        "en": "Request b is a type C request",
+        "zh": "请求b是C类请求"
+    },
+    {
+        "en": "C and D are request types, and b is a request",
+        "zh": "C和D是请求类型，b是请求"
+    },
+    {
+        "en": "Except for type D requests, all other requests are of type C",
+        "zh": "除D类请求外，其他所有请求均为C类"
+    },
+    {
+        "en": "Request b is not of type D",
+        "zh": "请求b不是D类型"
+    },
+    {
+        "en": "The request response time is calculated by judging the request type",
+        "zh": "通过判断请求类型来计算请求响应时间"
+    },
+    {
+        "en": "The request b belongs to type C requests",
+        "zh": "请求b属于C类请求"
+    },
+    {
+        "en": "The response time of module A to request b is less than 2ms and the code submission complies with the specification",
+        "zh": "模块A对请求b的响应时间小于2ms，提交代码符合规范"
+    },
+    {
+        "en": "For each MR, there is no case where the same person is a developer and a committer",
+        "zh": "对于每个MR，不存在同一个人既是开发人员又是提交人的情况"
+    },
+    {
+        "en": "A MR (mr_id is M) with the same developer id and committer id is a self review",
+        "zh": "具有相同开发人员id和提交者id的MR（MR_id为M）是自我审查"
+    },
+    {
+        "en": "Developer records and committer records of all merge requests",
+        "zh": "所有合并请求的开发人员记录和提交人记录"
+    },
+    {
+        "en": "Response time of module A to type C requests is less than 2ms",
+        "zh": "模块A对C类请求的响应时间小于2ms"
+    },
+    {
+        "en": "The processing time of module A to type C requests is less than 1ms",
+        "zh": "模块A对C类请求的处理时间小于1ms"
+    },
+    {
+        "en": "Message sending time of module A is less than 0.5ms",
+        "zh": "模块A报文发送时间小于0.5ms"
+    },
+    {
+        "en": "Processing time = instruction processing time * number of instructions",
+        "zh": "处理时间=指令处理时间*指令数"
+    },
+    {
+        "en": "The total number of instructions processed by module A for type C requests is less than 2000",
+        "zh": "模块A为C类请求处理的指令总数少于2000条"
+    },
+    {
+        "en": "The processing time of each instruction in module A is 10 ^ (- 9) s",
+        "zh": "模块A中每条指令的处理时间为10^（-9）s"
+    },
+    {
+        "en": "The processing time of module A for class B requests is less than 2ms",
+        "zh": "模块A对B类请求的处理时间小于2ms"
+    },
+    {
+        "en": "There shall be at least 3 reviewers of F documents or members of the verification department",
+        "zh": "F文件至少应有3名评审员或验证部门成员"
+    },
+    {
+        "en": "The reviewers of the F file are Alice and Bob",
+        "zh": "F文件的审阅者是Alice和Bob"
+    },
+    {
+        "en": "Jack, Bob and Tom are in the verification department",
+        "zh": "杰克、鲍勃和汤姆在核查部门"
+    },
+    {
+        "en": "The cooling fan speed is greater than 1800 rpm",
+        "zh": "冷却风扇转速大于1800转/分"
+    },
+    {
+        "en": "Fan 1 speed range 1300~1600 rpm",
+        "zh": "风扇1转速范围1300～1600转/分"
+    },
+    {
+        "en": "Fan 2 speed range 1900~2200 rpm",
+        "zh": "风扇2转速范围1900~2200转/分"
+    },
+    {
+        "en": "Fan 1 speed 1500 rpm",
+        "zh": "风扇1转速1500转/分"
+    },
+    {
+        "en": "Fan 2 speed 2000 rpm",
+        "zh": "风扇2转速2000转/分"
+    },
+    {
+        "en": "Software defects",
+        "zh": "软件缺陷"
+    },
+    {
+        "en": "Calculation error",
+        "zh": "计算错误"
+    },
+    {
+        "en": "Unexpected shutdown",
+        "zh": "意外关闭"
+    },
+    {
+        "en": "Slow execution",
+        "zh": "执行缓慢"
+    },
+    {
+        "en": "The automatic guided trolley can stop safely when encountering obstacles",
+        "zh": "自动导向小车在遇到障碍物时可以安全停车"
+    },
+    {
+        "en": "{\"Strategy\": \"Eliminate potential hazards from both internal and external aspects of the trolley\"}",
+        "zh": "{“战略”：“消除手推车内部和外部的潜在危险”}"
+    },
+    {
+        "en": "Able to decelerate to a standstill before impact",
+        "zh": "能够在撞击前减速至静止"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking distance of the trolley is less than the distance to the obstacle when braking starts\"}",
+        "zh": "{“策略”：“制动开始时，小车的制动距离小于到障碍物的距离”}"
+    },
+    {
+        "en": "The goods on the shelf will not slide",
+        "zh": "货架上的货物不会滑动"
+    },
+    {
+        "en": "The car starts braking when it detects an obstacle",
+        "zh": "汽车在检测到障碍物时开始制动"
+    },
+    {
+        "en": "The performance of the trolley brake module meets the requirements",
+        "zh": "小车制动模块性能符合要求"
+    },
+    {
+        "en": "{\n\"Assumption1\": \"The maximum running speed of the trolley is 1 m/s\",\n\"Assumption2\": \"The minimum acceleration of the trolley is 0.18 m/s^2\",\n\"Assumption3\": \"The maximum acceleration of the trolley is 0.5 m/s^2\",\n\"Justification\": \"Rate * Rate = 2 * Acceleration * Distance\"\n}",
+        "zh": "{\n“假设1”：“小车最大运行速度为1 m/s”，\n“假设2”：“小车的最小加速度为0.18m/s ^2”，\n“假设3”：“小车的最大加速度为0.5 m/s ^2”，\n“对正”：“速率*速率=2*加速度*距离”\n}"
+    },
+    {
+        "en": "Obstacle detection distance is 3m",
+        "zh": "障碍物探测距离为3米"
+    },
+    {
+        "en": "The maximum running speed of the trolley is 1 m/s",
+        "zh": "小车的最大运行速度为1 m/s"
+    },
+    {
+        "en": "The minimum acceleration of the trolley is 0.18 m/s ^ 2",
+        "zh": "小车的最小加速度为0.18 m/s ^2"
+    },
+    {
+        "en": "Braking reaction time is less than 0.1 s",
+        "zh": "制动反应时间小于0.1s"
+    },
+    {
+        "en": "The friction coefficient between goods and shelves is greater than 0.2",
+        "zh": "货物与货架之间的摩擦系数大于0.2"
+    },
+    {
+        "en": "Cargo mass is 1kg",
+        "zh": "货物质量为1kg"
+    },
+    {
+        "en": "Rate * Rate = 2 * Acceleration * Distance",
+        "zh": "速率*速率=2*加速度*距离"
+    },
+    {
+        "en": "The maximum acceleration of the trolley is 0.5m/s ^ 2",
+        "zh": "小车最大加速度为0.5m/s^2"
+    },
+    {
+        "en": "The pressure of goods on the shelf is 9.8 N",
+        "zh": "货架上货物的压力为9.8牛"
+    },
+    {
+        "en": "The acceleration of gravity is 9.8 N/kg",
+        "zh": "重力加速度为9.8 N/kg"
+    },
+    {
+        "en": "Pressure of object on horizontal plane = mass * gravitational acceleration",
+        "zh": "物体在水平面上的压力=质量*重力加速度"
+    },
+    {
+        "en": "Friction = friction coefficient * pressure",
+        "zh": "摩擦力=摩擦系数*压力"
+    },
+    {
+        "en": "The friction force generated by the goods during braking is less than 0.5 N",
+        "zh": "货物在制动过程中产生的摩擦力小于0.5 N"
+    },
+    {
+        "en": "External force on object = mass * acceleration",
+        "zh": "物体上的外力=质量*加速度"
+    },
+    {
+        "en": "The friction force that the shelf can give to the goods is greater than 0.5 N",
+        "zh": "货架能给货物的摩擦力大于0.5 N"
+    },
+    {
+        "zh": "小车能在合适的时机开始制动",
+        "en": "The trolley can start braking at the appropriate time"
+    },
+    {
+        "en": "{\"Strategy\": \"Eliminate potential hazards from both internal and external aspects of the trolley\",\n\"Context\": \"There is only one obstacle within the current range of the trolley's motion.\",\n\"Assumption\": \"Assume that the trolley is loaded with goods.\"}",
+        "zh": "{“战略”：“从手推车的内部和外部两个方面消除潜在的危险”，\n“上下文”：“小车当前运动范围内只有一个障碍物。”，\n“假设”：“假设手推车上装载着货物。”"
+    },
+    {
+        "en": "{\"Strategy\": \"The system functions involved in the automatic stop of the AGV include sensors, braking system, and control system.\"}",
+        "zh": "｛“策略”：“AGV自动停车涉及的系统功能包括传感器、制动系统和控制系统。”"
+    },
+    {
+        "en": "The sensors of the AGV can accurately and timely detect obstacles.",
+        "zh": "AGV的传感器可以准确、及时地检测障碍物。"
+    },
+    {
+        "en": "{\"Strategy\": \"It includes two major functional features: accuracy and timeliness.\"}",
+        "zh": "{“策略”：“它包括两个主要的功能特征：准确性和及时性。”}"
+    },
+    {
+        "en": "The braking system of the AGV can start quickly and safely after receiving sensor signals.",
+        "zh": "AGV的制动系统在接收到传感器信号后可以快速、安全地启动。"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking system should have a fast response time and ensure the safety of the AGV after receiving sensor signals.\"}",
+        "zh": "{“策略”：“制动系统应具有快速响应时间，并在接收到传感器信号后确保AGV的安全。”}"
+    },
+    {
+        "en": "The control system of the AGV can execute safety strategies, such as deceleration or stopping, after detecting obstacles.",
+        "zh": "AGV的控制系统可以在检测到障碍物后执行安全策略，如减速或停车。"
+    },
+    {
+        "en": "{\"Strategy\": \"The control system should be able to analyze sensor data, make appropriate decisions, and command the AGV to execute safety strategies.\"}",
+        "zh": "｛“策略”：“控制系统应该能够分析传感器数据，做出适当的决策，并命令AGV执行安全策略。”｝"
+    },
+    {
+        "en": "The AGV's sensor can accurately detect obstacles.",
+        "zh": "AGV的传感器可以准确地检测障碍物。"
+    },
+    {
+        "en": "The AGV's sensor can timely detect obstacles.",
+        "zh": "AGV的传感器可以及时检测障碍物。"
+    },
+    {
+        "en": "In a laboratory environment, the sensor successfully detected obstacles in 100% of the tests.",
+        "zh": "在实验室环境中，传感器在100%的测试中成功检测到障碍物。"
+    },
+    {
+        "en": "In a laboratory environment, the sensor responded in less than 0.1 seconds on average after receiving the obstacle signal.",
+        "zh": "在实验室环境中，传感器在接收到障碍物信号后平均在不到0.1秒内做出响应。"
+    },
+    {
+        "en": "The braking system of the AGV can start quickly after receiving sensor signals.",
+        "zh": "AGV的制动系统在接收到传感器信号后可以快速启动。"
+    },
+    {
+        "en": "The braking system of the AGV can ensure the safety of the AGV after starting.",
+        "zh": "AGV的制动系统可以保证AGV启动后的安全。"
+    },
+    {
+        "en": "In a laboratory environment, the braking system had an average response time of less than 0.5 seconds after receiving the sensor signal.",
+        "zh": "在实验室环境中，制动系统在接收到传感器信号后的平均响应时间小于0.5秒。"
+    },
+    {
+        "en": "In a simulated environment, the braking system successfully stopped the AGV within a safe distance without collisions after starting.",
+        "zh": "在模拟环境中，制动系统成功地将AGV停在了安全距离内，启动后没有发生碰撞。"
+    },
+    {
+        "en": "The control system can accurately analyze sensor data to detect obstacles.",
+        "zh": "该控制系统可以准确地分析传感器数据以检测障碍物。"
+    },
+    {
+        "en": "The control system can make appropriate decisions based on the detected obstacles.",
+        "zh": "控制系统可以基于检测到的障碍物做出适当的决定。"
+    },
+    {
+        "en": "The control system can command the AGV to execute safety strategies, such as deceleration or stopping.",
+        "zh": "控制系统可以命令AGV执行安全策略，例如减速或停止。"
+    },
+    {
+        "en": "In a simulated environment, the control system accurately detected obstacles in 95% of the cases based on sensor data.",
+        "zh": "在模拟环境中，控制系统基于传感器数据准确检测到95%的障碍物。"
+    },
+    {
+        "en": "In a simulated environment, the control system made appropriate decisions based on the detected obstacles in 90% of the cases.",
+        "zh": "在模拟环境中，控制系统在90%的情况下根据检测到的障碍物做出适当的决策。"
+    },
+    {
+        "en": "In a simulated environment, the control system successfully commanded the AGV to execute safety strategies, such as deceleration or stopping, in 98% of the cases.",
+        "zh": "在模拟环境中，控制系统在98%的情况下成功地命令AGV执行安全策略，如减速或停车。"
+    },
+    {
+        "en": "{\"Strategy\": \"The accuracy of the sensor can be evaluated based on the percentage of successful obstacle detections.\"}",
+        "zh": "｛“策略”：“传感器的准确性可以根据成功检测障碍物的百分比进行评估。”｝"
+    },
+    {
+        "en": "{\"Strategy\": \"The timely detection of obstacles by the AGV's sensor involves two major factors: response time and signal transmission.\"}",
+        "zh": "{“策略”：“AGV传感器对障碍物的及时检测涉及两个主要因素：响应时间和信号传输。”}"
+    },
+    {
+        "en": "The sensor should have a high percentage of successful obstacle detections.",
+        "zh": "传感器应具有高百分比的成功障碍物检测。"
+    },
+    {
+        "en": "In a laboratory environment, the sensor successfully detected obstacles in 98% of the tests.",
+        "zh": "在实验室环境中，该传感器在98%的测试中成功检测到障碍物。"
+    },
+    {
+        "en": "The AGV's sensor has a fast response time after receiving the obstacle signal.",
+        "zh": "AGV的传感器在接收到障碍物信号后具有快速响应时间。"
+    },
+    {
+        "en": "The AGV's sensor signal is efficiently transmitted to the control system.",
+        "zh": "AGV的传感器信号被有效地传输到控制系统。"
+    },
+    {
+        "en": "The sensor signal is transmitted to the control system through a high-speed communication channel with minimal delay.",
+        "zh": "传感器信号通过具有最小延迟的高速通信信道传输到控制系统。"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking system should be able to respond to sensor signals quickly and safely.\"}",
+        "zh": "｛“策略”：“制动系统应该能够快速、安全地对传感器信号做出响应。”｝"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking system must be able to stop the AGV quickly and safely after it has started moving.\"}",
+        "zh": "｛“策略”：“AGV开始移动后，制动系统必须能够快速安全地停止。”｝"
+    },
+    {
+        "en": "The braking system of the AGV can ensure the safety of the vehicle and its surrounding environment while stopping.",
+        "zh": "AGV的制动系统可以在停车时确保车辆及其周围环境的安全。"
+    },
+    {
+        "en": "In a simulated environment, the braking system successfully stopped the AGV without causing any collision or damage to the vehicle or its surroundings.",
+        "zh": "在模拟环境中，制动系统成功地停止了AGV，而不会对车辆或其周围环境造成任何碰撞或损坏。"
+    },
+    {
+        "en": "The braking system can apply sufficient braking force to stop the AGV.",
+        "zh": "制动系统可以施加足够的制动力来停止AGV。"
+    },
+    {
+        "en": "The braking system can respond quickly after receiving the command to stop.",
+        "zh": "制动系统在接收到停止命令后可以快速响应。"
+    },
+    {
+        "en": "In a laboratory environment, the braking system successfully stopped the AGV within a specified distance.",
+        "zh": "在实验室环境中，制动系统成功地将AGV停在指定距离内。"
+    },
+    {
+        "en": "In a laboratory environment, the braking system had an average response time of less than 0.5 seconds after receiving the stop command.",
+        "zh": "在实验室环境中，制动系统在接收到停止命令后的平均响应时间小于0.5秒。"
+    },
+    {
+        "en": "{\"Strategy\": \"The control system relies on accurate analysis of sensor data to detect obstacles.\"}",
+        "zh": "{“策略”：“控制系统依靠对传感器数据的准确分析来检测障碍物。”}"
+    },
+    {
+        "en": "{\"Strategy\": \"The control system should be able to interpret the sensor data and take appropriate actions based on the detected obstacles.\"}",
+        "zh": "｛“策略”：“控制系统应该能够解释传感器数据，并根据检测到的障碍物采取适当的行动。”｝"
+    },
+    {
+        "en": "{\"Strategy\": \"The control system should be able to detect obstacles and make decisions to initiate safety strategies.\"}",
+        "zh": "{“策略”：“控制系统应该能够检测障碍物并做出启动安全策略的决定。”}"
+    },
+    {
+        "en": "The control system can receive sensor data from the AGV.",
+        "zh": "控制系统可以从AGV接收传感器数据。"
+    },
+    {
+        "en": "The control system can accurately analyze the sensor data to detect obstacles.",
+        "zh": "该控制系统可以准确地分析传感器数据以检测障碍物。"
+    },
+    {
+        "en": "The control system successfully receives sensor data from the AGV in 100% of the tests.",
+        "zh": "控制系统在100%的测试中成功地从AGV接收到传感器数据。"
+    },
+    {
+        "en": "In a laboratory environment, the control system accurately detected obstacles based on sensor data in 95% of the tests.",
+        "zh": "在实验室环境中，控制系统在95%的测试中基于传感器数据准确检测到障碍物。"
+    },
+    {
+        "en": "The control system of the AGV can interpret sensor data accurately.",
+        "zh": "AGV的控制系统可以准确地解释传感器数据。"
+    },
+    {
+        "en": "The control system of the AGV can make appropriate decisions based on the interpreted sensor data.",
+        "zh": "AGV的控制系统可以基于解释的传感器数据做出适当的决定。"
+    },
+    {
+        "en": "In a simulated environment, the control system accurately interpreted sensor data in 95% of the cases.",
+        "zh": "在模拟环境中，控制系统在95%的情况下准确地解释了传感器数据。"
+    },
+    {
+        "en": "In a simulated environment, the control system made appropriate decisions based on the interpreted sensor data in 90% of the cases.",
+        "zh": "在模拟环境中，控制系统在90%的情况下基于解释的传感器数据做出适当的决策。"
+    },
+    {
+        "en": "The control system can accurately detect obstacles.",
+        "zh": "控制系统可以准确地检测障碍物。"
+    },
+    {
+        "en": "The control system can make decisions to initiate safety strategies.",
+        "zh": "控制系统可以做出启动安全策略的决策。"
+    },
+    {
+        "en": "In a simulated environment, the control system successfully detected obstacles in 100% of the tests.",
+        "zh": "在模拟环境中，控制系统在100%的测试中成功检测到障碍物。"
+    },
+    {
+        "en": "In a simulated environment, the control system made accurate decisions within the specified time to initiate safety strategies.",
+        "zh": "在模拟环境中，控制系统在指定的时间内做出准确的决策，以启动安全策略。"
+    },
+    {
+        "en": "In a simulated environment, the control system of the trolley was able to successfully execute safety strategies within the specified time after receiving the sensor signal.",
+        "zh": "在模拟环境中，小车的控制系统能够在接收到传感器信号后的指定时间内成功执行安全策略。"
+    },
+    {
+        "en": "Ensure that when AGVs (Automated Guided Vehicles) move within the warehouse, they are safe for all stakeholders (including other AGVs, personnel, and goods) and that the goods carried on the AGV remain stable during movement, never sliding or falling at any time.",
+        "zh": "确保AGV（自动导引车）在仓库内移动时，对所有利益相关者（包括其他AGV、人员和货物）都是安全的，并且AGV上携带的货物在移动过程中保持稳定，任何时候都不会滑动或坠落。"
+    },
+    {
+        "en": "{\"Strategy\": \"Ensure safety for all stakeholders and stability of goods carried on the AGV during movement.\"}",
+        "zh": "｛“战略”：“确保所有利益相关者的安全和AGV运输过程中货物的稳定性。”｝"
+    },
+    {
+        "en": "The AGV can safely navigate within the warehouse without colliding with other AGVs or personnel.",
+        "zh": "AGV可以在仓库内安全导航，不会与其他AGV或人员发生碰撞。"
+    },
+    {
+        "en": "The AGV can maintain a stable platform to prevent goods from sliding or falling during movement.",
+        "zh": "AGV可以保持一个稳定的平台，防止货物在移动过程中滑动或掉落。"
+    },
+    {
+        "en": "Implement collision avoidance algorithms and sensors that can detect and respond to obstacles.",
+        "zh": "实施防撞算法和传感器，可以检测和响应障碍物。"
+    },
+    {
+        "en": "Ensure proper load securing mechanisms and techniques are implemented on the AGV platform.",
+        "zh": "确保AGV平台上采用适当的负载固定机制和技术。"
+    },
+    {
+        "en": "确保AGV（自动导引车）在仓库内移动时，对所有利益相关者（包括其他AGV、人员和货物）都是安全的，并且AGV上携带的货物在移动过程中保持稳定，任何时候都不会滑动或坠落。",
+        "zh": "确保AGV（自动导引车）在仓库内移动时，对所有利益相关者（包括其他AGV、人员和货物）都是安全的，并且AGV上携带的货物在移动过程中保持稳定，任何时候都不会滑动或坠落。"
+    },
+    {
+        "en": "｛“战略”：“确保所有利益相关者的安全和AGV运输过程中货物的稳定性。”｝",
+        "zh": "｛“战略”：“确保所有利益相关者的安全和AGV运输过程中货物的稳定性。”｝"
+    },
+    {
+        "en": "AGV可以在仓库内安全导航，不会与其他AGV或人员发生碰撞。",
+        "zh": "AGV可以在仓库内安全导航，不会与其他AGV或人员发生碰撞。"
+    },
+    {
+        "en": "{\"Strategy\": \"The system functions involved in safe navigation of AGV include obstacle detection, collision avoidance, and path planning.\"}",
+        "zh": "｛“策略”：“AGV安全导航涉及的系统功能包括障碍物检测、防撞和路径规划。”"
+    },
+    {
+        "en": "AGV可以保持一个稳定的平台，防止货物在移动过程中滑动或掉落。",
+        "zh": "AGV可以保持一个稳定的平台，防止货物在移动过程中滑动或掉落。"
+    },
+    {
+        "en": "实施防撞算法和传感器，可以检测和响应障碍物。",
+        "zh": "实施防撞算法和传感器，可以检测和响应障碍物。"
+    },
+    {
+        "en": "确保AGV平台上采用适当的负载固定机制和技术。",
+        "zh": "确保AGV平台上采用适当的负载固定机制和技术。"
+    },
+    {
+        "en": "The AGV can accurately detect obstacles and other AGVs or personnel.",
+        "zh": "AGV可以准确地探测障碍物和其他AGV或人员。"
+    },
+    {
+        "en": "The AGV can effectively avoid collisions with obstacles, other AGVs, or personnel.",
+        "zh": "AGV可以有效避免与障碍物、其他AGV或人员碰撞。"
+    },
+    {
+        "en": "The AGV can plan a safe path to navigate within the warehouse.",
+        "zh": "AGV可以规划在仓库内导航的安全路径。"
+    },
+    {
+        "en": "In a laboratory environment, the AGV's obstacle detection system successfully detected obstacles and other AGVs or personnel in 100% of the tests.",
+        "zh": "在实验室环境中，AGV的障碍物检测系统在100%的测试中成功检测到障碍物和其他AGV或人员。"
+    },
+    {
+        "en": "In a simulated environment, the AGV's collision avoidance system effectively avoided collisions with obstacles, other AGVs, or personnel.",
+        "zh": "在模拟环境中，AGV的防撞系统有效地避免了与障碍物、其他AGV或人员的碰撞。"
+    },
+    {
+        "en": "In a simulated environment, the AGV's path planning system successfully planned safe paths to navigate within the warehouse.",
+        "zh": "在模拟环境中，AGV的路径规划系统成功规划了在仓库内导航的安全路径。"
+    },
+    {
+        "en": "{\"Strategy\": \"The system functions involved in safe navigation of AGVs include obstacle detection, collision avoidance, and path planning.\"}",
+        "zh": "｛“策略”：“AGV安全导航涉及的系统功能包括障碍物检测、防撞和路径规划。”｝"
+    },
+    {
+        "en": "The AGV's obstacle detection system can accurately and timely detect other AGVs and personnel.",
+        "zh": "AGV的障碍物探测系统可以准确、及时地探测其他AGV和人员。"
+    },
+    {
+        "en": "The AGV's collision avoidance system can effectively prevent collisions with other AGVs and personnel.",
+        "zh": "AGV的防撞系统可以有效防止与其他AGV和人员发生碰撞。"
+    },
+    {
+        "en": "The AGV's path planning system can generate collision-free paths for navigation.",
+        "zh": "AGV的路径规划系统可以生成无碰撞的导航路径。"
+    },
+    {
+        "en": "In a real-world environment, the obstacle detection system successfully detected other AGVs and personnel in 95% of the tests.",
+        "zh": "在真实世界的环境中，障碍物检测系统在95%的测试中成功检测到其他AGV和人员。"
+    },
+    {
+        "en": "In a simulated environment, the collision avoidance system successfully prevented collisions with other AGVs and personnel in 90% of the scenarios.",
+        "zh": "在模拟环境中，防撞系统在90%的场景中成功防止了与其他AGV和人员的碰撞。"
+    },
+    {
+        "en": "In a simulated warehouse environment, the path planning system generated collision-free paths for navigation in 100% of the simulations.",
+        "zh": "在模拟仓库环境中，路径规划系统在100%的模拟中生成了用于导航的无碰撞路径。"
+    },
+    {
+        "en": "{\"Strategy\": \"The system functions involved in maintaining a stable platform include load balancing, anti-slip measures, and control system.\"}",
+        "zh": "｛“策略”：“维护稳定平台所涉及的系统功能包括负载平衡、防滑措施和控制系统。”｝"
+    },
+    {
+        "en": "The AGV's load balancing system can distribute weight evenly to prevent goods from sliding or falling.",
+        "zh": "AGV的负载平衡系统可以均匀地分配重量，防止货物滑动或掉落。"
+    },
+    {
+        "en": "The AGV's anti-slip measures can provide sufficient traction to prevent goods from sliding or falling.",
+        "zh": "AGV的防滑措施可以提供足够的牵引力，防止货物滑动或坠落。"
+    },
+    {
+        "en": "The control system of the AGV can monitor and adjust the platform stability during movement.",
+        "zh": "AGV的控制系统可以监测和调整平台在运动过程中的稳定性。"
+    },
+    {
+        "en": "In a laboratory environment, the load balancing system was able to distribute weight evenly and prevent goods from sliding or falling.",
+        "zh": "在实验室环境中，负载平衡系统能够均匀地分配重量，防止货物滑动或掉落。"
+    },
+    {
+        "en": "In a simulated environment, the anti-slip measures provided sufficient traction to prevent goods from sliding or falling.",
+        "zh": "在模拟环境中，防滑措施提供了足够的牵引力，以防止货物滑动或坠落。"
+    },
+    {
+        "en": "In field tests, the control system successfully monitored and adjusted the platform stability during movement.",
+        "zh": "在现场测试中，控制系统成功地监测和调整了平台在运动过程中的稳定性。"
+    },
+    {
+        "en": "{\"Strategy\": \"The obstacle detection system should be able to detect both other AGVs and personnel accurately and in a timely manner.\"}",
+        "zh": "{“策略”：“障碍物探测系统应该能够准确及时地探测其他AGV和人员。”}"
+    },
+    {
+        "en": "The AGV's obstacle detection system can accurately detect other AGVs.",
+        "zh": "AGV的障碍物检测系统可以准确地检测其他AGV。"
+    },
+    {
+        "en": "The AGV's obstacle detection system can accurately detect personnel.",
+        "zh": "AGV的障碍物检测系统可以准确地检测人员。"
+    },
+    {
+        "en": "The AGV's obstacle detection system can timely detect other AGVs.",
+        "zh": "AGV的障碍物检测系统可以及时检测其他AGV。"
+    },
+    {
+        "en": "The AGV's obstacle detection system can timely detect personnel.",
+        "zh": "AGV的障碍物检测系统可以及时检测人员。"
+    },
+    {
+        "en": "In a laboratory environment, the obstacle detection system successfully detected other AGVs in 100% of the tests.",
+        "zh": "在实验室环境中，障碍物检测系统在100%的测试中成功检测到其他AGV。"
+    },
+    {
+        "en": "In a laboratory environment, the obstacle detection system successfully detected personnel in 95% of the tests.",
+        "zh": "在实验室环境中，障碍物检测系统在95%的测试中成功检测到人员。"
+    },
+    {
+        "en": "In a laboratory environment, the obstacle detection system responded to other AGVs in less than 0.1 seconds on average.",
+        "zh": "在实验室环境中，障碍物检测系统对其他AGV的响应平均不到0.1秒。"
+    },
+    {
+        "en": "In a laboratory environment, the obstacle detection system responded to personnel in less than 0.2 seconds on average.",
+        "zh": "在实验室环境中，障碍物检测系统对人员的响应平均不到0.2秒。"
+    },
+    {
+        "en": "{\"Strategy\": \"The collision avoidance system should include features such as detection, warning, and action to prevent collisions.\"}",
+        "zh": "｛“策略”：“防撞系统应包括检测、警告和防止碰撞的措施等功能。”｝"
+    },
+    {
+        "en": "The AGV's collision detection system can accurately detect other AGVs and personnel.",
+        "zh": "AGV的碰撞检测系统可以准确地检测其他AGV和人员。"
+    },
+    {
+        "en": "The AGV's warning system can effectively alert other AGVs and personnel of potential collisions.",
+        "zh": "AGV的预警系统可以有效地提醒其他AGV和人员潜在的碰撞。"
+    },
+    {
+        "en": "The AGV's action system can take appropriate measures to prevent collisions with other AGVs and personnel.",
+        "zh": "AGV的行动系统可以采取适当措施防止与其他AGV和人员发生碰撞。"
+    },
+    {
+        "en": "In a simulated environment, the collision detection system successfully detected other AGVs and personnel in 95% of the tests.",
+        "zh": "在模拟环境中，碰撞检测系统在95%的测试中成功检测到其他AGV和人员。"
+    },
+    {
+        "en": "In a laboratory environment, the warning system effectively alerted other AGVs and personnel of potential collisions in 90% of the tests.",
+        "zh": "在实验室环境中，警报系统在90%的测试中有效地提醒了其他AGV和人员潜在的碰撞。"
+    },
+    {
+        "en": "In a controlled environment, the action system successfully prevented collisions with other AGVs and personnel in 98% of the tests.",
+        "zh": "在受控环境中，动作系统在98%的测试中成功防止了与其他AGV和人员的碰撞。"
+    },
+    {
+        "en": "{\"Strategy\": \"The warning system should be able to detect potential collisions and effectively communicate the warning to other AGVs and personnel.\"}",
+        "zh": "｛“策略”：“警报系统应该能够检测潜在的碰撞，并将警报有效地传达给其他AGV和人员。”｝"
+    },
+    {
+        "en": "The warning system can accurately detect potential collisions.",
+        "zh": "报警系统可以准确地检测潜在的碰撞。"
+    },
+    {
+        "en": "The warning system can effectively communicate the warning to other AGVs.",
+        "zh": "警报系统可以有效地将警报传达给其他AGV。"
+    },
+    {
+        "en": "The warning system can effectively communicate the warning to personnel.",
+        "zh": "警报系统可以有效地将警报传达给人员。"
+    },
+    {
+        "en": "In a laboratory environment, the warning system successfully detected potential collisions in 100% of the tests.",
+        "zh": "在实验室环境中，警报系统在100%的测试中成功检测到潜在的碰撞。"
+    },
+    {
+        "en": "In a simulated environment, the warning system effectively communicated the warning to other AGVs within 1 second after detection.",
+        "zh": "在模拟环境中，警报系统在检测到警报后1秒内有效地将警报传达给其他AGV。"
+    },
+    {
+        "en": "In a simulated environment, the warning system effectively communicated the warning to personnel within 2 seconds after detection.",
+        "zh": "在模拟环境中，警报系统在检测到警报后2秒内有效地将警报传达给人员。"
+    },
+    {
+        "en": "{\"Strategy\": \"The warning system needs to have effective communication capabilities to relay warnings to other AGVs.\"}",
+        "zh": "｛“策略”：“警报系统需要具有有效的通信能力，才能将警报传递给其他AGV。”｝"
+    },
+    {
+        "en": "The warning system can accurately detect potential hazards.",
+        "zh": "报警系统可以准确地检测潜在的危险。"
+    },
+    {
+        "en": "The warning system can transmit the warning signals to other AGVs in a timely manner.",
+        "zh": "报警系统可以及时将报警信号传输给其他AGV。"
+    },
+    {
+        "en": "The warning system can ensure the warning signals are effectively received and understood by other AGVs.",
+        "zh": "该报警系统可以确保其他AGV有效地接收和理解报警信号。"
+    },
+    {
+        "en": "In a laboratory environment, the warning system successfully detected potential hazards in 100% of the tests.",
+        "zh": "在实验室环境中，警报系统在100%的测试中成功检测到潜在危险。"
+    },
+    {
+        "en": "In a simulated environment, the warning system transmitted the warning signals within 0.1 seconds after detection.",
+        "zh": "在模拟环境中，报警系统在检测到报警信号后0.1秒内发送报警信号。"
+    },
+    {
+        "en": "In a simulated environment, other AGVs successfully received and understood the warning signals from the warning system in 100% of the tests.",
+        "zh": "在模拟环境中，其他AGV在100%的测试中成功接收并理解了来自警报系统的警报信号。"
+    },
+    {
+        "en": "{\"Strategy\": \"The effectiveness of the warning system can be measured by its ability to communicate warnings to personnel.\"}",
+        "zh": "｛“策略”：“预警系统的有效性可以通过其向人员传达警告的能力来衡量。”｝"
+    },
+    {
+        "en": "The warning system can generate clear and understandable warnings.",
+        "zh": "警告系统可以生成清晰易懂的警告。"
+    },
+    {
+        "en": "The warning system can transmit warnings to personnel in a timely manner.",
+        "zh": "警报系统可以及时向人员发送警报。"
+    },
+    {
+        "en": "In a user study, participants rated the warnings generated by the system as clear and understandable with an average rating of 4.5 out of 5.",
+        "zh": "在一项用户研究中，参与者将系统生成的警告评为清晰易懂，平均评分为4.5分（满分5分）。"
+    },
+    {
+        "en": "In a simulated environment, the warning system successfully transmitted warnings to personnel within 2 seconds of detection.",
+        "zh": "在模拟环境中，警报系统在检测到警报后2秒内成功向人员发送警报。"
+    },
+    {
+        "en": "{\"Strategy\": \"The warning system should have clear and understandable warning messages and signals.\"}",
+        "zh": "｛“策略”：“警告系统应该有清晰易懂的警告信息和信号。”｝"
+    },
+    {
+        "en": "The warning messages generated by the system should be clear and easy to understand.",
+        "zh": "系统生成的警告信息应清晰易懂。"
+    },
+    {
+        "en": "The warning signals should be visually or audibly distinguishable from the normal operation of the AGV.",
+        "zh": "警告信号应在视觉或听觉上与AGV的正常操作区分开来。"
+    },
+    {
+        "en": "The warning messages displayed on the AGV's user interface were tested with a group of users, and 95% of them found the messages clear and easy to understand.",
+        "zh": "AGV用户界面上显示的警告信息经过了一组用户的测试，其中95%的用户发现这些信息清晰易懂。"
+    },
+    {
+        "en": "The warning signals were designed to be visually distinct from the normal operation of the AGV, using bright flashing lights and loud audible alarms.",
+        "zh": "警告信号的设计在视觉上与AGV的正常操作不同，使用明亮的闪光灯和响亮的声音警报。"
+    },
+    {
+        "en": "{\"Strategy\": \"The warning system should have the ability to detect potential hazards and transmit warnings to personnel in a timely manner.\"}",
+        "zh": "{“策略”：“预警系统应具有检测潜在危险并及时向人员发出警报的能力。”}"
+    },
+    {
+        "en": "The warning system can transmit warnings to personnel.",
+        "zh": "警告系统可以向人员发送警告。"
+    },
+    {
+        "en": "The warning system can transmit warnings in a timely manner.",
+        "zh": "警报系统可以及时发送警报。"
+    },
+    {
+        "en": "In a simulated environment, the warning system successfully transmitted warnings to personnel.",
+        "zh": "在模拟环境中，警报系统成功地向人员发送了警报。"
+    },
+    {
+        "en": "In a simulated environment, the warning system transmitted warnings to personnel within 5 seconds of detecting the potential hazard.",
+        "zh": "在模拟环境中，警报系统在检测到潜在危险的5秒内向人员发送警报。"
+    },
+    {
+        "en": "{\"Strategy\": \"The warning signals should have distinct visual or auditory characteristics that differentiate them from the normal operation of the AGV.\"}",
+        "zh": "｛“策略”：“警告信号应具有不同于AGV正常操作的视觉或听觉特征。”｝"
+    },
+    {
+        "en": "The warning signals should have visually distinguishable characteristics.",
+        "zh": "警告信号应具有视觉上可区分的特征。"
+    },
+    {
+        "en": "The warning signals should have audibly distinguishable characteristics.",
+        "zh": "警告信号应具有可听得见的特征。"
+    },
+    {
+        "en": "The warning signals should use bright flashing lights or contrasting colors to visually stand out from the normal operation of the AGV.",
+        "zh": "警告信号应使用明亮的闪光灯或对比色，以在视觉上突出AGV的正常操作。"
+    },
+    {
+        "en": "The warning signals should have a distinct sound or tone that is easily distinguishable from the normal operation of the AGV.",
+        "zh": "警告信号应具有明显的声音或音调，易于与AGV的正常操作区分开来。"
+    },
+    {
+        "en": "{\"Strategy\": \"The path planning system should be able to generate paths that avoid obstacles and collisions.\"}",
+        "zh": "{“策略”：“路径规划系统应该能够生成避免障碍和碰撞的路径。”}"
+    },
+    {
+        "en": "The path planning system can identify obstacles and potential collision points in the environment.",
+        "zh": "路径规划系统可以识别环境中的障碍物和潜在碰撞点。"
+    },
+    {
+        "en": "The path planning system can generate alternative routes to avoid obstacles and collisions.",
+        "zh": "路径规划系统可以生成替代路线以避免障碍物和碰撞。"
+    },
+    {
+        "en": "The path planning system can prioritize safe and collision-free paths.",
+        "zh": "路径规划系统可以优先考虑安全和无碰撞的路径。"
+    },
+    {
+        "en": "In a simulated environment, the path planning system successfully identified all obstacles and potential collision points.",
+        "zh": "在模拟环境中，路径规划系统成功识别了所有障碍物和潜在碰撞点。"
+    },
+    {
+        "en": "In a simulated environment, the path planning system generated alternative routes for all identified obstacles and collisions.",
+        "zh": "在模拟环境中，路径规划系统为所有已识别的障碍物和碰撞生成替代路线。"
+    },
+    {
+        "en": "In a simulated environment, the path planning system prioritized collision-free paths over paths with potential collisions.",
+        "zh": "在模拟环境中，路径规划系统将无碰撞路径优先于有潜在碰撞的路径。"
+    },
+    {
+        "en": "{\"Strategy\": \"The path planning system should be able to analyze the environment, identify obstacles and potential collisions, and generate alternative routes to avoid them.\"}",
+        "zh": "{“策略”：“路径规划系统应该能够分析环境，识别障碍物和潜在碰撞，并生成替代路线以避免它们。”}"
+    },
+    {
+        "en": "The path planning system can analyze the environment and identify obstacles.",
+        "zh": "路径规划系统可以分析环境并识别障碍物。"
+    },
+    {
+        "en": "The path planning system can identify potential collisions.",
+        "zh": "路径规划系统可以识别潜在的碰撞。"
+    },
+    {
+        "en": "In a simulated environment, the path planning system successfully analyzed the environment and identified obstacles with an accuracy of 95%.",
+        "zh": "在模拟环境中，路径规划系统成功地分析了环境并识别了障碍物，准确率为95%。"
+    },
+    {
+        "en": "In a simulated environment, the path planning system successfully identified potential collisions with an accuracy of 90%.",
+        "zh": "在模拟环境中，路径规划系统以90%的准确率成功识别了潜在的碰撞。"
+    },
+    {
+        "en": "In a simulated environment, the path planning system generated alternative routes to avoid obstacles and collisions in less than 2 seconds.",
+        "zh": "在模拟环境中，路径规划系统生成替代路线，以在不到2秒内避免障碍物和碰撞。"
+    },
+    {
+        "en": "{\"Strategy\": \"The path planning system should consider safety and collision avoidance as the primary criteria when generating paths.\"}",
+        "zh": "｛“策略”：“路径规划系统在生成路径时应将安全和防撞作为主要标准。”｝"
+    },
+    {
+        "en": "The path planning system can identify potential obstacles and hazards in the environment.",
+        "zh": "路径规划系统可以识别环境中的潜在障碍和危险。"
+    },
+    {
+        "en": "The path planning system can calculate alternative paths that avoid obstacles and hazards.",
+        "zh": "路径规划系统可以计算避开障碍物和危险的替代路径。"
+    },
+    {
+        "en": "The path planning system can prioritize paths that minimize the risk of collisions.",
+        "zh": "路径规划系统可以优先考虑将碰撞风险降至最低的路径。"
+    },
+    {
+        "en": "The path planning system utilizes sensor data to identify obstacles and hazards in the environment.",
+        "zh": "路径规划系统利用传感器数据来识别环境中的障碍物和危险。"
+    },
+    {
+        "en": "The path planning system uses algorithms to calculate alternative paths that avoid obstacles and hazards.",
+        "zh": "路径规划系统使用算法来计算避开障碍物和危险的替代路径。"
+    },
+    {
+        "en": "The path planning system assigns weights to different paths based on collision risk and selects the path with the lowest risk.",
+        "zh": "路径规划系统根据碰撞风险为不同的路径分配权重，并选择风险最低的路径。"
+    },
+    {
+        "en": "{\"Strategy\": \"The action system of the AGV should have collision avoidance capabilities and be able to detect and respond to the presence of other AGVs and personnel.\"}",
+        "zh": "｛“策略”：“AGV的行动系统应具有防撞能力，并能够检测和响应其他AGV和人员的存在。”｝"
+    },
+    {
+        "en": "The AGV's action system can detect other AGVs and personnel in its vicinity.",
+        "zh": "AGV的行动系统可以探测到附近的其他AGV和人员。"
+    },
+    {
+        "en": "The AGV's action system can analyze the detected data and determine the appropriate measures to prevent collisions.",
+        "zh": "AGV的行动系统可以分析检测到的数据，并确定防止碰撞的适当措施。"
+    },
+    {
+        "en": "The AGV's action system can execute the determined measures effectively and in a timely manner.",
+        "zh": "AGV的行动系统能够及时有效地执行确定的措施。"
+    },
+    {
+        "en": "In a simulated environment, the AGV's action system successfully detected other AGVs and personnel within a range of 10 meters.",
+        "zh": "在模拟环境中，AGV的行动系统成功探测到10米范围内的其他AGV和人员。"
+    },
+    {
+        "en": "In a laboratory environment, the AGV's action system accurately analyzed the detected data and determined the appropriate measures to prevent collisions.",
+        "zh": "在实验室环境中，AGV的行动系统准确地分析了检测到的数据，并确定了防止碰撞的适当措施。"
+    },
+    {
+        "en": "In a real-world scenario, the AGV's action system effectively executed the determined measures within 2 seconds after detecting the presence of other AGVs and personnel.",
+        "zh": "在真实世界的场景中，AGV的行动系统在检测到其他AGV和人员存在后的2秒内有效地执行了确定的措施。"
+    },
+    {
+        "en": "{\"Strategy\": \"The action system of the AGV should be able to analyze the data from the sensors and make decisions to prevent collisions.\"}",
+        "zh": "{“策略”：“AGV的行动系统应该能够分析来自传感器的数据，并做出防止碰撞的决定。”}"
+    },
+    {
+        "en": "The AGV's action system can analyze the detected data from the sensors.",
+        "zh": "AGV的动作系统可以分析来自传感器的检测数据。"
+    },
+    {
+        "en": "The AGV's action system can determine the appropriate measures to prevent collisions.",
+        "zh": "AGV的行动系统可以确定防止碰撞的适当措施。"
+    },
+    {
+        "en": "In a laboratory environment, the action system successfully analyzed the detected data from the sensors in 100% of the tests.",
+        "zh": "在实验室环境中，动作系统在100%的测试中成功地分析了传感器的检测数据。"
+    },
+    {
+        "en": "In a simulated environment, the action system was able to determine the appropriate measures to prevent collisions within the specified time.",
+        "zh": "在模拟环境中，行动系统能够确定在指定时间内防止碰撞的适当措施。"
+    },
+    {
+        "en": "{\"Strategy\": \"The action system should be able to interpret and process the data received from the sensors effectively.\"}",
+        "zh": "{“策略”：“行动系统应该能够有效地解释和处理从传感器接收到的数据。”}"
+    },
+    {
+        "en": "The action system can accurately interpret the data from the sensors.",
+        "zh": "动作系统可以准确地解释来自传感器的数据。"
+    },
+    {
+        "en": "The action system can process the data in a timely manner.",
+        "zh": "行动系统可以及时处理数据。"
+    },
+    {
+        "en": "In a laboratory environment, the action system correctly interpreted the data from the sensors in 100% of the tests.",
+        "zh": "在实验室环境中，动作系统在100%的测试中正确解释了传感器的数据。"
+    },
+    {
+        "en": "In a laboratory environment, the action system processed the data within 0.2 seconds on average after receiving it from the sensors.",
+        "zh": "在实验室环境中，动作系统从传感器接收数据后，平均在0.2秒内处理数据。"
+    },
+    {
+        "en": "{\"Strategy\": \"The action system should be able to receive and process data in a timely manner to ensure smooth operations.\"}",
+        "zh": "{“战略”：“行动系统应该能够及时接收和处理数据，以确保平稳运行。”}"
+    },
+    {
+        "en": "{\"Strategy\": \"The action system of the AGV needs to have the capability to analyze sensor data, assess collision risks, and decide on appropriate measures to prevent collisions.\"}",
+        "zh": "{“战略”：“AGV的行动系统需要有能力分析传感器数据，评估碰撞风险，并决定防止碰撞的适当措施。”}"
+    },
+    {
+        "en": "The action system can analyze sensor data accurately and efficiently.",
+        "zh": "该动作系统能够准确有效地分析传感器数据。"
+    },
+    {
+        "en": "The action system can assess collision risks based on the analyzed sensor data.",
+        "zh": "行动系统可以基于分析的传感器数据来评估碰撞风险。"
+    },
+    {
+        "en": "The action system can decide on appropriate measures to prevent collisions based on the assessed collision risks.",
+        "zh": "行动系统可以根据评估的碰撞风险来决定防止碰撞的适当措施。"
+    },
+    {
+        "en": "In a laboratory environment, the action system accurately analyzed sensor data in 95% of the tests.",
+        "zh": "在实验室环境中，动作系统在95%的测试中准确地分析了传感器数据。"
+    },
+    {
+        "en": "In a simulated environment, the action system successfully assessed collision risks within the specified time after analyzing the sensor data.",
+        "zh": "在模拟环境中，行动系统在分析传感器数据后，在指定时间内成功评估了碰撞风险。"
+    },
+    {
+        "en": "In a simulated environment, the action system consistently decided on appropriate measures to prevent collisions based on the assessed collision risks.",
+        "zh": "在模拟环境中，行动系统根据评估的碰撞风险，一致决定预防碰撞的适当措施。"
+    },
+    {
+        "en": "{\"Strategy\": \"The action system of the AGV should be able to effectively and timely execute measures determined by the control system.\"}",
+        "zh": "{“战略”：“AGV的行动系统应能够有效、及时地执行控制系统确定的措施。”}"
+    },
+    {
+        "en": "The AGV's action system can effectively execute the determined measures.",
+        "zh": "AGV的行动系统能够有效地执行所确定的措施。"
+    },
+    {
+        "en": "The AGV's action system can execute the determined measures in a timely manner.",
+        "zh": "AGV的行动系统可以及时执行确定的措施。"
+    },
+    {
+        "en": "In a simulated environment, the AGV's action system successfully executed the determined measures in 100% of the tests.",
+        "zh": "在模拟环境中，AGV的动作系统在100%的测试中成功执行了确定的措施。"
+    },
+    {
+        "en": "In a simulated environment, the AGV's action system executed the determined measures within the specified time in 95% of the tests.",
+        "zh": "在模拟环境中，AGV的动作系统在95%的测试中在指定时间内执行了确定的措施。"
+    },
+    {
+        "en": "{\"Strategy\": \"The action system of the AGV includes navigation, motion control, and operation modules.\"}",
+        "zh": "{“战略”：“AGV的动作系统包括导航、运动控制和操作模块。”}"
+    },
+    {
+        "en": "The navigation module of the AGV can accurately determine the appropriate measures to be executed.",
+        "zh": "AGV的导航模块可以准确地确定要执行的适当措施。"
+    },
+    {
+        "en": "The motion control module of the AGV can effectively control the movement of the vehicle to execute the determined measures.",
+        "zh": "AGV的运动控制模块可以有效地控制车辆的运动，以执行所确定的措施。"
+    },
+    {
+        "en": "The operation module of the AGV can interact with the environment to execute the determined measures.",
+        "zh": "AGV的操作模块可以与环境交互以执行所确定的措施。"
+    },
+    {
+        "en": "In a simulated environment, the navigation module successfully determined the appropriate measures with an accuracy rate of 95%.",
+        "zh": "在模拟环境中，导航模块成功地确定了适当的措施，准确率为95%。"
+    },
+    {
+        "en": "In a laboratory environment, the motion control module effectively controlled the movement of the AGV to execute the determined measures.",
+        "zh": "在实验室环境中，运动控制模块有效地控制AGV的运动，以执行所确定的措施。"
+    },
+    {
+        "en": "In a real-world environment, the operation module successfully interacted with the environment to execute the determined measures.",
+        "zh": "在真实世界的环境中，操作模块成功地与环境交互以执行所确定的措施。"
+    },
+    {
+        "en": "{\"Strategy\": \"Identify the necessary functional features of the anti-slip measures.\"}",
+        "zh": "｛“策略”：“确定防滑措施的必要功能特征。”｝"
+    },
+    {
+        "en": "The anti-slip measures can provide sufficient traction to prevent goods from sliding.",
+        "zh": "防滑措施可以提供足够的牵引力，防止货物滑动。"
+    },
+    {
+        "en": "The anti-slip measures can provide sufficient traction to prevent goods from falling.",
+        "zh": "防滑措施可以提供足够的牵引力，防止货物坠落。"
+    },
+    {
+        "en": "In a laboratory environment, the anti-slip measures prevented goods from sliding in 100% of the tests.",
+        "zh": "在实验室环境中，防滑措施在100%的测试中防止了货物滑动。"
+    },
+    {
+        "en": "In a laboratory environment, the anti-slip measures prevented goods from falling in 100% of the tests.",
+        "zh": "在实验室环境中，防滑措施在100%的测试中防止了货物坠落。"
+    },
+    {
+        "en": "{\"Strategy\": \"Different anti-slip measures can be implemented to provide traction and prevent goods from sliding.\"}",
+        "zh": "{“策略”：“可以采取不同的防滑措施来提供牵引力并防止货物滑动。”}"
+    },
+    {
+        "en": "The anti-slip measures can increase the coefficient of friction between the AGV and the goods.",
+        "zh": "防滑措施可以增加AGV与货物之间的摩擦系数。"
+    },
+    {
+        "en": "The anti-slip measures can distribute the load evenly to prevent excessive pressure on any part of the goods.",
+        "zh": "防滑措施可以均匀地分配负载，防止货物的任何部分承受过大的压力。"
+    },
+    {
+        "en": "Using rubber or textured coatings on the AGV's wheels to increase friction.",
+        "zh": "在AGV的车轮上使用橡胶或纹理涂层来增加摩擦。"
+    },
+    {
+        "en": "Implementing weight distribution mechanisms to evenly distribute the load on the goods.",
+        "zh": "实施重量分配机制，使货物负载均匀分布。"
+    },
+    {
+        "en": "{\"Strategy\": \"The load balancing system should have the ability to distribute weight evenly across the AGV and prevent goods from sliding or falling.\"}",
+        "zh": "｛“策略”：“负载平衡系统应该能够在AGV上均匀分配重量，防止货物滑动或掉落。”｝"
+    },
+    {
+        "en": "The load balancing system can accurately measure the weight of the goods.",
+        "zh": "负载平衡系统可以准确地测量货物的重量。"
+    },
+    {
+        "en": "The load balancing system can distribute weight evenly across the AGV.",
+        "zh": "负载平衡系统可以在AGV上均匀分配重量。"
+    },
+    {
+        "en": "The load balancing system can prevent goods from sliding or falling during AGV movement.",
+        "zh": "负载平衡系统可以防止货物在AGV移动过程中滑动或掉落。"
+    },
+    {
+        "en": "In a laboratory environment, the load balancing system accurately measured the weight of goods within a tolerance of 5%.",
+        "zh": "在实验室环境中，负载平衡系统在5%的公差范围内准确测量货物的重量。"
+    },
+    {
+        "en": "In a simulated environment, the load balancing system distributed weight evenly across the AGV with a maximum deviation of 2%.",
+        "zh": "在模拟环境中，负载平衡系统在AGV上均匀分布重量，最大偏差为2%。"
+    },
+    {
+        "en": "In a real-world scenario, the load balancing system prevented goods from sliding or falling during various AGV movements.",
+        "zh": "在真实世界的场景中，负载平衡系统防止货物在AGV的各种运动过程中滑动或掉落。"
+    },
+    {
+        "en": "{\"Strategy\": \"The control system should continuously monitor the platform stability and make necessary adjustments to maintain stability.\"}",
+        "zh": "{“策略”：“控制系统应持续监测平台稳定性，并进行必要的调整以保持稳定。”}"
+    },
+    {
+        "en": "The control system can continuously monitor the platform stability.",
+        "zh": "控制系统可以连续监测平台的稳定性。"
+    },
+    {
+        "en": "The control system can make necessary adjustments to maintain stability.",
+        "zh": "控制系统可以进行必要的调整以保持稳定性。"
+    },
+    {
+        "en": "The control system can measure and analyze the platform's tilt and vibration in real-time.",
+        "zh": "控制系统可以实时测量和分析平台的倾斜和振动。"
+    },
+    {
+        "en": "The control system can adjust the speed and direction of the AGV to compensate for any instability or deviation from the desired trajectory.",
+        "zh": "控制系统可以调整AGV的速度和方向，以补偿任何不稳定或偏离期望轨迹的情况。"
+    },
+    {
+        "en": "Ensure that the AGV can stop promptly and stably upon detecting obstacles, preventing goods from sliding.",
+        "zh": "确保AGV在检测到障碍物时能够迅速稳定地停止，防止货物滑动。"
+    },
+    {
+        "en": "{\"Strategy\": \"The system should have a prompt and stable braking system to ensure the AGV can stop promptly and stably upon detecting obstacles.\"}",
+        "zh": "{“策略”：“该系统应具有快速稳定的制动系统，以确保AGV在检测到障碍物时能够迅速稳定地停止。”}"
+    },
+    {
+        "en": "The AGV's braking system can start quickly upon receiving the obstacle signal.",
+        "zh": "AGV的制动系统可以在接收到障碍物信号后快速启动。"
+    },
+    {
+        "en": "The AGV's braking system can stop the AGV promptly and stably.",
+        "zh": "AGV的制动系统可以快速稳定地停止AGV。"
+    },
+    {
+        "en": "The AGV's braking system can prevent goods from sliding when braking.",
+        "zh": "AGV的制动系统可以防止货物在制动时滑动。"
+    },
+    {
+        "en": "In a laboratory environment, the braking system had an average response time of less than 0.5 seconds after receiving the obstacle signal.",
+        "zh": "在实验室环境中，制动系统在接收到障碍物信号后的平均响应时间小于0.5秒。"
+    },
+    {
+        "en": "In a simulated environment, the AGV's braking system was able to stop the AGV within a specified distance without causing any instability.",
+        "zh": "在模拟环境中，AGV的制动系统能够在指定距离内停止AGV，而不会造成任何不稳定。"
+    },
+    {
+        "en": "In a laboratory environment, the braking system was able to prevent goods from sliding during sudden stops.",
+        "zh": "在实验室环境中，制动系统能够防止货物在突然停车时滑动。"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking system should have a fast response time to ensure timely stopping of the AGV after receiving the obstacle signal.\"}",
+        "zh": "{“策略”：“制动系统应具有快速响应时间，以确保AGV在收到障碍信号后及时停止。”}"
+    },
+    {
+        "en": "The braking system of the AGV can receive the obstacle signal promptly.",
+        "zh": "AGV的制动系统能够及时接收到障碍物信号。"
+    },
+    {
+        "en": "The braking system of the AGV can start quickly after receiving the obstacle signal.",
+        "zh": "AGV的制动系统在接收到障碍物信号后可以快速启动。"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking system should ensure prompt and stable stopping of the AGV.\"}",
+        "zh": "｛“策略”：“制动系统应确保AGV迅速稳定停车。”｝"
+    },
+    {
+        "en": "The braking system can initiate the stopping process quickly after receiving the command.",
+        "zh": "制动系统可以在接收到命令后迅速启动停止过程。"
+    },
+    {
+        "en": "The braking system can bring the AGV to a stable stop without skidding or sliding.",
+        "zh": "制动系统可以使AGV稳定停止，而不会打滑或滑动。"
+    },
+    {
+        "en": "In a laboratory environment, the braking system had an average response time of less than 0.5 seconds after receiving the command.",
+        "zh": "在实验室环境中，制动系统在接收到命令后的平均响应时间小于0.5秒。"
+    },
+    {
+        "en": "In a simulated environment, the AGV successfully stopped without skidding or sliding within the specified time after the braking system was activated.",
+        "zh": "在模拟环境中，AGV在制动系统启动后的指定时间内成功停车，没有打滑或滑动。"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking system of the AGV should have sufficient braking force to prevent goods from sliding when braking.\"}",
+        "zh": "{“策略”：“AGV的制动系统应具有足够的制动力，以防止货物在制动时滑动。”}"
+    },
+    {
+        "en": "The AGV's braking system can generate sufficient braking force.",
+        "zh": "AGV的制动系统可以产生足够的制动力。"
+    },
+    {
+        "en": "The AGV's braking system can distribute the braking force evenly to prevent goods from sliding.",
+        "zh": "AGV的制动系统可以均匀地分配制动力，防止货物滑动。"
+    },
+    {
+        "en": "In a laboratory environment, the braking system generated a braking force of at least X Newtons.",
+        "zh": "在实验室环境中，制动系统产生的制动力至少为X牛顿。"
+    },
+    {
+        "en": "In a simulated environment, the braking system distributed the braking force evenly to prevent goods from sliding.",
+        "zh": "在模拟环境中，制动系统均匀地分配制动力，以防止货物滑动。"
+    },
+    {
+        "en": "The friction force generated by the goods during braking is less than or equal to 0.5 N",
+        "zh": "货物在制动过程中产生的摩擦力小于或等于0.5 N"
+    },
+    {
+        "en": "The goods on the top shelf of the AGV do not slide when it brakes.",
+        "zh": "AGV顶部货架上的货物在刹车时不会滑动。"
+    },
+    {
+        "en": "{\"Strategy\": \"To achieve this goal, we need to ensure stability and secure attachment of the goods on the top shelf of the AGV during braking.\"}",
+        "zh": "{“策略”：“为了实现这一目标，我们需要确保AGV顶部货架上货物在制动期间的稳定性和安全连接。”}"
+    },
+    {
+        "en": "The goods on the top shelf of the AGV remain stable during braking.",
+        "zh": "AGV顶部货架上的货物在制动过程中保持稳定。"
+    },
+    {
+        "en": "The goods on the top shelf of the AGV are securely attached and do not slide during braking.",
+        "zh": "AGV顶部货架上的货物连接牢固，在制动过程中不会滑动。"
+    },
+    {
+        "en": "In a laboratory environment, the goods on the top shelf of the AGV remained stable during braking in 100% of the tests.",
+        "zh": "在实验室环境中，AGV顶层货架上的货物在100%的测试中在制动过程中保持稳定。"
+    },
+    {
+        "en": "In a laboratory environment, the attachment mechanism securely held the goods on the top shelf of the AGV and prevented sliding during braking.",
+        "zh": "在实验室环境中，连接机构将货物牢固地固定在AGV的顶部货架上，并防止在制动过程中滑动。"
+    },
+    {
+        "en": "{\"Strategy\": \"The goal can be achieved by ensuring the speed and effectiveness of the braking system.\"}",
+        "zh": "{“策略”：“可以通过确保制动系统的速度和有效性来实现目标。”}"
+    },
+    {
+        "en": "The AGV's braking system can start quickly after receiving sensor signals.",
+        "zh": "AGV的制动系统在接收到传感器信号后可以快速启动。"
+    },
+    {
+        "en": "The AGV's braking system can safely stop the AGV while maintaining stability and preventing cargo damage.",
+        "zh": "AGV的制动系统可以安全地停止AGV，同时保持稳定性并防止货物损坏。"
+    },
+    {
+        "en": "In a simulated environment, the braking system was able to stop the AGV safely and maintain stability of the cargo without any damage.",
+        "zh": "在模拟环境中，制动系统能够安全地停止AGV，并在没有任何损坏的情况下保持货物的稳定性。"
+    },
+    {
+        "en": "The automatic guided trolley can stop safely when encountering obstacles.",
+        "zh": "自动导向小车在遇到障碍物时可以安全停车。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The system functions involved in the automatic stop of the trolley include obstacle detection, braking system activation, and control system execution.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“小车自动停止涉及的系统功能包括障碍物检测、制动系统激活和控制系统执行。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The obstacle detection system can accurately detect obstacles in the path of the trolley.",
+        "zh": "障碍物检测系统可以准确地检测小车路径中的障碍物。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The obstacle detection system consists of sensors, data processing algorithms, and obstacle recognition algorithms.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“障碍物检测系统由传感器、数据处理算法和障碍物识别算法组成。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The braking system can activate quickly and effectively upon receiving the obstacle detection signal.",
+        "zh": "制动系统可以在接收到障碍物检测信号时快速有效地激活。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The braking system activation involves two key aspects: speed and effectiveness.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“制动系统的激活涉及两个关键方面：速度和有效性。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The control system can execute appropriate safety strategies, such as deceleration or stopping, after detecting obstacles.",
+        "zh": "控制系统可以在检测到障碍物后执行适当的安全策略，例如减速或停止。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The control system needs to have the capability to analyze the sensor data, determine the appropriate safety strategy, and execute it effectively.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“控制系统需要有能力分析传感器数据，确定适当的安全策略，并有效执行。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The sensors of the obstacle detection system can accurately detect obstacles.",
+        "zh": "障碍物检测系统的传感器可以精确地检测障碍物。"
+    },
+    {
+        "en": "The data processing algorithms can filter out false detections and accurately identify obstacles.",
+        "zh": "数据处理算法可以滤除错误检测，准确识别障碍物。"
+    },
+    {
+        "en": "The obstacle recognition algorithms can correctly classify obstacles.",
+        "zh": "障碍物识别算法可以正确地对障碍物进行分类。"
+    },
+    {
+        "en": "In a laboratory environment, the sensors of the obstacle detection system successfully detected obstacles in 95% of the tests.",
+        "zh": "在实验室环境中，障碍物检测系统的传感器在95%的测试中成功检测到障碍物。"
+    },
+    {
+        "en": "The data processing algorithms reduced false detections by 80% in a simulated environment.",
+        "zh": "数据处理算法在模拟环境中减少了80%的错误检测。"
+    },
+    {
+        "en": "The obstacle recognition algorithms achieved an accuracy of 90% in classifying obstacles in a simulated environment.",
+        "zh": "障碍物识别算法在模拟环境中对障碍物进行分类的准确率达到90%。"
+    },
+    {
+        "en": "The braking system can activate quickly upon receiving the obstacle detection signal.",
+        "zh": "制动系统可以在接收到障碍物检测信号时快速启动。"
+    },
+    {
+        "en": "The braking system can effectively stop the AGV after activation.",
+        "zh": "制动系统在激活后可以有效地停止AGV。"
+    },
+    {
+        "en": "In a simulated environment, the braking system was able to stop the AGV within the specified braking distance after activation.",
+        "zh": "在模拟环境中，制动系统能够在激活后将AGV停止在指定的制动距离内。"
+    },
+    {
+        "en": "The control system can analyze sensor data accurately.",
+        "zh": "控制系统可以准确地分析传感器数据。"
+    },
+    {
+        "en": "The control system can determine the appropriate safety strategy based on the sensor data.",
+        "zh": "控制系统可以基于传感器数据来确定适当的安全策略。"
+    },
+    {
+        "en": "The control system can execute the safety strategy effectively.",
+        "zh": "控制系统能够有效地执行安全策略。"
+    },
+    {
+        "en": "In a laboratory environment, the control system accurately analyzed sensor data in 100% of the tests.",
+        "zh": "在实验室环境中，控制系统在100%的测试中准确地分析了传感器数据。"
+    },
+    {
+        "en": "In a simulated environment, the control system successfully determined the appropriate safety strategy based on the sensor data in 95% of the cases.",
+        "zh": "在模拟环境中，控制系统在95%的情况下成功地基于传感器数据确定了适当的安全策略。"
+    },
+    {
+        "en": "In a practical environment, the control system executed the safety strategy effectively in 98% of the cases.",
+        "zh": "在实际环境中，控制系统在98%的情况下有效地执行了安全策略。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The safe stopping of the trolley can be determined by examining its sensor system and control algorithm.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“小车的安全停车可以通过检查其传感器系统和控制算法来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The sensor system can detect obstacles accurately.",
+        "zh": "传感器系统可以准确地检测障碍物。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The accuracy of the sensor system can be determined by examining its hardware and software components.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“传感器系统的准确性可以通过检查其硬件和软件组件来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The control algorithm can initiate safe stopping maneuvers.",
+        "zh": "控制算法可以启动安全停车操作。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The control algorithm's ability to initiate safe stopping maneuvers can be determined by examining its inputs, logic, and outputs.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“控制算法启动安全停车操作的能力可以通过检查其输入、逻辑和输出来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The sensor hardware is calibrated and functioning properly.",
+        "zh": "传感器硬件已校准并正常工作。"
+    },
+    {
+        "en": "The sensor software algorithms are accurate and reliable.",
+        "zh": "传感器软件算法准确可靠。"
+    },
+    {
+        "en": "Calibration test results, sensor maintenance records.",
+        "zh": "校准测试结果、传感器维护记录。"
+    },
+    {
+        "en": "Algorithm validation reports, sensor performance evaluations.",
+        "zh": "算法验证报告，传感器性能评估。"
+    },
+    {
+        "en": "The algorithm receives accurate sensor inputs.",
+        "zh": "该算法接收准确的传感器输入。"
+    },
+    {
+        "en": "The algorithm incorporates logic to detect emergency situations.",
+        "zh": "该算法结合了检测紧急情况的逻辑。"
+    },
+    {
+        "en": "The algorithm outputs commands for safe stopping maneuvers.",
+        "zh": "该算法输出安全停车操作的命令。"
+    },
+    {
+        "en": "Sensor calibration reports, sensor accuracy tests.",
+        "zh": "传感器校准报告、传感器精度测试。"
+    },
+    {
+        "en": "Algorithm logic analysis, emergency situation detection tests.",
+        "zh": "算法逻辑分析，紧急情况检测测试。"
+    },
+    {
+        "en": "Verification and validation of output commands.",
+        "zh": "输出命令的验证和确认。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The calibration and functioning of the sensor hardware can be assessed by examining its individual components.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“传感器硬件的校准和功能可以通过检查其单个组件来评估。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The accuracy and reliability of the sensor software algorithms can be determined by examining the algorithm design, input validation, and error handling mechanisms.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“传感器软件算法的准确性和可靠性可以通过检查算法设计、输入验证和错误处理机制来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The sensor components are calibrated accurately.",
+        "zh": "传感器部件经过精确校准。"
+    },
+    {
+        "en": "The sensor components are functioning according to specifications.",
+        "zh": "传感器部件的功能符合技术规格。"
+    },
+    {
+        "en": "Calibration reports, manufacturer documentation.",
+        "zh": "校准报告、制造商文件。"
+    },
+    {
+        "en": "Functional testing results, performance benchmarks.",
+        "zh": "功能测试结果、性能基准。"
+    },
+    {
+        "en": "The algorithm design is robust and error-free.",
+        "zh": "该算法设计具有鲁棒性和无误差性。"
+    },
+    {
+        "en": "The input validation mechanism effectively filters out invalid sensor data.",
+        "zh": "输入验证机制有效地过滤掉无效的传感器数据。"
+    },
+    {
+        "en": "The error handling mechanisms handle unexpected situations appropriately.",
+        "zh": "错误处理机制可以适当地处理意外情况。"
+    },
+    {
+        "en": "Algorithm design documentation, code reviews.",
+        "zh": "算法设计文档，代码评审。"
+    },
+    {
+        "en": "Input validation test cases, input validation results.",
+        "zh": "输入验证测试用例，输入验证结果。"
+    },
+    {
+        "en": "Error handling test scenarios, error handling results.",
+        "zh": "错误处理测试场景，错误处理结果。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The accuracy of the sensor inputs can be determined by examining the sensor calibration and data processing.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“传感器输入的准确性可以通过检查传感器校准和数据处理来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The algorithm's ability to detect emergency situations can be assessed by examining its logic and decision-making process.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“该算法检测紧急情况的能力可以通过检查其逻辑和决策过程来评估。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The safety of the stopping maneuvers can be determined by examining the algorithm's inputs, calculations, and outputs.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“停止机动的安全性可以通过检查算法的输入、计算和输出来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The sensors are properly calibrated.",
+        "zh": "传感器已正确校准。"
+    },
+    {
+        "en": "The data processing algorithms accurately interpret sensor data.",
+        "zh": "数据处理算法准确地解释传感器数据。"
+    },
+    {
+        "en": "Calibration reports, sensor validation tests.",
+        "zh": "校准报告、传感器验证测试。"
+    },
+    {
+        "en": "Data validation tests, comparison with ground truth data.",
+        "zh": "数据验证测试，与地面实况数据的比较。"
+    },
+    {
+        "en": "The algorithm has rules and conditions to identify emergency situations.",
+        "zh": "该算法具有识别紧急情况的规则和条件。"
+    },
+    {
+        "en": "The algorithm can differentiate between emergency and non-emergency situations.",
+        "zh": "该算法可以区分紧急情况和非紧急情况。"
+    },
+    {
+        "en": "Code analysis, documentation of emergency detection rules.",
+        "zh": "代码分析，应急检测规则文件。"
+    },
+    {
+        "en": "Simulation tests, real-world scenario evaluations.",
+        "zh": "模拟测试，真实世界的场景评估。"
+    },
+    {
+        "en": "The algorithm receives accurate and reliable sensor data.",
+        "zh": "该算法接收准确可靠的传感器数据。"
+    },
+    {
+        "en": "The algorithm calculates the appropriate stopping distance and time.",
+        "zh": "该算法计算出合适的停车距离和时间。"
+    },
+    {
+        "en": "The algorithm outputs the correct commands for safe stopping.",
+        "zh": "算法输出正确的安全停止命令。"
+    },
+    {
+        "en": "Sensor calibration reports, data validation techniques.",
+        "zh": "传感器校准报告、数据验证技术。"
+    },
+    {
+        "en": "Mathematical models, simulation results.",
+        "zh": "数学模型，模拟结果。"
+    },
+    {
+        "en": "Test scenarios, validation against known safe stopping maneuvers.",
+        "zh": "测试场景，针对已知安全停车操作进行验证。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The accuracy of sensor calibration can be determined by examining the calibration procedure and the calibration results.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“传感器校准的准确性可以通过检查校准程序和校准结果来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The functionality of sensor components can be determined by examining their calibration, accuracy, and response time.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“传感器组件的功能可以通过检查其校准、准确性和响应时间来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The calibration procedure is reliable.",
+        "zh": "校准程序是可靠的。"
+    },
+    {
+        "en": "The sensor outputs are within acceptable ranges after calibration.",
+        "zh": "校准后，传感器输出在可接受的范围内。"
+    },
+    {
+        "en": "Manufacturer calibration guidelines, calibration reports.",
+        "zh": "制造商校准指南、校准报告。"
+    },
+    {
+        "en": "Sensor output measurements, comparison with reference standards.",
+        "zh": "传感器输出测量值，与参考标准进行比较。"
+    },
+    {
+        "en": "The sensors provide accurate measurements.",
+        "zh": "传感器提供精确的测量。"
+    },
+    {
+        "en": "The sensors have an acceptable response time.",
+        "zh": "传感器具有可接受的响应时间。"
+    },
+    {
+        "en": "Calibration reports, calibration verification tests.",
+        "zh": "校准报告、校准验证测试。"
+    },
+    {
+        "en": "Comparison with reference measurements, accuracy assessments.",
+        "zh": "与参考测量值的比较，准确性评估。"
+    },
+    {
+        "en": "Performance tests, benchmarking against response time requirements.",
+        "zh": "性能测试，根据响应时间要求进行基准测试。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The robustness and error-freeness of the algorithm design can be determined by examining its input validation, error handling, and testing procedures.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“算法设计的稳健性和无错误性可以通过检查其输入验证、错误处理和测试程序来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The input validation mechanism can be evaluated based on its ability to filter out different types of invalid sensor data.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“输入验证机制可以根据其过滤掉不同类型无效传感器数据的能力进行评估。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The error handling mechanisms can be evaluated by examining their response to different types of unexpected situations.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“错误处理机制可以通过检查它们对不同类型的意外情况的反应来评估。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The algorithm design includes comprehensive input validation.",
+        "zh": "算法设计包括全面的输入验证。"
+    },
+    {
+        "en": "The algorithm design includes robust error handling mechanisms.",
+        "zh": "算法设计包括鲁棒的错误处理机制。"
+    },
+    {
+        "en": "The algorithm design has been thoroughly tested for errors.",
+        "zh": "算法设计已经进行了彻底的错误测试。"
+    },
+    {
+        "en": "Code review reports, documentation on input validation techniques used.",
+        "zh": "代码审查报告，所用输入验证技术的文档。"
+    },
+    {
+        "en": "Code review reports, documentation on error handling mechanisms implemented.",
+        "zh": "代码审查报告，实施的错误处理机制文档。"
+    },
+    {
+        "en": "Test reports, test coverage metrics.",
+        "zh": "测试报告、测试覆盖率指标。"
+    },
+    {
+        "en": "The mechanism filters out data with values outside the valid range.",
+        "zh": "该机制筛选出值在有效范围之外的数据。"
+    },
+    {
+        "en": "The mechanism filters out data with inconsistent timestamp information.",
+        "zh": "该机制过滤掉时间戳信息不一致的数据。"
+    },
+    {
+        "en": "Test scenarios with data outside the valid range, results showing filtered out data.",
+        "zh": "数据在有效范围之外的测试场景，结果显示筛选出的数据。"
+    },
+    {
+        "en": "Test scenarios with data having inconsistent timestamps, results showing filtered out data.",
+        "zh": "测试具有不一致时间戳的数据的场景，结果显示筛选出的数据。"
+    },
+    {
+        "en": "The error handling mechanisms respond appropriately to input validation errors.",
+        "zh": "错误处理机制对输入验证错误做出适当响应。"
+    },
+    {
+        "en": "The error handling mechanisms respond appropriately to database connection errors.",
+        "zh": "错误处理机制对数据库连接错误做出适当的响应。"
+    },
+    {
+        "en": "The error handling mechanisms respond appropriately to server timeout errors.",
+        "zh": "错误处理机制对服务器超时错误做出适当响应。"
+    },
+    {
+        "en": "Test cases with invalid input, code reviews.",
+        "zh": "输入无效的测试用例，代码评审。"
+    },
+    {
+        "en": "Simulated database connection errors, error logs.",
+        "zh": "模拟数据库连接错误，错误日志。"
+    },
+    {
+        "en": "Simulated server timeouts, performance testing results.",
+        "zh": "模拟服务器超时，性能测试结果。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"Proper calibration means that the sensors are adjusted to accurately measure the desired parameters.\",\n    \"Block\": \"Concretion\"\n}",
+        "zh": "{\n“策略”：“正确的校准意味着调整传感器以准确测量所需的参数。”，\n“砌块”：“混凝土”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The accuracy of the data processing algorithms can be determined by examining their individual components and performance.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“数据处理算法的准确性可以通过检查其单个组件和性能来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The calibration process is performed correctly.",
+        "zh": "校准过程执行正确。"
+    },
+    {
+        "en": "Calibration test results, comparison with reference measurements.",
+        "zh": "校准测试结果，与参考测量值的比较。"
+    },
+    {
+        "en": "Calibration procedure documentation, training records for calibration technicians.",
+        "zh": "校准程序文件，校准技术人员的培训记录。"
+    },
+    {
+        "en": "The preprocessing stage correctly filters and normalizes sensor data.",
+        "zh": "预处理阶段正确地过滤和规范传感器数据。"
+    },
+    {
+        "en": "The feature extraction stage accurately identifies relevant features from the preprocessed data.",
+        "zh": "特征提取阶段从预处理的数据中准确地识别相关特征。"
+    },
+    {
+        "en": "The classification stage correctly classifies the extracted features.",
+        "zh": "分类阶段正确地对提取的特征进行分类。"
+    },
+    {
+        "en": "Preprocessing algorithm validation, data consistency checks.",
+        "zh": "预处理算法验证，数据一致性检查。"
+    },
+    {
+        "en": "Feature extraction algorithm validation, comparison with ground truth data.",
+        "zh": "特征提取算法验证，与地面实况数据进行比较。"
+    },
+    {
+        "en": "Classification algorithm validation, comparison with labeled data.",
+        "zh": "分类算法验证，与标记数据进行比较。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The algorithm's ability to identify emergency situations can be determined by examining its rules and conditions.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“算法识别紧急情况的能力可以通过检查其规则和条件来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The algorithm's ability to differentiate between emergency and non-emergency situations can be evaluated based on its accuracy, precision, and recall.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“该算法区分紧急情况和非紧急情况的能力可以根据其准确性、准确性和召回率进行评估。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The algorithm has rules to detect abnormal behavior.",
+        "zh": "该算法具有检测异常行为的规则。"
+    },
+    {
+        "en": "The algorithm has conditions to distinguish emergency situations from regular situations.",
+        "zh": "该算法具有区分紧急情况和常规情况的条件。"
+    },
+    {
+        "en": "Algorithm documentation, code review reports.",
+        "zh": "算法文档、代码审查报告。"
+    },
+    {
+        "en": "Test scenarios, simulation results.",
+        "zh": "测试场景、模拟结果。"
+    },
+    {
+        "en": "The algorithm has high accuracy in identifying emergency situations.",
+        "zh": "该算法在识别紧急情况时具有较高的准确性。"
+    },
+    {
+        "en": "The algorithm has high precision in identifying emergency situations.",
+        "zh": "该算法在识别紧急情况时具有较高的精度。"
+    },
+    {
+        "en": "The algorithm has high recall in identifying emergency situations.",
+        "zh": "该算法在识别紧急情况时具有较高的召回率。"
+    },
+    {
+        "en": "Testing the algorithm on a dataset with known emergency and non-emergency situations and measuring accuracy.",
+        "zh": "在已知紧急和非紧急情况的数据集上测试算法，并测量准确性。"
+    },
+    {
+        "en": "Testing the algorithm on a dataset with known emergency situations and measuring precision.",
+        "zh": "在已知紧急情况和测量精度的数据集上测试算法。"
+    },
+    {
+        "en": "Testing the algorithm on a dataset with known emergency situations and measuring recall.",
+        "zh": "在已知紧急情况的数据集上测试算法，并测量召回率。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The accuracy and reliability of the sensor data can be determined by examining the sensor calibration and data validation processes.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“传感器数据的准确性和可靠性可以通过检查传感器校准和数据验证过程来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The algorithm's calculation of stopping distance and time can be evaluated by examining its inputs, calculations, and outputs.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“可以通过检查其输入、计算和输出来评估算法对停车距离和时间的计算。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The correctness of the algorithm can be determined by examining its input, output, and logic.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“算法的正确性可以通过检查其输入、输出和逻辑来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The sensor calibration process is effective.",
+        "zh": "传感器校准过程是有效的。"
+    },
+    {
+        "en": "The data validation process is robust.",
+        "zh": "数据验证过程是稳健的。"
+    },
+    {
+        "en": "Calibration reports, sensor calibration test results.",
+        "zh": "校准报告、传感器校准测试结果。"
+    },
+    {
+        "en": "Validation reports, data validation test results.",
+        "zh": "验证报告、数据验证测试结果。"
+    },
+    {
+        "en": "The algorithm takes into account the speed of the vehicle.",
+        "zh": "该算法考虑了车辆的速度。"
+    },
+    {
+        "en": "The algorithm considers the road conditions.",
+        "zh": "该算法考虑了道路状况。"
+    },
+    {
+        "en": "The algorithm incorporates the braking capabilities of the vehicle.",
+        "zh": "该算法结合了车辆的制动能力。"
+    },
+    {
+        "en": "Algorithm documentation, code reviews.",
+        "zh": "算法文档，代码评审。"
+    },
+    {
+        "en": "Data from speed sensors, road condition monitoring systems.",
+        "zh": "来自速度传感器、路况监测系统的数据。"
+    },
+    {
+        "en": "Vehicle braking system specifications, braking performance tests.",
+        "zh": "车辆制动系统规范、制动性能测试。"
+    },
+    {
+        "en": "The input to the algorithm is accurate.",
+        "zh": "算法的输入是准确的。"
+    },
+    {
+        "en": "The output of the algorithm results in safe stopping.",
+        "zh": "算法的输出导致安全停止。"
+    },
+    {
+        "en": "The logic of the algorithm is free from errors.",
+        "zh": "该算法的逻辑没有错误。"
+    },
+    {
+        "en": "Sensor data validation, input verification techniques.",
+        "zh": "传感器数据验证、输入验证技术。"
+    },
+    {
+        "en": "Simulation results, real-world testing.",
+        "zh": "模拟结果，真实世界的测试。"
+    },
+    {
+        "en": "Code reviews, formal verification techniques.",
+        "zh": "代码审查，正式验证技术。"
+    },
+    {
+        "en": "System remains functional for intended radiation environment(NASA R&M mod) in order to complete science mission objective: Record the number of upsets in 28nm bulk SRAM in LEO for a period of 1 year.",
+        "zh": "为了完成科学任务目标，系统在预期的辐射环境中保持功能（NASA R&M mod）：记录LEO中28nm大块SRAM在一年内的故障次数。"
+    },
+    {
+        "en": "{\n\"S\": \"Understand radiation-induced failure mechanisms, eliminate and/or control radiation-induced failure causes and degradation. and limit radiation-induced failure propagation to reduce likelihood of failure to an acceptable level (NASA R&M mod).\",\n\"C1\": \"Radiation environment for CubeSat mission.\",\n\"C2\": \"Functional model of CubeSat experiment.\",\n\"C3\": \"System model of CubeSat experiment.\",\n\"C4\": \"Mission contraints.\"\n}",
+        "zh": "{\n“S”：“了解辐射引起的失效机制，消除和/或控制辐射引起的故障原因和退化。并限制辐射引起的失败传播，以将故障的可能性降低到可接受的水平（NASA R&M模式）。”，\n“C1”：“立方体卫星任务的辐射环境。”，\n“C2”：“立方体卫星实验的功能模型。”，\n“C3”：“立方体卫星实验的系统模型。”，\n“C4”：“任务限制。”\n}"
+    },
+    {
+        "en": "System and its elements are designed to withstand nominal and extreme loads and stresses (radiation) for the life of the mission (NASA R&M).",
+        "zh": "系统及其元件设计用于在任务寿命内承受标称和极端载荷和应力（辐射）（NASA R&M）。"
+    },
+    {
+        "en": "{\n\"A1\": \"Radiation tests are applicable to parts with the same part number and manufacturer (not lot testing).\"\n}",
+        "zh": "{\n“A1”：“辐射测试适用于具有相同零件号和制造商的零件（非批量测试）。”\n}"
+    },
+    {
+        "en": "System is tolerant to radiation-induced faults and failures (NASA R&M mod).",
+        "zh": "系统可耐受辐射引起的故障和失效（NASA R&M mod）。"
+    },
+    {
+        "en": "{\"S\": \"Assure that system includes necessary barriers and mitigations to Keep anomalous events from compromising the ability to meet mission objectives (NASA R&M).\"}",
+        "zh": "｛“S”：“确保系统包括必要的障碍和缓解措施，以防止异常事件影响实现任务目标的能力（NASA R&M）。”｝"
+    },
+    {
+        "en": "System is able to recover from anomalies affecting functions that are important to top-level expectations (NASA R&M).",
+        "zh": "系统能够从影响功能的异常中恢复，这些功能对顶级期望很重要（NASA R&M）。"
+    },
+    {
+        "en": "{\"S\": \"Provide fault management (detection, active isolation, recovery) capabilities (NASA R&M).\"}",
+        "zh": "｛“S”：“提供故障管理（检测、主动隔离、恢复）能力（NASA R&M）。”｝"
+    },
+    {
+        "en": "COTS parts pass mission proton SEL requirement: No latch-up seen up to 5e9 protons/cm2 for 200 MeV protons.",
+        "zh": "COTS部件通过了任务质子SEL要求：对于200 MeV质子，最高5e9质子/cm2没有闩锁。"
+    },
+    {
+        "en": "Physical and functional pathways for SEL fault propagation or combination are limited (NASA R&M).",
+        "zh": "SEL故障传播或组合的物理和功能途径有限（NASA R&M）。"
+    },
+    {
+        "en": "{\"S\": \"Isolate and contain faults (NASA R&M).\"}",
+        "zh": "｛“S”：“隔离并包含故障（NASA R&M）。”｝"
+    },
+    {
+        "en": "System recovers from SELs.",
+        "zh": "系统从SEL恢复。"
+    },
+    {
+        "en": "System detects SEFI in microcontroller.",
+        "zh": "系统检测微控制器中的SEFI。"
+    },
+    {
+        "en": "{\n\"S\": \"Implement detection and reset of a SEFI in the microcontroller using Watchdog Timer (WDT)\",\n\"A1\": \"A SEFI in the microcontroller results in no-progress in the program.\"\n}",
+        "zh": "{\n“S”：“使用看门狗定时器（WDT）在微控制器中实现SEFI的检测和重置”，\n“A1”：“微控制器中的SEFI导致程序没有进展。”\n}"
+    },
+    {
+        "en": "FRAM (FM24V10-GTR) passes SEL mission requirement.",
+        "zh": "FRAM（FM24V10-GTR）通过SEL任务要求。"
+    },
+    {
+        "en": "System recovers from SEFI in the microcontroller.",
+        "zh": "系统从微控制器中的SEFI恢复。"
+    },
+    {
+        "en": "{\"S\": \"Use FRAM to store microcontroller configuration and experiment telemetry.\"}",
+        "zh": "｛“S”：“使用FRAM存储微控制器配置和遥测实验。”｝"
+    },
+    {
+        "en": "Perform proton SEL characterization tests on system parts.",
+        "zh": "对系统部件进行质子SEL特性测试。"
+    },
+    {
+        "en": "{\"J1\": \"Heavy-ion SEL tests were not performed because the heavy-ion environment does not significantly contribute to the radiation environment and there are system-level latch-up mitigation schemes.\"}",
+        "zh": "｛“J1”：“没有进行重离子SEL测试，因为重离子环境对辐射环境没有显著影响，并且有系统级的闭锁缓解方案。”｝"
+    },
+    {
+        "en": "Effects of SEL are mitigated on system parts.",
+        "zh": "SEL对系统部件的影响得以减轻。"
+    },
+    {
+        "en": "Results from IUCF: No latch-up seen on FRAM(FM24CI6B) up to 6.2e9 protons/cm2 for 200 MeV protons.",
+        "zh": "IUCF的结果：对于200 MeV质子，在高达6.2e9质子/cm2的FRAM（FM24CI6B）上没有发现闩锁。"
+    },
+    {
+        "en": "Collision Avoidance Algorithm (CAA) provides correct instructions for avoiding collisions between two UAVs.",
+        "zh": "防撞算法（CAA）为避免两架无人机之间的碰撞提供了正确的指令。"
+    },
+    {
+        "en": "{\"S\":\"Strategize over the capabilities of the CAA to give accurate directives to individual UAVs.\"}",
+        "zh": "｛“S”：“对CAA的能力进行战略规划，为单个无人机提供准确的指令。”｝"
+    },
+    {
+        "en": "GPS is accurate within 5 cms.",
+        "zh": "GPS的精度在5厘米以内。"
+    },
+    {
+        "en": "{\"S\":\"Strategize over the GPS accuracy claims.\",\n\"C1\":\" RTK Ground station is provided in flying area.\"\n}",
+        "zh": "｛“S”：“对GPS精度声明进行战略规划。”，\n“C1”：“飞行区设置RTK地面站。”\n}"
+    },
+    {
+        "en": "CAA provides avoidance directives that prevent violation of minimum time-to-impact.",
+        "zh": "CAA提供了避免违反最短影响时间的指令。"
+    },
+    {
+        "en": "RTK HERE+ provides accuracy within 5 cms.",
+        "zh": "RTK HERE+提供5厘米以内的精度。"
+    },
+    {
+        "en": "RTK functions correctly on America hexcopters with S-900 folding wings airframe.",
+        "zh": "RTK在具有S-900折叠翼机身的美国六角直升机上正常工作。"
+    },
+    {
+        "en": "RTK Here+ Manufacturer's guarantees.",
+        "zh": "RTK此处+制造商保证。"
+    },
+    {
+        "en": "Field Test Cases passed.",
+        "zh": "通过了现场测试用例。"
+    },
+    {
+        "zh": "英军可以胜利",
+        "en": "The British army can win"
+    },
+    {
+        "zh": "英军控制阿拉曼战役中的关键地区以阻止德军胜利",
+        "en": "The British controlled key areas in the Battle of Alaman to prevent German victory"
+    },
+    {
+        "zh": "英军持续四个回合，确保德军未胜利",
+        "en": "The British army continued for four rounds to ensure that the German army did not win"
+    },
+    {
+        "zh": "英军成功执行突袭，并有剩余移动力到达地图的西部边缘",
+        "en": "The British army successfully carried out a surprise attack and had residual mobility to reach the western edge of the map"
+    },
+    {
+        "zh": "英军控制关键地区",
+        "en": "The British military controls key areas"
+    },
+    {
+        "zh": "英军持续四个回合阻止德军胜利",
+        "en": "The British continued for four rounds to prevent the German army from winning"
+    },
+    {
+        "zh": "英军执行成功的突袭",
+        "en": "The British army carried out a successful surprise attack"
+    },
+    {
+        "zh": "{\"Context\": \"任意回合结束时，有轴心国单位位于阿拉姆哈勒法岭（地图上有标注）的两个英军阵地之一上或位于沿海道路上阿拉曼以东（含）的道路上，德军胜利。四个回合结束后若德军仍未胜利，英军胜利。任一回合，若有英军位于地图西部边缘上并且有剩余移动力，英军胜利。\"}",
+        "en": "{\"Context\": \"At the end of any turn, if an Axis unit is located on one of the two British positions in the Alam Khalifa Ridge (marked on the map) or on a road east of Alam on a coastal road, the German army wins. If the German army still does not win after the end of four turns, the British army wins. In any turn, if a British army is located on the western edge of the map and has residual mobility, the British army wins.\"}"
+    },
+    {
+        "zh": "{\"S\": \"英军需要防守的关键地区有：阿拉姆哈勒法岭的阵地、沿海道路\",\n\"Context\": \"德军在地图西边，阿拉姆哈勒法岭（英军阵地）在地图中央，沿海道路上阿拉曼以东（含）的道路在地图北边，东西走向。\"}",
+        "en": "{\"S\": \"The key areas for the British to defend were the positions on the Aramhalfa Ridge and the coastal roads.\",\n\"Context\": \"The German army is on the west side of the map, the Alam Halfa Ridge (the British position) is in the center of the map, and the coastal road east of (including) Alamein is on the north side of the map, running east-west.\"}"
+    },
+    {
+        "zh": "英军维持在阿拉姆哈勒法岭的阵地控制",
+        "en": "The British maintain position control in the Alam Khalifa Range"
+    },
+    {
+        "zh": "英军阻止德军接近或控制沿海道路上阿拉曼以东（含）的道路",
+        "en": "The British prevented the German army from approaching or controlling the roads east of Alaman (including) on coastal roads"
+    },
+    {
+        "zh": "高地策略增强阵地防御",
+        "en": "High ground strategy enhances position defense"
+    },
+    {
+        "zh": "部署前哨部队",
+        "en": "Deploy outposts"
+    },
+    {
+        "zh": "设置障碍",
+        "en": "Put up obstacles"
+    },
+    {
+        "zh": "定期巡逻",
+        "en": "Regular patrols"
+    },
+    {
+        "zh": "{\"J1\":\"德军没有后勤补给通道，4个回合（2天）后，德军坦克燃油耗尽，不战而败\"}",
+        "en": "{\"J1\": \"The German army had no logistics supply channels. After 4 rounds (2 days), the German tanks ran out of fuel and were defeated without fighting\"}"
+    },
+    {
+        "zh": "{\"J1\":\"英军突袭到了德军的后方\"}",
+        "en": "{\"J1\": \"The British attacked the rear of the German army\"}"
+    },
+    {
+        "zh": "{\"J1\":\"该道路被德军占领，会打通德军的后勤补给通道\"}",
+        "en": "{\"J1\": \"This road is occupied by the German army and will open up the German logistics supply channel\"}"
+    },
+    {
+        "zh": "{\"S\":\"确保每个回合英军都布置有一个严密的防线，阻止德军的任何进攻尝试\",\n\"J1\":\"德军没有后勤补给通道，4个回合（2天）后，德军坦克燃油耗尽，不战而败\"}",
+        "en": "{\"S\": \"Ensure that the British army has a tight defense line in every round to prevent any attempt by the German army to attack\",\n\"J1\": \"The German army had no logistics supply channels. After 4 rounds (2 days), the German tanks ran out of fuel and were defeated without fighting\"}"
+    },
+    {
+        "zh": "英军在每个回合开始时都有一个完整、无缺口的防线",
+        "en": "The British army has a complete and seamless defense line at the beginning of each round"
+    },
+    {
+        "zh": "英军的防线能够在受到攻击后迅速重组和恢复",
+        "en": "The British defense line can quickly reorganize and recover after being attacked"
+    },
+    {
+        "zh": "制定阵地部署计划，确保没有明显的弱点或缺口",
+        "en": "Develop a field deployment plan to ensure that there are no obvious weaknesses or gaps"
+    },
+    {
+        "zh": "通过侦查和情报收集，预测并防范德军可能的进攻路径",
+        "en": "Predict and prevent potential German attack paths through investigation and intelligence collection"
+    },
+    {
+        "zh": "保持后方有一定数量的预备队，以备前线需要迅速增援",
+        "en": "Maintain a certain number of reserve teams in the rear in case the front line needs rapid reinforcement"
+    },
+    {
+        "zh": "制定紧急撤退和重组计划，以应对突然的战场变化",
+        "en": "Develop emergency evacuation and restructuring plans to respond to sudden battlefield changes"
+    },
+    {
+        "zh": "{\"S\":\"英军需要找到德军的疏忽薄弱点，利用速度和出其不意的战术，迅速执行突袭并前进到地图的西部边缘\",\n\"J1\":\"英军突袭到了德军的后方\"}",
+        "en": "{\"S\": \"The British need to identify the German army's negligence and weaknesses, utilize speed and unexpected tactics, quickly carry out a surprise attack and advance to the western edge of the map\",\n\"J1\": \"The British attacked the rear of the German army\"}"
+    },
+    {
+        "zh": "英军进行深入的侦查，发现德军的薄弱点",
+        "en": "The British conducted in-depth investigations and discovered the weak points of the German army"
+    },
+    {
+        "zh": "英军制定详细的突袭计划",
+        "en": "The British army formulated a detailed surprise plan"
+    },
+    {
+        "zh": "英军确保在突袭过程中保留足够的移动力，使部队能够达到地图的西部边缘",
+        "en": "The British army ensures that sufficient mobility is retained during the raid, allowing the troops to reach the western edge of the map"
+    },
+    {
+        "zh": "双方兵力部署图",
+        "en": "Deployment Map of Forces on Both Sides"
+    },
+    {
+        "zh": "具体的路线和行动计划",
+        "en": "Specific route and action plan"
+    },
+    {
+        "zh": "轻型部队进行突袭",
+        "en": "Light troops conduct a surprise attack"
+    },
+    {
+        "zh": "{\"J1\":\"确保快速移动\"}",
+        "en": "{\"J1\": \"Ensure fast movement\"}"
+    },
+    {
+        "zh": "行动计划可行性的分析报告",
+        "en": "Analysis report on the feasibility of the action plan"
+    },
+    {
+        "en": "The automatic guided vehicle can stop safely when encountering obstacles",
+        "zh": "自动导引车在遇到障碍物时可以安全停车"
+    },
+    {
+        "en": "{\"Strategy\": \"Eliminate potential hazards from both internal and external aspects of the vehicle\",\n\"Context\": \"There is only one obstacle within the current range of the vehicle's motion.\",\n\"Assumption\": \"Assume that the vehicle is loaded with goods.\"}",
+        "zh": "{“战略”：“消除车辆内部和外部的潜在危险”，\n“上下文”：“车辆当前运动范围内只有一个障碍物。”，\n“假设”：“假设车辆装载了货物。”}"
+    },
+    {
+        "en": "{\"Strategy\": \"The braking distance of the vehicle is less than the distance to the obstacle when braking starts\"}",
+        "zh": "{“策略”：“车辆的制动距离小于制动开始时到障碍物的距离”}"
+    },
+    {
+        "en": "The vehicle can start braking at the appropriate time",
+        "zh": "车辆可以在适当的时间开始制动"
+    },
+    {
+        "en": "The performance of the vehicle brake module meets the requirements",
+        "zh": "车辆制动模块性能符合要求"
+    },
+    {
+        "en": "The maximum running speed of the vehicle is 1 m/s",
+        "zh": "车辆的最大运行速度为1 m/s"
+    },
+    {
+        "en": "The minimum acceleration of the vehicle is 0.18 m/s ^ 2",
+        "zh": "车辆的最小加速度为0.18 m/s ^2"
+    },
+    {
+        "en": "The maximum acceleration of the vehicle is 0.5m/s ^ 2",
+        "zh": "车辆的最大加速度为0.5m/s^2"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The safety of the automatic guided vehicle can be determined by examining its obstacle detection system and braking system.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“自动导引车的安全性可以通过检查其障碍物检测系统和制动系统来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The obstacle detection system is reliable.",
+        "zh": "障碍物检测系统可靠。"
+    },
+    {
+        "en": "The braking system is effective.",
+        "zh": "制动系统是有效的。"
+    },
+    {
+        "en": "Sensor test reports, third-party evaluations.",
+        "zh": "传感器测试报告，第三方评估。"
+    },
+    {
+        "en": "Brake performance tests, manufacturer specifications.",
+        "zh": "制动器性能测试，制造商规范。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The reliability of the obstacle detection system can be determined by examining its hardware and software components.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“障碍物检测系统的可靠性可以通过检查其硬件和软件组件来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"The effectiveness of the braking system can be determined by examining its components and performance.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“制动系统的有效性可以通过检查其部件和性能来确定。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The sensor system is accurate.",
+        "zh": "传感器系统准确。"
+    },
+    {
+        "en": "The object recognition algorithm is effective.",
+        "zh": "目标识别算法是有效的。"
+    },
+    {
+        "en": "The system can detect obstacles in real-time.",
+        "zh": "该系统可以实时检测障碍物。"
+    },
+    {
+        "en": "Manufacturer test reports, third-party evaluations.",
+        "zh": "制造商测试报告、第三方评估。"
+    },
+    {
+        "en": "Code audits, simulation results.",
+        "zh": "代码审核，模拟结果。"
+    },
+    {
+        "en": "Real-time testing scenarios, independent assessments.",
+        "zh": "实时测试场景，独立评估。"
+    },
+    {
+        "en": "The brake pads have sufficient friction.",
+        "zh": "制动片具有足够的摩擦力。"
+    },
+    {
+        "en": "The brake fluid is at the correct level.",
+        "zh": "制动液液位正确。"
+    },
+    {
+        "en": "The brake pedal is responsive.",
+        "zh": "制动踏板反应灵敏。"
+    },
+    {
+        "en": "Friction coefficient tests, manufacturer specifications.",
+        "zh": "摩擦系数测试，制造商规范。"
+    },
+    {
+        "en": "Fluid level checks, maintenance records.",
+        "zh": "液位检查、维护记录。"
+    },
+    {
+        "en": "Pedal sensitivity tests, user feedback.",
+        "zh": "踏板灵敏度测试，用户反馈。"
+    },
+    {
+        "en": "Perform image inference on a batch of images, returning the inference results along with the elapsed time for each step.",
+        "zh": "对一批图像执行图像推理，返回推理结果以及每个步骤的经过时间。"
+    },
+    {
+        "en": "{\n    \"J1\": \"infer_call.infer.Infer\\ncalls: 1\\ntime: 9.922854s\",\n    \"Strategy\": \"Download and process the image data, convert the image list to a dictionary of models, infer the classification of images using each model, merge the inference results with the image list, and clear the temporary images directory.\"\n}",
+        "zh": "{\n“J1”：“推断调用。推断调用：1\\n时间：9.922854s”，\n“策略”：“下载并处理图像数据，将图像列表转换为模型词典，使用每个模型推断图像的分类，将推断结果与图像列表合并，并清除临时图像目录。”\n}"
+    },
+    {
+        "en": "Download and process image data, returning a dictionary containing the local paths and information of the images.",
+        "zh": "下载并处理图像数据，返回包含图像的本地路径和信息的字典。"
+    },
+    {
+        "en": "{\n    \"J1\": \"infer_image.InferImage.download_infer_images\\ncalls: 1\\ntime: 0.326414s\",\n    \"Strategy\": \"The function first checks if the required zip and json fields are present in the images_data_info dictionary. Then, it uses the download_file function to download the zip and json files from the specified location. After that, it uses the unzip_file function to extract the contents of the zip file into a folder. Finally, it parses the json file to obtain the local paths and information of the images.\"\n}",
+        "zh": "{\n“J1”：“infer_image.InferImage.download_infer_images\\ncalls:1\\n时间：0.326414s”，\n“战略”：“该函数首先检查images_data_info字典中是否存在所需的zip和json字段。然后，它使用download_file函数从指定的位置下载zip文件和json文件。之后，它使用unzip _file函数将zip文件的内容提取到文件夹中。最后，它解析json文件，以获得im的本地路径和信息年龄。\"\n}"
+    },
+    {
+        "en": "Download a file from a specified location and return the local file path.",
+        "zh": "从指定位置下载文件并返回本地文件路径。"
+    },
+    {
+        "en": "{\"J1\": \"infer_call.minio_oper.MinioOper.download_file\\ncalls: 2\\ntime: 0.136437s\"}",
+        "zh": "｛“J1”：“推断调用.mino_oper.MinioOper.download_file\\ncalls:2\\n时间：0.1336437s”｝"
+    },
+    {
+        "en": "Unzips a compressed file and extracts its contents into a folder with the same name as the compressed file.",
+        "zh": "解压缩压缩文件并将其内容提取到与压缩文件同名的文件夹中。"
+    },
+    {
+        "en": "{\"J1\": \"infer_call.minio_oper.MinioOper.unzip_file\\ncalls: 1\\ntime: 0.098564s\"}",
+        "zh": "｛“J1”：“推断调用.mino_oper.MinioOper.unzip文件调用：1\\n时间：0.098564s”｝"
+    },
+    {
+        "en": "Convert a list of images to a dictionary of models and their corresponding image information.",
+        "zh": "将图像列表转换为模型及其相应图像信息的字典。"
+    },
+    {
+        "en": "{\n    \"J1\": \"infer_json.InferJson.image_list_to_model_list\\ncalls: 1\\ntime: 0.012469s\",\n    \"Strategy\": \"Iterate through the image list and for each image, iterate through the model parameters to create a copy of the image information with updated parameters for each model.\"\n}",
+        "zh": "{\n“J1”：“推断_json.InferJson.image_list_to_model_list\\n调用：1\\n时间：0.012469s”，\n“策略”：“遍历图像列表，对于每个图像，遍历模型参数，以创建图像信息的副本，并为每个模型更新参数。”\n}"
+    },
+    {
+        "en": "Create a copy of the image information and update specific parameters for a given model.",
+        "zh": "创建图像信息的副本，并更新给定模型的特定参数。"
+    },
+    {
+        "en": "{\"J1\": \"infer_json.InferJson.get_infer_image\\ncalls: 10\\ntime: 0.011474s\"}",
+        "zh": "｛“J1”：“infer_json.InferJson.get_infer_image\\nalls:10\\n时间：0.011474s”｝"
+    },
+    {
+        "en": "Infer the classification of images using a specified model and return the results.",
+        "zh": "使用指定的模型推断图像的分类并返回结果。"
+    },
+    {
+        "en": "{\n    \"J1\": \"infer_call.infer.one_model_infer_exec\\ncalls: 1\\ntime: 9.573131s\",\n    \"Strategy\": \"The function creates a model with specified parameters, initializes an inference execution object, and calls the external function \\\"infer_classifier\\\" to perform the classification on the given images using the model. The function then returns the classification results.\"\n}",
+        "zh": "{\n“J1”：“推断_调用.推断.one_model_infer_exec\\n调用：1\\n时间：9.573131s”，\n“策略”：“该函数使用指定的参数创建一个模型，初始化一个推理执行对象，并调用外部函数\\”infract_classifier \\“来使用该模型对给定的图像进行分类。然后，该函数返回分类结果。”\n}"
+    },
+    {
+        "en": "{\n    \"J1\": \"infer_exec.InferExec.infer_classifier\\ncalls: 1\\ntime: 9.563882s\",\n    \"Strategy\": \"Load the specified model, parse its JSON information to extract category and threshold values, assign categories and thresholds to each image in the infer_image_list, and use a filter pipeline to perform the inference on the dataset.\"\n}",
+        "zh": "{\n“J1”：“infer_exec.InferExec.infer_classifier\\ncalls:1\\n时间：9.563882s”，\n“策略”：“加载指定的模型，解析其JSON信息以提取类别和阈值，将类别和阈值分配给inferi_image_list中的每个图像，并使用过滤器管道对数据集进行推理。”\n}"
+    },
+    {
+        "en": "Load a specified model.",
+        "zh": "加载指定的模型。"
+    },
+    {
+        "en": "{\"J1\": \"infer_call.infer_model.InferModel.load\\ncalls: 1\\ntime: 0.000000s\"}",
+        "zh": "｛“J1”：“infer_all.infer_model.InferModel.load\\n调用：1\\n时间：0.00000s”｝"
+    },
+    {
+        "en": "Parse the model JSON information and extract the category, lower threshold, and upper threshold values.",
+        "zh": "解析模型JSON信息并提取类别、下限阈值和上限阈值。"
+    },
+    {
+        "en": "{\"J1\": \"infer_exec.InferExec.parse_model_json_info\\ncalls: 1\\ntime: 0.000000s\"}",
+        "zh": "｛“J1”：“infer_exec.InferExec.parse_model_json_info\\nalls:1\\n时间：0.00000s”｝"
+    },
+    {
+        "en": "Assign categories and thresholds to each image in the infer_image_list.",
+        "zh": "为inferi_image_list中的每个图像指定类别和阈值。"
+    },
+    {
+        "en": "{\"J1\": \"infer_exec.InferExec.label_threshold_to_array\\ncalls: 1\\ntime: 0.000000s\"}",
+        "zh": "｛“J1”：“infer_exec.InferExec.label_threshold_to_array\\n调用：1\\n时间：0.00000s”｝"
+    },
+    {
+        "en": "Merge the inference results with the image list and simplify the image paths.",
+        "zh": "将推理结果与图像列表合并，并简化图像路径。"
+    },
+    {
+        "en": "{\"J1\": \"infer_json.InferJson.merge_result_to_image_list\\ncalls: 1\\ntime: 0.001000s\"}",
+        "zh": "｛“J1”：“推断_json.InferJson.merge_sult_to_image_list\\n调用：1\\n时间：0.001000s”｝"
+    },
+    {
+        "en": "Clear the temporary images directory.",
+        "zh": "清除临时图像目录。"
+    },
+    {
+        "en": "{\"J1\": \"infer_image.InferImage.clear_tmp_images_dir\\ncalls: 2\\ntime: 0.008835s\"}",
+        "zh": "｛“J1”：“infer_image.InferImage.clear_tmp_images_dir\\ncalls:2\\n时间：0.008835s”｝"
+    },
+    {
+        "en": "Prove that MIL-STD-1553B bus operates without failures under operational conditions",
+        "zh": "证明MIL-STD-1553B总线在运行条件下无故障运行"
+    },
+    {
+        "en": "{\n    \"C1\": \"The MIL-STD-1553B bus is used in critical military communication systems\"\n}",
+        "zh": "{\n“C1”：“MIL-STD-1553B总线用于关键的军事通信系统”\n}"
+    },
+    {
+        "en": "Strategy to prove bus reliability through technical validation",
+        "zh": "通过技术验证证明总线可靠性的策略"
+    },
+    {
+        "en": "{}",
+        "zh": "{}"
+    },
+    {
+        "en": "All components of the 1553B bus are verified to meet technical specifications",
+        "zh": "1553B总线的所有组件都经过验证，符合技术规范"
+    },
+    {
+        "en": "{\n    \"C2\": \"Technical specifications include error handling capabilities\"\n}",
+        "zh": "{\n“C2”：“技术规范包括错误处理能力”\n}"
+    },
+    {
+        "en": "Test results showing compliance with MIL-STD-1553B specifications",
+        "zh": "符合MIL-STD-1553B规范的测试结果"
+    },
+    {
+        "en": "Analysis report on error rates and signal integrity under various conditions",
+        "zh": "各种条件下的错误率和信号完整性分析报告"
+    },
+    {
+        "en": "Strategy to ensure error-free operation through operational procedures",
+        "zh": "通过操作程序确保无错误操作的策略"
+    },
+    {
+        "en": "Operational procedures are in place to prevent and detect bus errors",
+        "zh": "操作程序到位，可防止和检测总线错误"
+    },
+    {
+        "en": "Operational manual documenting error handling procedures",
+        "zh": "记录错误处理程序的操作手册"
+    },
+    {
+        "en": "Training records of personnel on handling 1553B bus operations",
+        "zh": "1553B总线操作人员培训记录"
+    },
+    {
+        "en": "The 1553B bus transmits messages that conform to requirements",
+        "zh": "1553B总线传输的消息跟需求一致"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"From two aspects: message transmission timing and content.\",\n    \"Block\": \"Decomposition\"\n}",
+        "zh": "{\n“策略”：“从两个方面分解：消息传输的时机和内容。”，\n“块”：“分解”\n}"
+    },
+    {
+        "en": "The 1553B bus transmits messages within the required timing constraints.",
+        "zh": "1553B总线在所需的定时约束内传输消息。"
+    },
+    {
+        "en": "The 1553B bus transmits messages with correct content.",
+        "zh": "1553B总线传输的消息内容正确。"
+    },
+    {
+        "en": "Bus protocol specifications, testing results showing timing compliance.",
+        "zh": "总线协议规范，显示时序符合性的测试结果。"
+    },
+    {
+        "en": "Message format documentation, validation of message contents through testing or simulation.",
+        "zh": "消息格式文档，通过测试或模拟验证消息内容。"
+    },
+    {
+        "en": "{\n    \"Strategy\": \"From two aspects: message transmission timing and content.\",\n    \"Block\": \"Decomposition\",\n    \"Context\": \"The message collected is complete and correct\"\n}",
+        "zh": "{\n“策略”：“从两个方面：消息传输的时机和内容。”，\n“块”：“分解”，\n“上下文”：“收集的消息完整且正确”\n}"
+    },
+    {
+        "en": "Compacts physical page mapping for an address space dispatch.",
+        "zh": "压缩地址空间调度的物理页面映射。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\naddress_space_dispatch_compact\\n1.05%\\n(0.00%)\\n134\",\n    \"Function\": \"address_space_dispatch_compact\"\n}",
+        "zh": "{\n“信息”：“qemu系统臂\\naddress_space_dispatch_compact\\n1.05%\\n（0.00%）\\n134”，\n“函数”：“address_space_dispatch_compact”\n}"
+    },
+    {
+        "en": "Updates the flat view of an address space, replacing the old view with a new one.",
+        "zh": "更新地址空间的平面视图，将旧视图替换为新视图。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\naddress_space_set_flatview\\n0.69%\\n(0.01%)\\n658\",\n    \"Function\": \"address_space_set_flatview\",\n    \"Strategy\": \"Looks up and sets a new flat view for an address space, updating the topology and reference counts as necessary to ensure consistent memory management.\"\n}",
+        "zh": "{\n“信息”：“qemu system arm\\naddress_space_set_flatwiew\\n0.69%\\n（0.01%）\\n658”，\n“函数”：“address_space_set_flatwiew”，\n“策略”：“查找并设置地址空间的新平面视图，根据需要更新拓扑和引用计数，以确保一致的内存管理。”\n}"
+    },
+    {
+        "en": "Updates the topology of an address space based on changes between old and new views.",
+        "zh": "根据新旧视图之间的更改更新地址空间的拓扑。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\naddress_space_update_topology_pass\\n0.66%\\n(0.46%)\\n896\",\n    \"Function\": \"address_space_update_topology_pass\"\n}",
+        "zh": "{\n“信息”：“qemu system arm\\naddress_space_update_topology_pass\\n0.66%\\n（0.46%）\\n896”，\n“函数”：“address_space_update_topology_pass”\n}"
+    },
+    {
+        "en": "Registers sections of a memory region with a flat view dispatcher, handling subpages and whole pages accordingly.",
+        "zh": "使用平面视图调度器注册内存区域的部分，从而相应地处理子页面和整个页面。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\nflatview_add_to_dispatch\\n3.85%\\n(0.03%)\\n2144\",\n    \"Function\": \"flatview_add_to_dispatch\"\n}",
+        "zh": "{\n“信息”：“qemu系统臂\\nfladview_add_to_dispatch\\n3.85%\\n（0.03%）\\n2144”，\n“函数”：“flatview_add_to_dispatch”\n}"
+    },
+    {
+        "en": "Generates a flat view representation of a given memory region.",
+        "zh": "生成给定内存区域的平面视图表示。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\ngenerate_memory_topology\\n5.25%\\n(0.03%)\\n134\",\n    \"Function\": \"generate_memory_topology\",\n    \"Strategy\": \"Utilizes external functions to create and configure a flat view, register its sections, compact physical page mapping, and ultimately return the resulting flat view.\"\n}",
+        "zh": "{\n“信息”：“qemu system arm\\nenerate_memory_topology\\n5.25%\\n（0.03%）\\n134”，\n“函数”：“generate_memory_topology”，\n“策略”：“利用外部函数创建和配置平面视图，注册其部分，压缩物理页面映射，并最终返回生成的平面视图。”\n}"
+    },
+    {
+        "en": "Commits a memory region transaction, updating address spaces and I/O event file descriptors accordingly.",
+        "zh": "提交内存区域事务，相应地更新地址空间和I/O事件文件描述符。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\nmemory_region_transaction_commit\\n6.12%\\n(0.00%)\\n76\",\n    \"Function\": \"memory_region_transaction_commit\",\n    \"Strategy\": \"The function uses external functions to update flat views of address spaces, reset flat views, and update I/O event file descriptors to commit the memory region transaction.\"\n}",
+        "zh": "{\n“信息”：“qemu system arm\\nmory_region_transaction_commit\\n6.12%\\n（0.00%）\\n76”，\n“函数”：“memory_regon_transaction_commit”，\n“策略”：“该函数使用外部函数更新地址空间的平面视图、重置平面视图和更新I/O事件文件描述符以提交内存区域事务。”\n}"
+    },
+    {
+        "en": "Initializes and runs the QEMU emulator with the given command-line arguments.",
+        "zh": "使用给定的命令行参数初始化并运行QEMU模拟器。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\nmain\\n74.08%\\n(0.00%)\\n1\",\n    \"Function\": \"main\",\n    \"Strategy\": \"Initializes the QEMU machine setup through qemu_init and then runs the emulator's main loop with qemu_default_main to facilitate a complete emulation process.\"\n}",
+        "zh": "{\n“信息”：“qemu系统臂\\nmain\\n74.08%\\n（0.00%）\\n1”，\n“函数”：“main”，\n“策略”：“通过qemuinit初始化QEMU机器设置，然后使用QEMU_default_main运行模拟器的主循环，以促进完整的仿真过程。”\n}"
+    },
+    {
+        "en": "Runs the main loop of the QEMU emulator and performs cleanup afterwards.",
+        "zh": "运行QEMU模拟器的主循环，然后执行清理。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\nqemu_default_main\\n48.00%\\n(0.00%)\\n1\",\n    \"Function\": \"qemu_default_main\"\n}",
+        "zh": "{\n“信息”：“qemu系统臂\\nqemu_default_main\\n48.00%（0.00%）\\n1”，\n“函数”：“qemu_default_main”\n}"
+    },
+    {
+        "en": "To initialize and set up the QEMU machine, including processing command-line options, setting up the memory model, initializing the main loop, creating devices, and configuring accelerators.",
+        "zh": "初始化和设置QEMU机器，包括处理命令行选项、设置内存模型、初始化主循环、创建设备和配置加速器。"
+    },
+    {
+        "en": "{\n    \"Info\": \"qemu-system-arm\\nqemu_init\\n26.08%\\n(0.00%)\\n1\",\n    \"Function\": \"qemu_init\"\n}",
+        "zh": "{\n“信息”：“qemu系统臂\\nqemuinit \\n26.08%\\n（0.00%）\\n1”，\n“函数”：“qem_init”\n}"
+    },
+    {
+        "en": "Determines whether a soldier is safe behind a gun carriage.",
+        "zh": "确定士兵在炮车后面是否安全。"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.trusta_main\\ncalls: 1\\ntime: 0.007980s\",\n    \"Function\": \"trusta_main.trusta_main\",\n    \"Strategy\": \"Initializes a cannon object with given parameters and then uses it to determine if a soldier is safe, considering the recoil distance and soldier's position.\"\n}",
+        "zh": "{\n“信息”：“trusta_main.trusta_main\\n调用次数：1\\n时间：0.007980s”，\n“函数”：“trusta_main.trusta_main”，\n“策略”：“使用给定的参数初始化大炮对象，然后根据反冲距离和士兵的位置，使用它来确定士兵是否安全。”\n}"
+    },
+    {
+        "en": "Initializes the parameters of a cannon.",
+        "zh": "初始化大炮的参数。"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.__init__\\ncalls: 1\\ntime: 0.000000s\",\n    \"Function\": \"trusta_main.Cannon.__init__\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.__init__calls:1\\n时间：0.000000s”，\n“函数”：“trusta_main.Cannon.__init__”\n}"
+    },
+    {
+        "en": "Determine whether a soldier is safe behind a gun carriage based on the recoil distance and the soldier's position.",
+        "zh": "根据反冲距离和士兵的位置，确定士兵在炮架后面是否安全。"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.is_soldier_safe\\ncalls: 1\\ntime: 0.006977s\",\n    \"Function\": \"trusta_main.Cannon.is_soldier_safe\",\n    \"Strategy\": \"Calculate the recoil distance of the gun carriage and compare it with the soldier's position to ensure safety.\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.is_soldier_safe调用次数：1\\n时间：0.006977s”，\n“函数”：“trust_main.Cannon.is_soldier_safe”，\n“策略”：“计算炮架的后坐力距离，并将其与士兵的位置进行比较，以确保安全。”\n}"
+    },
+    {
+        "en": "Calculate the recoil distance of a gun carriage.",
+        "zh": "计算炮架的反冲距离。"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.calculate_recoil_distance\\ncalls: 1\\ntime: 0.005980s\",\n    \"Function\": \"trusta_main.Cannon.calculate_recoil_distance\",\n    \"Strategy\": \"Calculates the recoil velocity and resistance, then uses them to determine the recoil distance by equating kinetic energy with work done by resistance.\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.calculate_recoil_disstance列表：1\\n时间：0.005980s”，\n“函数”：“trusta_main.Cannon.calculate_recoil_distance”，\n“策略”：“计算反冲速度和阻力，然后通过将动能与阻力所做的功相等来确定反冲距离。”\n}"
+    },
+    {
+        "en": "Calculate the recoil velocity of a gun carriage.",
+        "zh": "计算炮架的反冲速度。"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.calculate_recoil_velocity\\ncalls: 1\\ntime: 0.000000s\",\n    \"Function\": \"trusta_main.Cannon.calculate_recoil_velocity\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.calculate_recoil_速度计数：1\\n时间：0.000000s”，\n“函数”：“trust_main.Cannon.calculate_recoil_velocity”\n}"
+    },
+    {
+        "en": "Calculates the resistance on a horizontal surface.",
+        "zh": "计算水平表面上的阻力。"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.calculate_resistance\\ncalls: 1\\ntime: 0.000000s\",\n    \"Function\": \"trusta_main.Cannon.calculate_resistance\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.calculate_resistances：1\\n时间：0.000000s”，\n“函数”：“trusta_main.Cannon.calculate_resistance”\n}"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.trusta_main\\ncalls: 1\\ntime: 0.007970s\",\n    \"Function\": \"trusta_main.trusta_main\",\n    \"Strategy\": \"Initializes a cannon object with given parameters and then uses it to determine if a soldier is safe, considering the recoil distance and soldier's position.\",\n    \"C1\": \"Initializes the parameters of a cannon.\"\n}",
+        "zh": "{\n“信息”：“trusta_main.trusta_main\\n调用次数：1\\n时间：0.007970s”，\n“函数”：“trusta_main.trusta_main”，\n“策略”：“使用给定的参数初始化大炮对象，然后根据反冲距离和士兵的位置，使用它来确定士兵是否安全。”，\n“C1”：“初始化大炮的参数。”\n}"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.is_soldier_safe\\ncalls: 1\\ntime: 0.006953s\",\n    \"Function\": \"trusta_main.Cannon.is_soldier_safe\",\n    \"Strategy\": \"Calculate the recoil distance of the gun carriage and compare it with the soldier's position to ensure safety.\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.is_soldier_safe调用次数：1\\n时间：0.006953s”，\n“函数”：“trust_main.Cannon.is_soldier_safe”，\n“策略”：“计算炮架的后坐力距离，并将其与士兵的位置进行比较，以确保安全。”\n}"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.calculate_recoil_distance\\ncalls: 1\\ntime: 0.005955s\",\n    \"Function\": \"trusta_main.Cannon.calculate_recoil_distance\",\n    \"Strategy\": \"Calculates the recoil velocity and resistance, then uses them to determine the recoil distance by equating kinetic energy with work done by resistance.\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.calculate_recoil_distance列表：1\\n时间：0.005955s”，\n“函数”：“trusta_main.Cannon.calculate_recoil_distance”，\n“策略”：“计算反冲速度和阻力，然后通过将动能与阻力所做的功相等来确定反冲距离。”\n}"
+    },
+    {
+        "en": "Calculate the distance between a gunner and the gun carriage.",
+        "zh": "计算炮手和炮架之间的距离。"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.calculate_distance_behind\\ncalls: 1\\ntime: 0.000000s\",\n    \"Function\": \"trusta_main.Cannon.calculate_distance_behind\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.calculate_distance_backgrounds：1\\n时间：0.000000s”，\n“函数”：“trusta_main.Cannon.calculate_distance_behind”\n}"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.trusta_main\\ncalls: 1\\ntime: 0.000000s\",\n    \"Function\": \"trusta_main.trusta_main\",\n    \"C1\": \"Initializes the parameters of a cannon.\"\n}",
+        "zh": "{\n“信息”：“trusta_main.trusta_main\\n调用次数：1\\n时间：0.000000s”，\n“函数”：“trusta_main.trusta_main”，\n“C1”：“初始化大炮的参数。”\n}"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.is_soldier_safe\\ncalls: 1\\ntime: 0.000000s\",\n    \"Function\": \"trusta_main.Cannon.is_soldier_safe\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.is_soldier_safe调用次数：1\\n时间：0.00000s”，\n“函数”：“trust_main.Cannon.is_soldier_safe”\n}"
+    },
+    {
+        "en": "{\n    \"Info\": \"trusta_main.Cannon.calculate_recoil_distance\\ncalls: 1\\ntime: 0.000000s\",\n    \"Function\": \"trusta_main.Cannon.calculate_recoil_distance\"\n}",
+        "zh": "{\n“信息”：“trusta_main.Cannon.calculate_recoil_disstance列表：1\\n时间：0.00000s”，\n“函数”：“trusta_main.Cannon.calculate_recoil_distance”\n}"
+    },
+    {
+        "en": "TestCase: test.TestCannon.test_is_soldier_safe",
+        "zh": "测试用例：test_is_soldier_safe"
+    },
+    {
+        "en": "TestCase: test.TestCannon.test_calculate_recoil_distance",
+        "zh": "测试用例：test_is_soldier_safe"
+    },
+    {
+        "en": "TestCase: test.TestCannon.test_calculate_recoil_velocity",
+        "zh": "测试用例：test_calculate_recoil_velocity"
+    },
+    {
+        "en": "TestCase: test.TestCannon.test_calculate_resistance",
+        "zh": "测试用例：test_calculate_resistance"
+    },
+    {
+        "en": "Initializes a cannon object with given parameters and then uses it to determine if a soldier is safe, considering the recoil distance and soldier's position.",
+        "zh": "使用给定的参数初始化加农炮对象，然后根据反冲距离和士兵的位置，使用它来确定士兵是否安全。"
+    },
+    {
+        "en": "Calculate the recoil distance of the gun carriage and compare it with the soldier's position to ensure safety.",
+        "zh": "计算炮架的反冲距离，并将其与士兵的位置进行比较，以确保安全。"
+    },
+    {
+        "en": "Calculates the recoil velocity and resistance, then uses them to determine the recoil distance by equating kinetic energy with work done by resistance.",
+        "zh": "计算反冲速度和阻力，然后通过将动能与阻力所做的功相等来确定反冲距离。"
+    },
+    {
+        "en": "Initializes an ARM CPU object, setting up various components and attributes.",
+        "zh": "初始化ARM CPU对象，设置各种组件和属性。"
+    },
+    {
+        "en": "The goal of this function is to initialize an ARM CPU model, setting up its various components and features based on the specified configuration.",
+        "zh": "此函数的目标是初始化ARM CPU模型，根据指定的配置设置其各种组件和功能。"
+    },
+    {
+        "en": "Register GDB registers for ARM CPU features.",
+        "zh": "为ARM CPU功能注册GDB寄存器。"
+    },
+    {
+        "en": "Sets or clears the specified IRQ line for an ARM CPU.",
+        "zh": "设置或清除ARM CPU的指定IRQ行。"
+    },
+    {
+        "en": "Load a device tree blob (DTB) into memory and configure it according to the machine state and boot information.",
+        "zh": "将设备树blob（DTB）加载到内存中，并根据机器状态和引导信息对其进行配置。"
+    },
+    {
+        "en": "Prepare and boot a kernel on an ARM CPU.",
+        "zh": "在ARM CPU上准备并启动内核。"
+    },
+    {
+        "en": "Initializes and sets up the memory regions for the ChipideaState object.",
+        "zh": "初始化并设置ChipideaState对象的内存区域。"
+    },
+    {
+        "en": "Defines multiple ARM coprocessor register instances with opaque length.",
+        "zh": "定义多个具有不透明长度的ARM协处理器寄存器实例。"
+    },
+    {
+        "en": "Sets the realization state of a device to either realized or unrealized.",
+        "zh": "将设备的实现状态设置为已实现或未实现。"
+    },
+    {
+        "en": "Realizes or unrealizes a device object based on the given boolean value.",
+        "zh": "根据给定的布尔值实现或不实现设备对象。"
+    },
+    {
+        "en": "The goal of this function is to initialize and configure various hardware components of an IMX6 system-on-chip (SoC), including SPI interfaces, Ethernet, watchdog timers, ROM memory, CAAM memory, OCRAM memory, and internal OCRAM aliasing.",
+        "zh": "此功能的目标是初始化和配置IMX6片上系统（SoC）的各种硬件组件，包括SPI接口、以太网、看门狗定时器、ROM存储器、CAAM存储器、OCRAM存储器和内部OCRAM混叠。"
+    },
+    {
+        "en": "Sets and updates the IRQ (Interrupt Request) status for a specified interrupt request.",
+        "zh": "设置和更新指定中断请求的IRQ（中断请求）状态。"
+    },
+    {
+        "en": "Updates the internal state of a GIC (Generic Interrupt Controller) based on the current pending interrupts and priority levels.",
+        "zh": "根据当前挂起的中断和优先级更新GIC（通用中断控制器）的内部状态。"
+    },
+    {
+        "en": "Realizes an IMX GPIO device, initializing its memory region, GPIO inputs and outputs, and interrupt handling.",
+        "zh": "实现IMX GPIO设备，初始化其存储区域、GPIO输入和输出以及中断处理。"
+    },
+    {
+        "en": "Initializes the cpreg_tuples array based on the cp_regs hash and prepares it for further usage.",
+        "zh": "根据cp_regs哈希初始化cpreg_tuples数组，并为进一步使用做好准备。"
+    },
+    {
+        "en": "Initializes a machine state with the given memory path and error handling.",
+        "zh": "使用给定的内存路径和错误处理初始化计算机状态。"
+    },
+    {
+        "en": "Wait for events in the main loop with optional non-blocking behavior.",
+        "zh": "等待主循环中具有可选非阻塞行为的事件。"
+    },
+    {
+        "en": "Adds a subregion to a given memory region.",
+        "zh": "将子区域添加到给定的内存区域。"
+    },
+    {
+        "en": "Adds a sub-region to a given memory region, setting up the necessary connections and attributes.",
+        "zh": "将子区域添加到给定的内存区域，设置必要的连接和属性。"
+    },
+    {
+        "en": "Initializes a MemoryRegion object with the provided parameters.",
+        "zh": "使用提供的参数初始化MemoryRegion对象。"
+    },
+    {
+        "en": "Initializes a MemoryRegion object with default values and sets up its properties.",
+        "zh": "使用默认值初始化MemoryRegion对象并设置其属性。"
+    },
+    {
+        "en": "Retrieves a list of object classes that implement the given type, with an option to include abstract classes.",
+        "zh": "检索实现给定类型的对象类列表，并提供包含抽象类的选项。"
+    },
+    {
+        "en": "Finds an object property by its name in a given object class or its parent classes.",
+        "zh": "在给定的对象类或其父类中按名称查找对象属性。"
+    },
+    {
+        "en": "Finds an object property by its name in a given class or its parent classes.",
+        "zh": "在给定类或其父类中按名称查找对象属性。"
+    },
+    {
+        "en": "Initializes an object with a specified type, ensuring proper setup and allocation.",
+        "zh": "使用指定类型初始化对象，确保正确设置和分配。"
+    },
+    {
+        "en": "Initializes an Object with a given TypeImpl and size.",
+        "zh": "使用给定的TypeImpl和大小初始化对象。"
+    },
+    {
+        "en": "Initializes an object with a given type, ensuring proper setup and allocation.",
+        "zh": "使用给定类型初始化对象，确保正确设置和分配。"
+    },
+    {
+        "en": "Creates a new object based on the provided typename.",
+        "zh": "根据提供的类型名创建新对象。"
+    },
+    {
+        "en": "Creates a new object instance of the specified type.",
+        "zh": "创建指定类型的新对象实例。"
+    },
+    {
+        "en": "Creates a new object instance of the specified type, initializes it, and returns a pointer to it.",
+        "zh": "创建指定类型的新对象实例，初始化它，并返回指向它的指针。"
+    },
+    {
+        "en": "Adds a new property to an object.",
+        "zh": "向对象添加新属性。"
+    },
+    {
+        "en": "Adds a child object to an existing object as a property.",
+        "zh": "将子对象作为属性添加到现有对象中。"
+    },
+    {
+        "en": "Sets a property of an object based on the input from a visitor.",
+        "zh": "根据访问者的输入设置对象的属性。"
+    },
+    {
+        "en": "Sets a property of an object to a new value.",
+        "zh": "将对象的属性设置为新值。"
+    },
+    {
+        "en": "Sets a boolean property of an object.",
+        "zh": "设置对象的布尔属性。"
+    },
+    {
+        "en": "Sets a boolean property of an object to a specified value.",
+        "zh": "将对象的布尔属性设置为指定值。"
+    },
+    {
+        "en": "Sets a property of an object using a QObject value.",
+        "zh": "使用QObject值设置对象的属性。"
+    },
+    {
+        "en": "Sets a property of an object to a new value using a QObject.",
+        "zh": "使用QObject将对象的属性设置为新值。"
+    },
+    {
+        "en": "Attempts to add a new property to an object, ensuring no duplicate properties exist.",
+        "zh": "尝试向对象添加新属性，确保不存在重复属性。"
+    },
+    {
+        "en": "Attempts to add a child object to an existing object as a property.",
+        "zh": "尝试将子对象作为属性添加到现有对象中。"
+    },
+    {
+        "en": "Compact a physical page entry by recursively traversing its children and optimizing storage.",
+        "zh": "通过递归遍历子项并优化存储来压缩物理页面条目。"
+    },
+    {
+        "en": "Compact a physical page by recursively traversing its child nodes and combining them into a single node if possible.",
+        "zh": "通过递归遍历其子节点并将其组合成单个节点（如果可能的话）来压缩物理页面。"
+    },
+    {
+        "en": "Set up a physical page in the address space dispatch.",
+        "zh": "在地址空间调度中设置一个物理页面。"
+    },
+    {
+        "en": "Sets the physical page level for a given map and index.",
+        "zh": "为给定的映射和索引设置物理页面级别。"
+    },
+    {
+        "en": "Sets a boolean property of an object based on the input from a visitor.",
+        "zh": "根据访问者的输入设置对象的布尔属性。"
+    },
+    {
+        "en": "Sets a boolean property on an object based on the given visitor and error handling.",
+        "zh": "根据给定的访问者和错误处理在对象上设置布尔属性。"
+    },
+    {
+        "en": "Reloads and adjusts a timer based on its state and policy, ensuring it triggers correctly.",
+        "zh": "根据计时器的状态和策略重新加载和调整计时器，确保其正确触发。"
+    },
+    {
+        "en": "Handles a timer tick event, managing the timer's state and triggering callbacks as necessary.",
+        "zh": "处理计时器滴答事件，管理计时器的状态并在必要时触发回调。"
+    },
+    {
+        "en": "Initializes a GPIO input device with the specified IRQ handler and number of inputs.",
+        "zh": "使用指定的IRQ处理程序和输入数量初始化GPIO输入设备。"
+    },
+    {
+        "en": "Initializes a named GPIO input with the specified handler and opaque data.",
+        "zh": "使用指定的处理程序和不透明数据初始化命名GPIO输入。"
+    },
+    {
+        "en": "Completes the initial machine setup and prepares it for hotpluggable devices.",
+        "zh": "完成初始机器设置，并为热插拔设备做好准备。"
+    },
+    {
+        "en": "Realizes a device state by setting its parent bus and marking it as realized.",
+        "zh": "通过设置其父总线并将其标记为已实现来实现设备状态。"
+    },
+    {
+        "en": "Retrieves the current clock value in nanoseconds based on the specified QEMU clock type.",
+        "zh": "根据指定的QEMU时钟类型检索当前时钟值（以纳秒为单位）。"
+    },
+    {
+        "en": "Runs and processes all timers across different clock types.",
+        "zh": "跨不同时钟类型运行和处理所有计时器。"
+    },
+    {
+        "en": "Resets all devices based on the given shutdown cause.",
+        "zh": "根据给定的关机原因重置所有设备。"
+    },
+    {
+        "en": "Extends or creates a new array of IRQs with the specified handler and opaque data.",
+        "zh": "使用指定的处理程序和不透明数据扩展或创建新的IRQ数组。"
+    },
+    {
+        "en": "Runs the main event loop of QEMU, handling events and exiting when necessary.",
+        "zh": "运行QEMU的主事件循环，处理事件并在必要时退出。"
+    },
+    {
+        "en": "Locks a mutex in QEMU's mutex implementation.",
+        "zh": "在QEMU的互斥体实现中锁定互斥体。"
+    },
+    {
+        "en": "Unlock a mutex (mutual exclusion lock) in QEMU.",
+        "zh": "解锁QEMU中的互斥锁。"
+    },
+    {
+        "en": "Handles and sets the IRQ (Interrupt Request) status for a specified interrupt request.",
+        "zh": "处理并设置指定中断请求的IRQ（中断请求）状态。"
+    },
+    {
+        "en": "Sets or clears the specified IRQ line for a CPU.",
+        "zh": "设置或清除CPU的指定IRQ行。"
+    },
+    {
+        "en": "Resets the QEMU system based on a specified shutdown cause.",
+        "zh": "根据指定的关机原因重置QEMU系统。"
+    },
+    {
+        "en": "Checks and resets the VM stop request status.",
+        "zh": "检查并重置VM停止请求状态。"
+    },
+    {
+        "en": "Initializes and configures the QEMU machine before starting the VM.",
+        "zh": "启动VM之前，初始化并配置QEMU计算机。"
+    },
+    {
+        "en": "The goal of this function is to define and initialize various ARM coprocessor registers and their associated fields, based on the features supported by the CPU.",
+        "zh": "此函数的目标是根据CPU支持的功能定义和初始化各种ARM协处理器寄存器及其相关字段。"
+    },
+    {
+        "en": "Registers a subpage in the address space dispatch with the given FlatView and MemoryRegionSection.",
+        "zh": "使用给定的FlatView和MemoryRegionSection在地址空间调度中注册子页面。"
+    },
+    {
+        "en": "Initializes the SabreLite machine state, setting up its components and peripherals.",
+        "zh": "初始化SabreLite计算机状态，设置其组件和外围设备。"
+    },
+    {
+        "en": "Maps a specific memory-mapped I/O region to the system bus.",
+        "zh": "将特定的内存映射I/O区域映射到系统总线。"
+    },
+    {
+        "en": "Maps a memory-mapped I/O region to the system bus.",
+        "zh": "将内存映射的I/O区域映射到系统总线。"
+    },
+    {
+        "en": "Modifies a timer to expire at a specified time.",
+        "zh": "将计时器修改为在指定时间到期。"
+    },
+    {
+        "en": "Modifies a timer to expire at the specified time while ensuring thread safety.",
+        "zh": "将计时器修改为在指定时间到期，同时确保线程安全。"
+    },
+    {
+        "en": "Handles a timer block tick event, managing the timer's state and interrupt requests.",
+        "zh": "处理定时器块滴答事件，管理定时器的状态和中断请求。"
+    },
+    {
+        "en": "Calculates and returns the deadline of a timer list in nanoseconds.",
+        "zh": "计算并返回计时器列表的截止时间（以纳秒为单位）。"
+    },
+    {
+        "en": "Processes and handles expired timers in a timer list, executing their corresponding callbacks.",
+        "zh": "处理计时器列表中过期的计时器，并执行其相应的回调。"
+    },
+    {
+        "en": "Calculates and returns the overall deadline of a timer list group in nanoseconds.",
+        "zh": "计算并返回计时器列表组的总截止时间（以纳秒为单位）。"
+    },
+    {
+        "en": "Initializes and sets up an EHCI (Enhanced Host Controller Interface) device state.",
+        "zh": "初始化并设置EHCI（增强型主机控制器接口）设备状态。"
+    },
+    {
+        "en": "Initializes and sets up an EHCI (Enhanced Host Controller Interface) device state as part of the system bus realization.",
+        "zh": "初始化并设置EHCI（增强型主机控制器接口）设备状态，作为系统总线实现的一部分。"
+    },
+    {
+        "en": "",
+        "zh": null
+    },
+    {
+        "en": "Looks up and sets a new flat view for an address space, updating the topology and reference counts as necessary to ensure consistent memory management.",
+        "zh": "查找并设置地址空间的新平面视图，根据需要更新拓扑和引用计数，以确保一致的内存管理。"
+    },
+    {
+        "en": "Utilizes external functions to initialize GPIO devices, set CPU registers, and configure other essential components to establish a functional ARM CPU environment.",
+        "zh": "利用外部功能初始化GPIO设备、设置CPU寄存器和配置其他基本组件，以建立功能齐全的ARM CPU环境。"
+    },
+    {
+        "en": "\nThis function initializes an ARM CPU by setting up its MPU (Memory Protection Unit), registers, address spaces, and other features, while also handling errors and compatibility with different ARM architectures.",
+        "zh": "此函数通过设置其MPU（内存保护单元）、寄存器、地址空间和其他功能来初始化ARM CPU，同时处理错误和与不同ARM架构的兼容性。"
+    },
+    {
+        "en": "Initializes the CPU environment, loads the kernel, sets up firmware or direct kernel boot, configures PSCI conduit, and prepares device tree blob loading to ensure successful kernel booting.",
+        "zh": "初始化CPU环境，加载内核，设置固件或直接内核引导，配置PSCI管道，并准备设备树blob加载以确保内核引导成功。"
+    },
+    {
+        "en": "Uses external functions, such as memory_region_init_io and memory_region_add_subregion, to divide and configure the memory space of the ChipideaState object into separate regions with specific offsets, sizes, and operations.",
+        "zh": "使用外部函数，如memory_region_init_io和memory_reregion_add_subregion，将ChipideaState对象的内存空间划分并配置为具有特定偏移量、大小和操作的单独区域。"
+    },
+    {
+        "en": "This function uses various external functions to achieve its goal by handling hotplug operations, setting up clocks and buses, realizing or unrealizing child devices, and updating the device's state accordingly.",
+        "zh": "此函数使用各种外部函数通过处理热插拔操作、设置时钟和总线、实现或不实现子设备以及相应地更新设备状态来实现其目标。"
+    },
+    {
+        "en": "Utilizes various external functions for hotplug handling, device realization, and error handling to ensure a device is properly realized or unrealized in a controlled manner.",
+        "zh": "利用各种外部功能进行热插拔处理、设备实现和错误处理，以确保设备以受控方式正确实现或未实现。"
+    },
+    {
+        "en": "",
+        "zh": null
+    },
+    {
+        "en": "\nThe strategy employed by this function is to realize and map each hardware component to the system bus, configure their properties and interrupts, and add them as subregions to the system's memory regions.",
+        "zh": "此功能采用的策略是实现每个硬件组件并将其映射到系统总线，配置它们的属性和中断，并将它们作为子区域添加到系统的内存区域。"
+    },
+    {
+        "en": "Utilizes external functions to create and configure a flat view, register its sections, compact physical page mapping, and ultimately return the resulting flat view.",
+        "zh": "利用外部函数创建和配置平面视图，注册其部分，压缩物理页面映射，并最终返回生成的平面视图。"
+    },
+    {
+        "en": "''",
+        "zh": "''"
+    },
+    {
+        "en": "Uses qemu_irq_lower, qemu_set_irq, gic_get_best_virq or gic_get_best_irq, and other functions to manage interrupt signaling, handling, and prioritization for both virtual and physical CPUs.",
+        "zh": "使用qemu_irq_lower、qemu_set_irq、gic_get_best_virq或gic_get-best_irq以及其他函数来管理虚拟和物理CPU的中断信令、处理和优先级。"
+    },
+    {
+        "en": "Initializes the IMX GPIO device by setting up its memory region, input/output handlers, and interrupts to enable proper device functionality.",
+        "zh": "通过设置内存区域、输入/输出处理程序和中断来初始化IMX GPIO设备，以启用正确的设备功能。"
+    },
+    {
+        "en": "Initializes the QEMU machine setup through qemu_init and then runs the emulator's main loop with qemu_default_main to facilitate a complete emulation process.",
+        "zh": "通过QEMU_init初始化QEMU机器设置，然后使用QEMU_default_main运行仿真器的主循环，以促进完整的仿真过程。"
+    },
+    {
+        "en": "'' (No external functions with sub-goals provided, so no strategy can be explained.)",
+        "zh": "“”（没有提供子目标的外部功能，因此无法解释任何策略。）"
+    },
+    {
+        "en": "Initializes the priority of the subregion and then utilizes the common functionality provided by memory_region_add_subregion_common to add the subregion to the memory region.",
+        "zh": "初始化子区域的优先级，然后利用memory_region_add_subregion_common提供的通用功能将子区域添加到内存区域。"
+    },
+    {
+        "en": "The function relies on external functions like memory_region_update_container_subregions to ensure the successful integration of the sub-region into the main memory region.",
+        "zh": "该函数依赖于memory_region_update_container_subjects等外部函数，以确保子区域成功集成到主内存区域中。"
+    },
+    {
+        "en": "Initializes the MemoryRegion object by calling memory_region_init and setting up its operations, opaque data, and termination flag, ensuring proper setup and allocation.",
+        "zh": "通过调用memory_region_init并设置其操作、不透明数据和终止标志来初始化MemoryRegion对象，确保正确的设置和分配。"
+    },
+    {
+        "en": "The function uses external functions to update flat views of address spaces, reset flat views, and update I/O event file descriptors to commit the memory region transaction.",
+        "zh": "该函数使用外部函数来更新地址空间的平面视图、重置平面视图和更新I/O事件文件描述符，以提交内存区域事务。"
+    },
+    {
+        "en": "Recursively searches for the object property in the current class and its parent classes until found.",
+        "zh": "递归搜索当前类及其父类中的对象属性，直到找到为止。"
+    },
+    {
+        "en": "Recursively searches for the property in the current class and its parents until found, ensuring that all inheritance levels are considered.",
+        "zh": "递归搜索当前类及其父类中的属性，直到找到为止，确保考虑所有继承级别。"
+    },
+    {
+        "en": "Retrieves the required type, loads it if necessary, checks for its availability, reports errors if it's missing, and initializes the object using the retrieved type.",
+        "zh": "检索所需的类型，必要时加载它，检查其可用性，如果丢失则报告错误，并使用检索到的类型初始化对象。"
+    },
+    {
+        "en": "Initializes the Type, sets up the Object's memory and properties, and performs additional initialization steps to ensure the Object is properly set up according to its Type.",
+        "zh": "初始化类型，设置对象的内存和属性，并执行其他初始化步骤，以确保对象根据其类型正确设置。"
+    },
+    {
+        "en": "Uses various initialization functions to set up the object's properties, memory, and attributes while asserting correctness and consistency.",
+        "zh": "使用各种初始化函数来设置对象的属性、内存和特性，同时断言正确性和一致性。"
+    },
+    {
+        "en": "Retrieves the corresponding type implementation and uses it to create a new object instance.",
+        "zh": "检索相应的类型实现并使用它来创建新的对象实例。"
+    },
+    {
+        "en": "Retrieves the type implementation and uses it to create a new object instance, ensuring the correct type is instantiated.",
+        "zh": "检索类型实现并使用它创建新的对象实例，确保实例化了正确的类型。"
+    },
+    {
+        "en": "Initializes an object with a given type by allocating memory, setting up the object's internal state, and configuring its deallocation function, ensuring proper object creation and management.",
+        "zh": "通过分配内存、设置对象的内部状态和配置其释放函数来初始化具有给定类型的对象，确保正确的对象创建和管理。"
+    },
+    {
+        "en": "Attempts to add the property while ensuring no duplicate properties exist by utilizing the object_property_try_add function.",
+        "zh": "尝试通过使用object_property_try_add函数添加属性，同时确保不存在重复的属性。"
+    },
+    {
+        "en": "Attempts to add the child object as a property by calling the object_property_try_add_child function to ensure successful addition.",
+        "zh": "尝试通过调用object_property_try_add_child函数将子对象添加为属性，以确保添加成功。"
+    },
+    {
+        "en": "Finds the specified property, checks if it is writable, and then sets its value using the provided visitor, while handling potential errors.",
+        "zh": "查找指定的属性，检查其是否可写，然后使用提供的访问者设置其值，同时处理潜在错误。"
+    },
+    {
+        "en": "Guards against errors, finds the requested property, checks its writability, and sets its value while handling potential errors.",
+        "zh": "防止错误，查找请求的属性，检查其可写性，并在处理潜在错误时设置其值。"
+    },
+    {
+        "en": "Converts the boolean value to a QObject and uses the object_property_set_qobject function to set the property, ensuring proper error handling.",
+        "zh": "将布尔值转换为QObject，并使用object_property_set_QObject函数设置属性，确保正确的错误处理。"
+    },
+    {
+        "en": "Converts the boolean value to a QObject and then sets the object's property using the external function, ensuring proper memory management.",
+        "zh": "将布尔值转换为QObject，然后使用外部函数设置对象的属性，确保适当的内存管理。"
+    },
+    {
+        "en": "Creates a visitor from the QObject, uses it to set the object's property, and ensures resources are freed, thereby setting the property correctly.",
+        "zh": "从QObject创建访问者，使用它来设置对象的属性，并确保释放资源，从而正确设置属性。"
+    },
+    {
+        "en": "Creates a Visitor from the QObject, uses it to set the object's property, and releases the Visitor to achieve the goal.",
+        "zh": "从QObject创建访问者，使用它来设置对象的属性，并释放访问者以实现目标。"
+    },
+    {
+        "en": "Utilizes object_class_property_find to avoid duplicates and dynamically creates array-type properties if necessary, ultimately adding the new property to the object.",
+        "zh": "使用object_class_property_find来避免重复，并在必要时动态创建数组类型属性，最终将新属性添加到对象中。"
+    },
+    {
+        "en": "Utilizes the object_property_try_add function to ensure duplicate-free addition of the child object as a property, thereby maintaining data consistency.",
+        "zh": "利用object_property_try_add函数确保将子对象作为属性无重复添加，从而保持数据一致性。"
+    },
+    {
+        "en": "Recursively compacts child nodes and updates the parent node's pointer and skip values to minimize storage usage.",
+        "zh": "递归压缩子节点并更新父节点的指针和跳过值，以最大限度地减少存储使用。"
+    },
+    {
+        "en": "Recursively compacts child nodes and combines them into a single node if there's only one valid child, ensuring efficient use of bits.",
+        "zh": "如果只有一个有效的子节点，则递归压缩子节点并将其组合成一个节点，以确保位的有效使用。"
+    },
+    {
+        "en": "Reserves node mapping and sets the physical page level to establish the required page setup.",
+        "zh": "保留节点映射并设置物理页面级别以建立所需的页面设置。"
+    },
+    {
+        "en": "Recursively allocates and sets physical page entries based on the given level, index, and node boundaries.",
+        "zh": "根据给定的级别、索引和节点边界递归分配和设置物理页面条目。"
+    },
+    {
+        "en": "Recursively sets the physical page level by allocating nodes, updating entries, and traversing the page table until the desired level is reached.",
+        "zh": "通过分配节点、更新条目和遍历页表来递归设置物理页级别，直到达到所需级别。"
+    },
+    {
+        "en": "Uses visit_type_bool to retrieve a boolean value from a visitor and then sets the corresponding property on the object using prop->set, ensuring proper error handling.",
+        "zh": "使用visit_type_bool从访问者检索布尔值，然后使用prop->set在对象上设置相应的属性，确保正确的错误处理。"
+    },
+    {
+        "en": "Reloading the timer involves adjusting its delta value according to the policy, handling edge cases, and ultimately modifying the timer to expire at the calculated time using the external function timer_mod.",
+        "zh": "重新加载计时器需要根据策略调整其增量值，处理边缘情况，并最终使用外部函数timer_mod将计时器修改为在计算的时间到期。"
+    },
+    {
+        "en": "Uses transactional logic to safely adjust the timer's delta value, reload the timer if necessary, and trigger callbacks while avoiding recursive triggers.",
+        "zh": "使用事务逻辑安全地调整计时器的增量值，必要时重新加载计时器，并在避免递归触发的同时触发回调。"
+    },
+    {
+        "en": "It utilizes the `qdev_init_gpio_in_named` function to achieve this goal.",
+        "zh": "它利用“qdev_init_gpio_in_named”函数来实现这一目标。"
+    },
+    {
+        "en": "Extends or creates IRQs using qemu_extend_irqs and adds them as properties to the device object using object_property_add_child, ensuring proper initialization of GPIO inputs.",
+        "zh": "使用qemu_exxtend_IRQs扩展或创建IRQ，并使用object_property_add_child将它们作为属性添加到设备对象中，确保GPIO输入的正确初始化。"
+    },
+    {
+        "en": "Sets the parent bus of the device state using qdev_set_parent_bus and marks it as realized by setting a boolean property using object_property_set_bool.",
+        "zh": "使用qdev_set_parent_bus设置设备状态的父总线，并通过使用object_property_set_bool设置布尔属性将其标记为已实现。"
+    },
+    {
+        "en": "Iterates through each clock type, checks if it's used for a deadline, and runs its corresponding timers by leveraging qemu_clock_run_timers to process expired timers.",
+        "zh": "遍历每种时钟类型，检查它是否用于截止日期，并通过利用qemu_clock_run_timers处理过期的计时器来运行相应的计时器。"
+    },
+    {
+        "en": "",
+        "zh": null
+    },
+    {
+        "en": "Dynamically allocates or renews an array of IRQs using external functions g_new and g_renew, and initializes each element by allocating an IRQ with the provided handler and opaque data.",
+        "zh": "使用外部函数g_new和g_renew动态分配或更新IRQ数组，并通过使用提供的处理程序和不透明数据分配IRQ来初始化每个元素。"
+    },
+    {
+        "en": "",
+        "zh": null
+    },
+    {
+        "en": "Waits for events in the main loop while profiling the execution time to ensure efficient and controlled event processing.",
+        "zh": "在分析执行时间时等待主循环中的事件，以确保高效和可控的事件处理。"
+    },
+    {
+        "en": "Calls the handler function to set and update the IRQ status, ensuring proper interrupt handling.",
+        "zh": "调用处理程序函数来设置和更新IRQ状态，确保正确的中断处理。"
+    },
+    {
+        "en": "Uses the irq handler to set or clear the IRQ line based on the provided level, ensuring proper interrupt handling.",
+        "zh": "使用irq处理程序根据提供的级别设置或清除irq行，确保正确的中断处理。"
+    },
+    {
+        "en": "Synchronizes CPU states, resets machine and devices accordingly, and sends reset events to handle the shutdown cause.",
+        "zh": "同步CPU状态，相应地重置机器和设备，并发送重置事件以处理关机原因。"
+    },
+    {
+        "en": "Checks phase, initializes board and devices, loads snapshot or migrates if necessary, and starts the VM in autostart mode, ensuring a successful machine creation.",
+        "zh": "检查阶段，初始化板和设备，加载快照或在必要时进行迁移，并在自动启动模式下启动VM，确保成功创建机器。"
+    },
+    {
+        "en": "\nThis function achieves its goal by iterating over a set of predefined register information structures, checking for specific CPU feature support, and defining or registering the corresponding coprocessor registers accordingly.",
+        "zh": "此函数通过迭代一组预定义的寄存器信息结构，检查特定的CPU功能支持，并相应地定义或注册相应的协处理器寄存器来实现其目标。"
+    },
+    {
+        "en": "Initializes or retrieves a subpage, sets up its memory region section, and registers it with the address space dispatch to manage memory allocation.",
+        "zh": "初始化或检索子页面，设置其内存区域部分，并将其注册到地址空间调度中以管理内存分配。"
+    },
+    {
+        "en": "Creates a new FSL_IMX6 SoC object, sets up its memory and peripherals, including Ethernet PHY and NOR FLASH memory, and prepares to boot a kernel on an ARM CPU.",
+        "zh": "创建一个新的FSL_IMX6 SoC对象，设置其内存和外围设备，包括以太网PHY和NOR FLASH内存，并准备在ARM CPU上启动内核。"
+    },
+    {
+        "en": "Utilizes sysbus_mmio_map_common to map the region, ensuring proper allocation and configuration.",
+        "zh": "使用sysbus_mmio_map_common映射区域，确保正确分配和配置。"
+    },
+    {
+        "en": "Unregisters any previous mapping, sets the new address, and adds a subregion to the system memory using either overlapping or non-overlapping methods.",
+        "zh": "注销任何以前的映射，设置新地址，并使用重叠或非重叠方法将子区域添加到系统内存中。"
+    },
+    {
+        "en": "Uses the timer_mod_ns function to modify the timer, ensuring thread safety while setting the expiration time.",
+        "zh": "使用timer_mod_ns函数修改计时器，在设置过期时间的同时确保线程安全。"
+    },
+    {
+        "en": "Locks and unlocks a mutex to prevent concurrent modifications, deletes and modifies the timer in a thread-safe manner to ensure reliable timer operations.",
+        "zh": "锁定和解锁互斥体以防止并发修改，以线程安全的方式删除和修改计时器以确保可靠的计时器操作。"
+    },
+    {
+        "en": "Stops the periodic timer if necessary, updates the interrupt request, and sets the status of the TimerBlock to ensure proper handling of the tick event.",
+        "zh": "如有必要，停止定期计时器，更新中断请求，并设置TimerBlock的状态，以确保正确处理滴答事件。"
+    },
+    {
+        "en": "Ensures thread safety while retrieving the expire time and current clock value to calculate the deadline, handling edge cases and locking mechanisms.",
+        "zh": "在检索过期时间和当前时钟值以计算截止日期、处理边缘情况和锁定机制时，确保线程安全。"
+    },
+    {
+        "en": "Utilizes external functions to manage the timer list's state, retrieve current clock values, and control mutex locks, ensuring correct and thread-safe processing of expired timers.",
+        "zh": "利用外部函数来管理计时器列表的状态、检索当前时钟值和控制互斥锁，确保正确和线程安全地处理过期的计时器。"
+    },
+    {
+        "en": "Iterates through all clock types, checks if each type is suitable for determining the deadline, and uses the timerlist_deadline_ns function to find the earliest deadline across all applicable clocks.",
+        "zh": "遍历所有时钟类型，检查每种类型是否适合确定截止日期，并使用timerlist_deadline_ns函数在所有适用的时钟中找到最早的截止日期。"
+    },
+    {
+        "en": "Validates input parameters, sets up memory regions, initializes the USB bus and ports, and schedules timers to ensure proper operation of the EHCI device.",
+        "zh": "验证输入参数，设置内存区域，初始化USB总线和端口，并安排计时器以确保EHCI设备的正常运行。"
+    },
+    {
+        "en": "Initializes the EHCI device state using usb_ehci_realize and sets up its IRQ using sysbus_init_irq to ensure proper integration with the system bus.",
+        "zh": "使用usb_EHCI_realize初始化EHCI设备状态，并使用sysbus_init_IRQ设置其IRQ，以确保与系统总线的正确集成。"
+    }
+]
