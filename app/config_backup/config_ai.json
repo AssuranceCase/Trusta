@@ -1,0 +1,23 @@
+{
+    "LLM_USE": "llama3:70b",
+    "LLM_INFO": {
+        "llama3:70b": {
+            "model": "llama3:70b",
+            "url": "http://172.29.10.136:11434/api/chat"
+        }
+    },
+    "FUNCTION_CODE_PATH": "./func_analysis_llm/callgraph_data/src_func_data.json",
+    "FUNCTION_NEED_KEYWORDS": [
+    ],
+    "FUNCTION_IGNORE_KEYWORDS": [
+        "InferEvent.info",
+        "MinioOper.unzip_file",
+        "MinioOper.make_one_model_dir",
+        "InferImage.__del__",
+        "ETATimeIter.print_info",
+        "ElapsedTime",
+        "__main__",
+        "infer_model.<dictcomp>",
+        "InferJson.get_infer_image"
+    ]
+}

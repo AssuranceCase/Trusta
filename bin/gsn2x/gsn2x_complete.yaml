@@ -1,0 +1,32 @@
+G1:
+ text: Main Goal
+ supportedBy: [S1]
+ inContextOf: [A1]
+ classes: [additionalclass1, additionalclass2]
+
+S1:
+ text: Strategy 1
+ supportedBy: [G2,G3]
+
+A1: 
+ text: Assumption 1
+
+G2:
+ text: Subgoal 1
+ inContextOf: [J1]
+ undeveloped: true
+
+G3:
+ text: Subgoal 2
+ supportedBy: [Sn1] 
+ inContextOf: [J1,C1]
+
+Sn1: 
+ text: Solution 1
+ url: https://github.com/jonasthewolf/gsn2x
+
+J1: 
+ text: Justification 1
+
+C1:
+ text: Context 1

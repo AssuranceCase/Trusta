@@ -1,0 +1,105 @@
+F.C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4220, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11226), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=3980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11218), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4092, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11220), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4112, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11221), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4144, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11222), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4060, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11219), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4168, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11223), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4204, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11224), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:107: ResourceWarning: unclosed <socket.socket fd=4240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11225), raddr=('172.29.10.42', 9001)>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11235), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4752, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11227), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4032, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11229), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=3944, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11228), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11230), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4268, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11231), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4088, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11232), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4856, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11233), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11234), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\zezhong\AppData\Roaming\Python\Python38\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py:54: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'CPUExecutionProvider'
+  warnings.warn(
+.C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=5076, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11244), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4032, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11236), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11237), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=5016, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11238), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4780, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11239), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=5056, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11240), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11241), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=5032, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11242), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Program Files\Python38\lib\unittest\suite.py:84: ResourceWarning: unclosed <socket.socket fd=4360, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.29.1.83', 11243), raddr=('172.29.10.42', 9001)>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+======================================================================
+FAIL: test_image_list_to_model_list (test_infer_exec.TestInferExecute)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\zezhong\Documents\github\ds_deployer\test\UnitTest\test_infer_exec.py", line 182, in test_image_list_to_model_list
+    self.assertEqual(json.dumps(model_list), json.dumps(TEST_MODEL_LIST))
+AssertionError: '{"cl[1700 chars]cs1-vrs0-2.png"], "label_threshold": {"OK": 0.5, "NG": 0.6}}}}' != '{"cl[1700 chars]cs1-vrs0-2.png"], "label_threshold": {"OK": 0.5, "NG": 0.7}}}}'
+Diff is 7069 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_model_load (test_model_mngr.TestModelManager)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\zezhong\Documents\github\ds_deployer\test\UnitTest\test_model_mngr.py", line 32, in test_model_load
+    self.assertNotEqual(None, None)
+AssertionError: None == None
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.900s
+
+FAILED (failures=2)

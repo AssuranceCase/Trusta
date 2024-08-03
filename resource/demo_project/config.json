@@ -1,0 +1,17 @@
+{
+    "LLM_USE": "llama3:70b",
+    "LLM_INFO": {
+        "llama3:70b": {
+            "model": "llama3:70b",
+            "url": "http://172.29.10.124:11434/api/chat"
+        }
+    },
+    "PROJECT_START_FILE": "../resource/demo_project/main.py",
+    "FUNCTION_CODE_PATH": "../resource/demo_project/trusta_func_body.json",
+    "TESTCASE_CODE_PATH": "../resource/demo_project/trusta_test_body.json",
+    "FUNCTION_NEED_KEYWORDS": [],
+    "FUNCTION_IGNORE_KEYWORDS": [
+        "pydevd",
+        "__main__"
+    ]
+}

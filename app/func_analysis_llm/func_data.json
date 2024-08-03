@@ -1,0 +1,592 @@
+{
+    "calculate_average_score": {
+        "func_name": "calculate_average_score",
+        "function_goal": "Calculate the average score from a list of scores.\n",
+        "strategy": "Use the sum function to calculate the total sum of all elements in the scores list, and use the len function to determine the number of elements in the scores list. Then, divide the total sum by the count to calculate the average score."
+    },
+    "infer_call.minio_oper.MinioOper.download_file": {
+        "func_name": "infer_call.minio_oper.MinioOper.download_file",
+        "function_goal": "Download a file from a specified location and return the local file path.\n",
+        "strategy": "Create the local directory if it doesn't exist, check if the file already exists locally and return its path if it does, attempt to download the file from the specified location and handle any exceptions that occur, log a warning if the download fails, and return the local file path."
+    },
+    "infer_call.minio_oper.MinioOper.unzip_file": {
+        "func_name": "infer_call.minio_oper.MinioOper.unzip_file",
+        "function_goal": "Unzips a compressed file and extracts its contents into a folder with the same name as the compressed file.\n",
+        "strategy": "None"
+    },
+    "infer_image.InferImage.download_infer_images": {
+        "func_name": "infer_image.InferImage.download_infer_images",
+        "function_goal": "Download and process image data, returning a dictionary containing the local paths and information of the images.\n",
+        "strategy": "The function first checks if the required zip and json fields are present in the images_data_info dictionary. Then, it uses the download_file function to download the zip and json files from the specified location. After that, it uses the unzip_file function to extract the contents of the zip file into a folder. Finally, it parses the json file to obtain the local paths and information of the images."
+    },
+    "infer_json.InferJson.get_infer_image": {
+        "func_name": "infer_json.InferJson.get_infer_image",
+        "function_goal": "Create a copy of the image information and update specific parameters for a given model.\n",
+        "strategy": "None"
+    },
+    "infer_json.InferJson.image_list_to_model_list": {
+        "func_name": "infer_json.InferJson.image_list_to_model_list",
+        "function_goal": "Convert a list of images to a dictionary of models and their corresponding image information.\n",
+        "strategy": "Iterate through the image list and for each image, iterate through the model parameters to create a copy of the image information with updated parameters for each model."
+    },
+    "infer_call.infer_model.InferModel.load": {
+        "func_name": "infer_call.infer_model.InferModel.load",
+        "function_goal": "Load a specified model.\n",
+        "strategy": "Check if the model is already loaded, and if not, initialize and load the model from a specified directory using the provided model name and type."
+    },
+    "infer_exec.InferExec.parse_model_json_info": {
+        "func_name": "infer_exec.InferExec.parse_model_json_info",
+        "function_goal": "Parse the model JSON information and extract the category, lower threshold, and upper threshold values.\n",
+        "strategy": "N/A"
+    },
+    "infer_exec.InferExec.label_threshold_to_array": {
+        "func_name": "infer_exec.InferExec.label_threshold_to_array",
+        "function_goal": "Assign categories and thresholds to each image in the infer_image_list.\n",
+        "strategy": "'"
+    },
+    "infer_exec.InferExec.infer_classifier": {
+        "func_name": "infer_exec.InferExec.infer_classifier",
+        "function_goal": "Infer the classification of images using a specified model and return the results.\n",
+        "strategy": "Load the specified model, parse its JSON information to extract category and threshold values, assign categories and thresholds to each image in the infer_image_list, and use a filter pipeline to perform the inference on the dataset."
+    },
+    "infer_call.infer.one_model_infer_exec": {
+        "func_name": "infer_call.infer.one_model_infer_exec",
+        "function_goal": "Infer the classification of images using a specified model and return the results.\n",
+        "strategy": "The function creates a model with specified parameters, initializes an inference execution object, and calls the external function \"infer_classifier\" to perform the classification on the given images using the model. The function then returns the classification results."
+    },
+    "infer_json.InferJson.merge_result_to_image_list": {
+        "func_name": "infer_json.InferJson.merge_result_to_image_list",
+        "function_goal": "Merge the inference results with the image list and simplify the image paths.\n",
+        "strategy": "The function iterates through the inference results and updates the corresponding image entries in the image list with the inference results, and then simplifies the image paths by removing the directory information."
+    },
+    "infer_image.InferImage.clear_tmp_images_dir": {
+        "func_name": "infer_image.InferImage.clear_tmp_images_dir",
+        "function_goal": "Clear the temporary images directory.\n",
+        "strategy": "Check if the temporary images directory exists and remove it if it does."
+    },
+    "infer_call.infer.Infer": {
+        "func_name": "infer_call.infer.Infer",
+        "function_goal": "Perform image inference on a batch of images, returning the inference results along with the elapsed time for each step.\n",
+        "strategy": "Download and process the image data, convert the image list to a dictionary of models, infer the classification of images using each model, merge the inference results with the image list, and clear the temporary images directory."
+    },
+    "infer_call.infer_model.InferModel.get_model_obj": {
+        "func_name": "infer_call.infer_model.InferModel.get_model_obj",
+        "function_goal": "Get the model object based on the specified type.\n",
+        "strategy": "Depending on the type specified, either create a TRTInfer or OnnxInfer object and return it, or return None if the type is not recognized."
+    },
+    "infer_call.minio_oper.MinioOper.download_model_file": {
+        "func_name": "infer_call.minio_oper.MinioOper.download_model_file",
+        "function_goal": "Download a model file, unzip it, and return the path to the unzipped folder.\n",
+        "strategy": "Download the model file from a specified location, unzip it to a designated folder, and return the path to the unzipped folder."
+    },
+    "infer_call.minio_oper.MinioOper.__init__": {
+        "func_name": "infer_call.minio_oper.MinioOper.__init__",
+        "function_goal": "Initialize the object with the provided information.\n",
+        "strategy": "N/A"
+    },
+    "infer_call.infer_model.InferModel.__init__": {
+        "func_name": "infer_call.infer_model.InferModel.__init__",
+        "function_goal": "Initialize the object with the given context and event.\n",
+        "strategy": "N/A"
+    },
+    "infer_exec.InferExec.__init__": {
+        "func_name": "infer_exec.InferExec.__init__",
+        "function_goal": "Initialize the object with the given context and event.\n",
+        "strategy": "N/A"
+    },
+    "infer_json.InferJson.__init__": {
+        "func_name": "infer_json.InferJson.__init__",
+        "function_goal": "Initialize the object with the given context and event.\n",
+        "strategy": "N/A"
+    },
+    "infer_image.InferImage.__init__": {
+        "func_name": "infer_image.InferImage.__init__",
+        "function_goal": "Initialize the class instance with the given context and event variables.\n",
+        "strategy": "N/A"
+    },
+    "infer_call.infer_model.InferModel.init_context_model": {
+        "func_name": "infer_call.infer_model.InferModel.init_context_model",
+        "function_goal": "Initialize a context model by downloading and processing a model file from MinIO storage.",
+        "strategy": "Initializes the context model by downloading the model file, extracting relevant information, creating the model object, and loading it into the context, ensuring successful model initialization."
+    },
+    "flatview_add_to_dispatch": {
+        "func_name": "flatview_add_to_dispatch",
+        "function_goal": "Registers sections of a memory region with a flat view dispatcher, handling subpages and whole pages accordingly.\n",
+        "strategy": ""
+    },
+    "address_space_dispatch_compact": {
+        "func_name": "address_space_dispatch_compact",
+        "function_goal": "Compacts physical page mapping for an address space dispatch.\n",
+        "strategy": ""
+    },
+    "generate_memory_topology": {
+        "func_name": "generate_memory_topology",
+        "function_goal": "Generates a flat view representation of a given memory region.\n",
+        "strategy": "Utilizes external functions to create and configure a flat view, register its sections, compact physical page mapping, and ultimately return the resulting flat view."
+    },
+    "address_space_update_topology_pass": {
+        "func_name": "address_space_update_topology_pass",
+        "function_goal": "Updates the topology of an address space based on changes between old and new views.\n",
+        "strategy": ""
+    },
+    "address_space_set_flatview": {
+        "func_name": "address_space_set_flatview",
+        "function_goal": "Updates the flat view of an address space, replacing the old view with a new one.\n",
+        "strategy": "Looks up and sets a new flat view for an address space, updating the topology and reference counts as necessary to ensure consistent memory management."
+    },
+    "memory_region_transaction_commit": {
+        "func_name": "memory_region_transaction_commit",
+        "function_goal": "Commits a memory region transaction, updating address spaces and I/O event file descriptors accordingly.\n",
+        "strategy": "The function uses external functions to update flat views of address spaces, reset flat views, and update I/O event file descriptors to commit the memory region transaction."
+    },
+    "qemu_default_main": {
+        "func_name": "qemu_default_main",
+        "function_goal": "Runs the main loop of the QEMU emulator and performs cleanup afterwards.\n",
+        "strategy": ""
+    },
+    "qemu_init": {
+        "func_name": "qemu_init",
+        "function_goal": "To initialize and set up the QEMU machine, including processing command-line options, setting up the memory model, initializing the main loop, creating devices, and configuring accelerators.\n",
+        "strategy": ""
+    },
+    "main": {
+        "func_name": "main",
+        "function_goal": "Initializes and runs the QEMU emulator with the given command-line arguments.\n",
+        "strategy": "Initializes the QEMU machine setup through qemu_init and then runs the emulator's main loop with qemu_default_main to facilitate a complete emulation process."
+    },
+    "trusta_main.Cannon.calculate_resistance": {
+        "func_name": "trusta_main.Cannon.calculate_resistance",
+        "function_goal": "Calculates the resistance on a horizontal surface.\n",
+        "strategy": "''"
+    },
+    "trusta_main.Cannon.calculate_recoil_velocity": {
+        "func_name": "trusta_main.Cannon.calculate_recoil_velocity",
+        "function_goal": "Calculate the recoil velocity of a gun carriage.\n",
+        "strategy": "''"
+    },
+    "trusta_main.Cannon.calculate_recoil_distance": {
+        "func_name": "trusta_main.Cannon.calculate_recoil_distance",
+        "function_goal": "Calculate the recoil distance of a gun carriage.\n",
+        "strategy": "Calculates the recoil velocity and resistance, then uses them to determine the recoil distance by equating kinetic energy with work done by resistance."
+    },
+    "trusta_main.Cannon.is_soldier_safe": {
+        "func_name": "trusta_main.Cannon.is_soldier_safe",
+        "function_goal": "Determine whether a soldier is safe behind a gun carriage based on the recoil distance and the soldier's position.\n",
+        "strategy": "Calculate the recoil distance of the gun carriage and compare it with the soldier's position to ensure safety."
+    },
+    "trusta_main.Cannon.__init__": {
+        "func_name": "trusta_main.Cannon.__init__",
+        "function_goal": "Initializes the parameters of a cannon.\n",
+        "strategy": "''"
+    },
+    "trusta_main.trusta_main": {
+        "func_name": "trusta_main.trusta_main",
+        "function_goal": "Determines whether a soldier is safe behind a gun carriage.\n",
+        "strategy": "Initializes a cannon object with given parameters and then uses it to determine if a soldier is safe, considering the recoil distance and soldier's position."
+    },
+    "trusta_main.Cannon.calculate_distance_behind": {
+        "func_name": "trusta_main.Cannon.calculate_distance_behind",
+        "function_goal": "Calculate the distance between a gunner and the gun carriage.\n",
+        "strategy": "''"
+    },
+    "qmp_x_exit_preconfig.part.0": {
+        "func_name": "qmp_x_exit_preconfig.part.0",
+        "function_goal": "Initializes and configures the QEMU machine before starting the VM.\n",
+        "strategy": "Checks phase, initializes board and devices, loads snapshot or migrates if necessary, and starts the VM in autostart mode, ensuring a successful machine creation."
+    },
+    "object_class_get_list": {
+        "func_name": "object_class_get_list",
+        "function_goal": "Retrieves a list of object classes that implement the given type, with an option to include abstract classes.\n",
+        "strategy": "Iterates over object classes using the object_class_foreach function to populate the list with matching classes."
+    },
+    "qdev_machine_creation_done": {
+        "func_name": "qdev_machine_creation_done",
+        "function_goal": "Completes the initial machine setup and prepares it for hotpluggable devices.\n",
+        "strategy": "''"
+    },
+    "machine_run_board_init": {
+        "func_name": "machine_run_board_init",
+        "function_goal": "Initializes a machine state with the given memory path and error handling.\n",
+        "strategy": "''"
+    },
+    "qemu_vmstop_requested": {
+        "func_name": "qemu_vmstop_requested",
+        "function_goal": "Checks and resets the VM stop request status.\n",
+        "strategy": "''"
+    },
+    "main_loop_wait": {
+        "func_name": "main_loop_wait",
+        "function_goal": "Wait for events in the main loop with optional non-blocking behavior.\n",
+        "strategy": "'' (No external functions with sub-goals provided, so no strategy can be explained.)"
+    },
+    "qemu_main_loop": {
+        "func_name": "qemu_main_loop",
+        "function_goal": "Runs the main event loop of QEMU, handling events and exiting when necessary.\n",
+        "strategy": "Waits for events in the main loop while profiling the execution time to ensure efficient and controlled event processing."
+    },
+    "qemu_devices_reset": {
+        "func_name": "qemu_devices_reset",
+        "function_goal": "Resets all devices based on the given shutdown cause.\n",
+        "strategy": "''"
+    },
+    "qemu_system_reset": {
+        "func_name": "qemu_system_reset",
+        "function_goal": "Resets the QEMU system based on a specified shutdown cause.\n",
+        "strategy": "Synchronizes CPU states, resets machine and devices accordingly, and sends reset events to handle the shutdown cause."
+    },
+    "property_set_bool": {
+        "func_name": "property_set_bool",
+        "function_goal": "Sets a boolean property of an object based on the input from a visitor.\n",
+        "strategy": "''"
+    },
+    "object_property_set": {
+        "func_name": "object_property_set",
+        "function_goal": "Sets a property of an object based on the input from a visitor.\n",
+        "strategy": "Finds the specified property, checks if it is writable, and then sets its value using the provided visitor, while handling potential errors."
+    },
+    "object_property_set_qobject": {
+        "func_name": "object_property_set_qobject",
+        "function_goal": "Sets a property of an object using a QObject value.\n",
+        "strategy": "Creates a visitor from the QObject, uses it to set the object's property, and ensures resources are freed, thereby setting the property correctly."
+    },
+    "object_property_set_bool": {
+        "func_name": "object_property_set_bool",
+        "function_goal": "Sets a boolean property of an object.\n",
+        "strategy": "Converts the boolean value to a QObject and uses the object_property_set_qobject function to set the property, ensuring proper error handling."
+    },
+    "qdev_realize": {
+        "func_name": "qdev_realize",
+        "function_goal": "Realizes a device state by setting its parent bus and marking it as realized.\n",
+        "strategy": "Sets the parent bus of the device state using qdev_set_parent_bus and marks it as realized by setting a boolean property using object_property_set_bool."
+    },
+    "memory_region_add_subregion": {
+        "func_name": "memory_region_add_subregion",
+        "function_goal": "Adds a subregion to a given memory region.\n",
+        "strategy": "Initializes the priority of the subregion and then utilizes the common functionality provided by memory_region_add_subregion_common to add the subregion to the memory region."
+    },
+    "chipidea_init": {
+        "func_name": "chipidea_init",
+        "function_goal": "Initializes and sets up the memory regions for the ChipideaState object.\n",
+        "strategy": "Uses external functions, such as memory_region_init_io and memory_region_add_subregion, to divide and configure the memory space of the ChipideaState object into separate regions with specific offsets, sizes, and operations."
+    },
+    "qdev_init_gpio_in": {
+        "func_name": "qdev_init_gpio_in",
+        "function_goal": "Initializes a GPIO input device with the specified IRQ handler and number of inputs.\n",
+        "strategy": "It utilizes the `qdev_init_gpio_in_named` function to achieve this goal."
+    },
+    "arm_cpu_initfn": {
+        "func_name": "arm_cpu_initfn",
+        "function_goal": "Initializes an ARM CPU object, setting up various components and attributes.\n",
+        "strategy": "Utilizes external functions to initialize GPIO devices, set CPU registers, and configure other essential components to establish a functional ARM CPU environment."
+    },
+    "object_new": {
+        "func_name": "object_new",
+        "function_goal": "Creates a new object based on the provided typename.\n",
+        "strategy": "Retrieves the corresponding type implementation and uses it to create a new object instance."
+    },
+    "memory_region_add_subregion_common": {
+        "func_name": "memory_region_add_subregion_common",
+        "function_goal": "Adds a sub-region to a given memory region, setting up the necessary connections and attributes.\n",
+        "strategy": "The function relies on external functions like memory_region_update_container_subregions to ensure the successful integration of the sub-region into the main memory region."
+    },
+    "arm_load_dtb": {
+        "func_name": "arm_load_dtb",
+        "function_goal": "Load a device tree blob (DTB) into memory and configure it according to the machine state and boot information.\n",
+        "strategy": "''"
+    },
+    "arm_load_kernel": {
+        "func_name": "arm_load_kernel",
+        "function_goal": "Prepare and boot a kernel on an ARM CPU.\n\n",
+        "strategy": "Initializes the CPU environment, loads the kernel, sets up firmware or direct kernel boot, configures PSCI conduit, and prepares device tree blob loading to ensure successful kernel booting."
+    },
+    "sabrelite_init": {
+        "func_name": "sabrelite_init",
+        "function_goal": "Initializes the SabreLite machine state, setting up its components and peripherals.\n\n",
+        "strategy": "Creates a new FSL_IMX6 SoC object, sets up its memory and peripherals, including Ethernet PHY and NOR FLASH memory, and prepares to boot a kernel on an ARM CPU."
+    },
+    "qemu_mutex_unlock_impl": {
+        "func_name": "qemu_mutex_unlock_impl",
+        "function_goal": "Unlock a mutex (mutual exclusion lock) in QEMU.\n",
+        "strategy": "Ensures the mutex is initialized before unlocking it by calling qemu_mutex_pre_unlock and releasing the exclusive lock."
+    },
+    "qemu_mutex_lock_impl": {
+        "func_name": "qemu_mutex_lock_impl",
+        "function_goal": "Locks a mutex in QEMU's mutex implementation.\n",
+        "strategy": "Ensures the mutex is properly locked by first preparing for lock acquisition, then acquiring an exclusive lock, and finally performing post-lock operations."
+    },
+    "qemu_clock_get_ns": {
+        "func_name": "qemu_clock_get_ns",
+        "function_goal": "Retrieves the current clock value in nanoseconds based on the specified QEMU clock type.\n",
+        "strategy": "''"
+    },
+    "timerlist_deadline_ns": {
+        "func_name": "timerlist_deadline_ns",
+        "function_goal": "Calculates and returns the deadline of a timer list in nanoseconds.\n",
+        "strategy": "Ensures thread safety while retrieving the expire time and current clock value to calculate the deadline, handling edge cases and locking mechanisms."
+    },
+    "timerlistgroup_deadline_ns": {
+        "func_name": "timerlistgroup_deadline_ns",
+        "function_goal": "Calculates and returns the overall deadline of a timer list group in nanoseconds.\n",
+        "strategy": "Iterates through all clock types, checks if each type is suitable for determining the deadline, and uses the timerlist_deadline_ns function to find the earliest deadline across all applicable clocks."
+    },
+    "gic_set_irq": {
+        "func_name": "gic_set_irq",
+        "function_goal": "Sets and updates the IRQ (Interrupt Request) status for a specified interrupt request.\n\n",
+        "strategy": "''"
+    },
+    "timerblock_tick": {
+        "func_name": "timerblock_tick",
+        "function_goal": "Handles a timer block tick event, managing the timer's state and interrupt requests.\n",
+        "strategy": "Stops the periodic timer if necessary, updates the interrupt request, and sets the status of the TimerBlock to ensure proper handling of the tick event."
+    },
+    "timer_mod_ns": {
+        "func_name": "timer_mod_ns",
+        "function_goal": "Modifies a timer to expire at the specified time while ensuring thread safety.\n",
+        "strategy": "Locks and unlocks a mutex to prevent concurrent modifications, deletes and modifies the timer in a thread-safe manner to ensure reliable timer operations."
+    },
+    "timer_mod": {
+        "func_name": "timer_mod",
+        "function_goal": "Modifies a timer to expire at a specified time.\n",
+        "strategy": "Uses the timer_mod_ns function to modify the timer, ensuring thread safety while setting the expiration time."
+    },
+    "ptimer_reload": {
+        "func_name": "ptimer_reload",
+        "function_goal": "Reloads and adjusts a timer based on its state and policy, ensuring it triggers correctly.\n",
+        "strategy": "Reloading the timer involves adjusting its delta value according to the policy, handling edge cases, and ultimately modifying the timer to expire at the calculated time using the external function timer_mod."
+    },
+    "ptimer_tick": {
+        "func_name": "ptimer_tick",
+        "function_goal": "Handles a timer tick event, managing the timer's state and triggering callbacks as necessary.\n",
+        "strategy": "Uses transactional logic to safely adjust the timer's delta value, reload the timer if necessary, and trigger callbacks while avoiding recursive triggers."
+    },
+    "timerlist_run_timers.part.0": {
+        "func_name": "timerlist_run_timers.part.0",
+        "function_goal": "Processes and handles expired timers in a timer list, executing their corresponding callbacks.\n\n",
+        "strategy": "Utilizes external functions to manage the timer list's state, retrieve current clock values, and control mutex locks, ensuring correct and thread-safe processing of expired timers."
+    },
+    "qemu_clock_run_all_timers": {
+        "func_name": "qemu_clock_run_all_timers",
+        "function_goal": "Runs and processes all timers across different clock types.\n",
+        "strategy": "Iterates through each clock type, checks if it's used for a deadline, and runs its corresponding timers by leveraging qemu_clock_run_timers to process expired timers."
+    },
+    "object_initialize_with_type'2": {
+        "func_name": "object_initialize_with_type'2",
+        "function_goal": "Initializes an object with a given type, ensuring proper setup and allocation.\n",
+        "strategy": "Uses various initialization functions to set up the object's properties, memory, and attributes while asserting correctness and consistency."
+    },
+    "object_new_with_type'2": {
+        "func_name": "object_new_with_type'2",
+        "function_goal": "Creates a new object instance of the specified type, initializes it, and returns a pointer to it.\n",
+        "strategy": "Initializes an object with a given type by allocating memory, setting up the object's internal state, and configuring its deallocation function, ensuring proper object creation and management."
+    },
+    "sysbus_mmio_map_common": {
+        "func_name": "sysbus_mmio_map_common",
+        "function_goal": "Maps a memory-mapped I/O region to the system bus.\n",
+        "strategy": "Unregisters any previous mapping, sets the new address, and adds a subregion to the system memory using either overlapping or non-overlapping methods."
+    },
+    "sysbus_mmio_map": {
+        "func_name": "sysbus_mmio_map",
+        "function_goal": "Maps a specific memory-mapped I/O region to the system bus.\n",
+        "strategy": "Utilizes sysbus_mmio_map_common to map the region, ensuring proper allocation and configuration."
+    },
+    "object_property_set'2": {
+        "func_name": "object_property_set'2",
+        "function_goal": "Sets a property of an object to a new value.\n",
+        "strategy": "Guards against errors, finds the requested property, checks its writability, and sets its value while handling potential errors."
+    },
+    "object_property_set_qobject'2": {
+        "func_name": "object_property_set_qobject'2",
+        "function_goal": "Sets a property of an object to a new value using a QObject.\n",
+        "strategy": "Creates a Visitor from the QObject, uses it to set the object's property, and releases the Visitor to achieve the goal."
+    },
+    "object_property_set_bool'2": {
+        "func_name": "object_property_set_bool'2",
+        "function_goal": "Sets a boolean property of an object to a specified value.\n",
+        "strategy": "Converts the boolean value to a QObject and then sets the object's property using the external function, ensuring proper memory management."
+    },
+    "fsl_imx6_realize": {
+        "func_name": "fsl_imx6_realize",
+        "function_goal": "\nThe goal of this function is to initialize and configure various hardware components of an IMX6 system-on-chip (SoC), including SPI interfaces, Ethernet, watchdog timers, ROM memory, CAAM memory, OCRAM memory, and internal OCRAM aliasing.\n\n",
+        "strategy": "\nThe strategy employed by this function is to realize and map each hardware component to the system bus, configure their properties and interrupts, and add them as subregions to the system's memory regions."
+    },
+    "device_set_realized": {
+        "func_name": "device_set_realized",
+        "function_goal": "Sets the realization state of a device to either realized or unrealized.\n",
+        "strategy": "This function uses various external functions to achieve its goal by handling hotplug operations, setting up clocks and buses, realizing or unrealizing child devices, and updating the device's state accordingly."
+    },
+    "register_subpage": {
+        "func_name": "register_subpage",
+        "function_goal": "Registers a subpage in the address space dispatch with the given FlatView and MemoryRegionSection.\n\n",
+        "strategy": "Initializes or retrieves a subpage, sets up its memory region section, and registers it with the address space dispatch to manage memory allocation."
+    },
+    "phys_page_set": {
+        "func_name": "phys_page_set",
+        "function_goal": "Set up a physical page in the address space dispatch.\n",
+        "strategy": "Reserves node mapping and sets the physical page level to establish the required page setup."
+    },
+    "phys_page_compact": {
+        "func_name": "phys_page_compact",
+        "function_goal": "Compact a physical page entry by recursively traversing its children and optimizing storage.\n",
+        "strategy": "Recursively compacts child nodes and updates the parent node's pointer and skip values to minimize storage usage."
+    },
+    "object_new'2": {
+        "func_name": "object_new'2",
+        "function_goal": "Creates a new object instance of the specified type.\n",
+        "strategy": "Retrieves the type implementation and uses it to create a new object instance, ensuring the correct type is instantiated."
+    },
+    "qemu_extend_irqs": {
+        "func_name": "qemu_extend_irqs",
+        "function_goal": "Extends or creates a new array of IRQs with the specified handler and opaque data.\n",
+        "strategy": "Dynamically allocates or renews an array of IRQs using external functions g_new and g_renew, and initializes each element by allocating an IRQ with the provided handler and opaque data."
+    },
+    "object_class_property_find": {
+        "func_name": "object_class_property_find",
+        "function_goal": "Finds an object property by its name in a given object class or its parent classes.\n",
+        "strategy": "Recursively searches for the object property in the current class and its parent classes until found."
+    },
+    "object_property_try_add": {
+        "func_name": "object_property_try_add",
+        "function_goal": "Attempts to add a new property to an object, ensuring no duplicate properties exist.\n\n",
+        "strategy": "Utilizes object_class_property_find to avoid duplicates and dynamically creates array-type properties if necessary, ultimately adding the new property to the object."
+    },
+    "object_property_try_add_child": {
+        "func_name": "object_property_try_add_child",
+        "function_goal": "Attempts to add a child object to an existing object as a property.\n",
+        "strategy": "Utilizes the object_property_try_add function to ensure duplicate-free addition of the child object as a property, thereby maintaining data consistency."
+    },
+    "object_property_add_child": {
+        "func_name": "object_property_add_child",
+        "function_goal": "Adds a child object to an existing object as a property.\n",
+        "strategy": "Attempts to add the child object as a property by calling the object_property_try_add_child function to ensure successful addition."
+    },
+    "qdev_init_gpio_in_named_with_opaque": {
+        "func_name": "qdev_init_gpio_in_named_with_opaque",
+        "function_goal": "Initializes a named GPIO input with the specified handler and opaque data.\n",
+        "strategy": "Extends or creates IRQs using qemu_extend_irqs and adds them as properties to the device object using object_property_add_child, ensuring proper initialization of GPIO inputs."
+    },
+    "phys_page_set_level'2": {
+        "func_name": "phys_page_set_level'2",
+        "function_goal": "Sets the physical page level for a given map and index.\n\n",
+        "strategy": "Recursively sets the physical page level by allocating nodes, updating entries, and traversing the page table until the desired level is reached."
+    },
+    "phys_page_set_level": {
+        "func_name": "phys_page_set_level",
+        "function_goal": "Sets the physical page level for a given map and index.\n",
+        "strategy": "Recursively allocates and sets physical page entries based on the given level, index, and node boundaries."
+    },
+    "memory_region_initfn": {
+        "func_name": "memory_region_initfn",
+        "function_goal": "Initializes a MemoryRegion object with default values and sets up its properties.\n",
+        "strategy": "''"
+    },
+    "object_initialize_with_type": {
+        "func_name": "object_initialize_with_type",
+        "function_goal": "Initializes an Object with a given TypeImpl and size.\n",
+        "strategy": "Initializes the Type, sets up the Object's memory and properties, and performs additional initialization steps to ensure the Object is properly set up according to its Type."
+    },
+    "object_initialize": {
+        "func_name": "object_initialize",
+        "function_goal": "Initializes an object with a specified type, ensuring proper setup and allocation.\n",
+        "strategy": "Retrieves the required type, loads it if necessary, checks for its availability, reports errors if it's missing, and initializes the object using the retrieved type."
+    },
+    "memory_region_init_io": {
+        "func_name": "memory_region_init_io",
+        "function_goal": "Initializes a MemoryRegion object with the provided parameters.\n",
+        "strategy": "Initializes the MemoryRegion object by calling memory_region_init and setting up its operations, opaque data, and termination flag, ensuring proper setup and allocation."
+    },
+    "phys_page_compact'2": {
+        "func_name": "phys_page_compact'2",
+        "function_goal": "Compact a physical page by recursively traversing its child nodes and combining them into a single node if possible.\n",
+        "strategy": "Recursively compacts child nodes and combines them into a single node if there's only one valid child, ensuring efficient use of bits."
+    },
+    "arm_cpu_set_irq": {
+        "func_name": "arm_cpu_set_irq",
+        "function_goal": "Sets or clears the specified IRQ line for an ARM CPU.\n\n",
+        "strategy": "''"
+    },
+    "gic_update_internal": {
+        "func_name": "gic_update_internal",
+        "function_goal": "Updates the internal state of a GIC (Generic Interrupt Controller) based on the current pending interrupts and priority levels.\n\n",
+        "strategy": "Uses qemu_irq_lower, qemu_set_irq, gic_get_best_virq or gic_get_best_irq, and other functions to manage interrupt signaling, handling, and prioritization for both virtual and physical CPUs."
+    },
+    "object_class_property_find'2": {
+        "func_name": "object_class_property_find'2",
+        "function_goal": "Finds an object property by its name in a given class or its parent classes.\n",
+        "strategy": "Recursively searches for the property in the current class and its parents until found, ensuring that all inheritance levels are considered."
+    },
+    "object_property_add": {
+        "func_name": "object_property_add",
+        "function_goal": "Adds a new property to an object.\n",
+        "strategy": "Attempts to add the property while ensuring no duplicate properties exist by utilizing the object_property_try_add function."
+    },
+    "usb_ehci_realize": {
+        "func_name": "usb_ehci_realize",
+        "function_goal": "Initializes and sets up an EHCI (Enhanced Host Controller Interface) device state.\n",
+        "strategy": "Validates input parameters, sets up memory regions, initializes the USB bus and ports, and schedules timers to ensure proper operation of the EHCI device."
+    },
+    "usb_ehci_sysbus_realize": {
+        "func_name": "usb_ehci_sysbus_realize",
+        "function_goal": "Initializes and sets up an EHCI (Enhanced Host Controller Interface) device state as part of the system bus realization.\n",
+        "strategy": "Initializes the EHCI device state using usb_ehci_realize and sets up its IRQ using sysbus_init_irq to ensure proper integration with the system bus."
+    },
+    "imx_gpio_realize": {
+        "func_name": "imx_gpio_realize",
+        "function_goal": "Realizes an IMX GPIO device, initializing its memory region, GPIO inputs and outputs, and interrupt handling.\n",
+        "strategy": "Initializes the IMX GPIO device by setting up its memory region, input/output handlers, and interrupts to enable proper device functionality."
+    },
+    "add_cpreg_to_hashtable": {
+        "func_name": "add_cpreg_to_hashtable",
+        "function_goal": "\nThe function `define_one_arm_cp_reg` creates a new instance of an ARM coprocessor register, initializes its fields based on the input parameters, and inserts it into a hash table.\n\n",
+        "strategy": "\nThis function uses a combination of bitwise operations, conditional statements, and assertions to create a customized register instance that adheres to specific rules and conventions for ARM coprocessor registers."
+    },
+    "define_one_arm_cp_reg_with_opaque": {
+        "func_name": "define_one_arm_cp_reg_with_opaque",
+        "function_goal": "\nThe function `define_one_arm_cp_reg` defines an ARM coprocessor register instance, initializes its fields based on input parameters, and inserts it into a hash table.\n\n",
+        "strategy": "\nThe function uses nested loops to iterate over possible combinations of coprocessor states, secure states, CRm, Opc1, and Opc2 values, and creates a new register instance for each combination, inserting it into the hash table."
+    },
+    "define_arm_cp_regs_with_opaque_len": {
+        "func_name": "define_arm_cp_regs_with_opaque_len",
+        "function_goal": "Defines multiple ARM coprocessor register instances with opaque length.\n",
+        "strategy": "Iterates over the input registers and uses `define_one_arm_cp_reg_with_opaque` to define each instance, initializing its fields and inserting it into a hash table."
+    },
+    "register_cp_regs_for_features": {
+        "func_name": "register_cp_regs_for_features",
+        "function_goal": "\nThe goal of this function is to define and initialize various ARM coprocessor registers and their associated fields, based on the features supported by the CPU.\n\n",
+        "strategy": "\nThis function achieves its goal by iterating over a set of predefined register information structures, checking for specific CPU feature support, and defining or registering the corresponding coprocessor registers accordingly."
+    },
+    "init_cpreg_list": {
+        "func_name": "init_cpreg_list",
+        "function_goal": "Initializes the cpreg_tuples array based on the cp_regs hash and prepares it for further usage.\n",
+        "strategy": "''"
+    },
+    "arm_cpu_register_gdb_regs_for_features": {
+        "func_name": "arm_cpu_register_gdb_regs_for_features",
+        "function_goal": "Register GDB registers for ARM CPU features.\n",
+        "strategy": "'' (No external functions are provided, so no strategy can be explained.)"
+    },
+    "arm_cpu_realizefn": {
+        "func_name": "arm_cpu_realizefn",
+        "function_goal": "\nThe goal of this function is to initialize an ARM CPU model, setting up its various components and features based on the specified configuration.\n\n",
+        "strategy": "\nThis function initializes an ARM CPU by setting up its MPU (Memory Protection Unit), registers, address spaces, and other features, while also handling errors and compatibility with different ARM architectures."
+    },
+    "device_set_realized'2": {
+        "func_name": "device_set_realized'2",
+        "function_goal": "Realizes or unrealizes a device object based on the given boolean value.\n",
+        "strategy": "Utilizes various external functions for hotplug handling, device realization, and error handling to ensure a device is properly realized or unrealized in a controlled manner."
+    },
+    "property_set_bool'2": {
+        "func_name": "property_set_bool'2",
+        "function_goal": "Sets a boolean property on an object based on the given visitor and error handling.\n",
+        "strategy": "Uses visit_type_bool to retrieve a boolean value from a visitor and then sets the corresponding property on the object using prop->set, ensuring proper error handling."
+    },
+    "qemu_set_irq'2": {
+        "func_name": "qemu_set_irq'2",
+        "function_goal": "Sets or clears the specified IRQ line for a CPU.\n",
+        "strategy": "Uses the irq handler to set or clear the IRQ line based on the provided level, ensuring proper interrupt handling."
+    },
+    "qemu_set_irq": {
+        "func_name": "qemu_set_irq",
+        "function_goal": "Handles and sets the IRQ (Interrupt Request) status for a specified interrupt request.\n",
+        "strategy": "Calls the handler function to set and update the IRQ status, ensuring proper interrupt handling."
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "LLM_USE": "llama3:70b",
+    "LLM_INFO": {
+        "llama3:70b": {
+            "model": "llama3:70b",
+            "url": "http://172.29.10.124:11434/api/chat"
+        }
+    },
+    "FUNCTION_CODE_PATH": "../resource/qemu_project/qemu_func_body.json",
+    "FUNCTION_NEED_KEYWORDS": [
+        "qemu"
+    ],
+    "FUNCTION_IGNORE_KEYWORDS": [
+    ]
+}

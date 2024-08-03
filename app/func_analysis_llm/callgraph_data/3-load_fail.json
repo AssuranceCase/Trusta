@@ -1,0 +1,395 @@
+{
+    "nodeDataArray": [
+        {
+            "key": 2,
+            "question": "2 Perform image inference on a batch of images, returning the inference results along with the elapsed time for each step.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\n    \"Info\": \"infer_call.infer.Infer\\ncalls: 1\\ntime: 0.370453s\",\n    \"Strategy\": \"Download and process the image data, convert the image list to a dictionary of models, infer the classification of images using each model, merge the inference results with the image list, and clear the temporary images directory.\",\n    \"C1\": \"Initialize the class instance with the given context and event variables.\",\n    \"C2\": \"Initialize the object with the given context and event.\"\n}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "reason": "",
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 6,
+            "question": "6 Download and process image data, returning a dictionary containing the local paths and information of the images.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\n    \"Info\": \"infer_image.InferImage.download_infer_images\\ncalls: 1\\ntime: 0.286144s\",\n    \"Strategy\": \"The function first checks if the required zip and json fields are present in the images_data_info dictionary. Then, it uses the download_file function to download the zip and json files from the specified location. After that, it uses the unzip_file function to extract the contents of the zip file into a folder. Finally, it parses the json file to obtain the local paths and information of the images.\",\n    \"C1\": \"Initialize the object with the provided information.\"\n}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "reason": "",
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 8,
+            "question": "8 Download a file from a specified location and return the local file path.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\"Info\": \"infer_call.minio_oper.MinioOper.download_file\\ncalls: 2\\ntime: 0.101282s\"}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300
+                }
+            ],
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 12,
+            "question": "12 Convert a list of images to a dictionary of models and their corresponding image information.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\"Info\": \"infer_json.InferJson.image_list_to_model_list\\ncalls: 1\\ntime: 0.012762s\"}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300
+                }
+            ],
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 14,
+            "question": "14 Infer the classification of images using a specified model and return the results.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\n    \"Info\": \"infer_call.infer.one_model_infer_exec\\ncalls: 1\\ntime: 0.070544s\",\n    \"Strategy\": \"The function creates a model with specified parameters, initializes an inference execution object, and calls the external function \\\"infer_classifier\\\" to perform the classification on the given images using the model. The function then returns the classification results.\",\n    \"C1\": \"Initialize the object with the given context and event.\"\n}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "reason": "",
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 16,
+            "question": "16 Infer the classification of images using a specified model and return the results.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\n    \"Info\": \"infer_exec.InferExec.infer_classifier\\ncalls: 1\\ntime: 0.070544s\",\n    \"Strategy\": \"Load the specified model, parse its JSON information to extract category and threshold values, assign categories and thresholds to each image in the infer_image_list, and use a filter pipeline to perform the inference on the dataset.\",\n    \"C1\": \"Initialize the object with the given context and event.\"\n}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "reason": "",
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 18,
+            "question": "18 Load a specified model.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\n    \"Info\": \"infer_call.infer_model.InferModel.load\\ncalls: 1\\ntime: 0.069548s\",\n    \"Strategy\": \"Check if the model is already loaded, and if not, initialize and load the model from a specified directory using the provided model name and type.\"\n}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "reason": "",
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 19,
+            "question": "19 Initialize the context model by downloading and extracting the model file, extracting relevant information from the JSON file, creating the model object, and loading the necessary data into the context.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\n    \"Info\": \"infer_call.infer_model.InferModel.init_context_model\\ncalls: 1\\ntime: 0.069548s\",\n    \"Strategy\": \"Initialize the context model by downloading the model file, extracting relevant information from the JSON file, creating the model object based on the specified type, and loading the necessary data into the context.\",\n    \"C1\": \"Initialize the object with the provided information.\"\n}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300,
+                    "text": ""
+                }
+            ],
+            "reason": "",
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 20,
+            "question": "20 Download a model file, unzip it, and return the path to the unzipped folder.",
+            "nodetype": "Goal",
+            "Addition": [
+                {
+                    "text": "{\"Info\": \"infer_call.minio_oper.MinioOper.download_model_file\\ncalls: 1\\ntime: 0.000996s\"}",
+                    "text_width": 300
+                }
+            ],
+            "node_width": 300,
+            "actions": [
+                {
+                    "text_width": 300
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text_width": 300
+                }
+            ],
+            "frameColor": "GreenYellow"
+        },
+        {
+            "key": 21,
+            "number": "",
+            "question": "21 TestCase: TestMinioOper.test_download_file",
+            "nodetype": "Solution",
+            "reason": "",
+            "node_width": 300,
+            "actions": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "Addition": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ]
+        },
+        {
+            "key": 22,
+            "number": "",
+            "question": "22 TestCase: TestInferExecute.test_image_list_to_model_list",
+            "nodetype": "Solution",
+            "reason": "",
+            "node_width": 300,
+            "actions": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "Addition": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ]
+        },
+        {
+            "key": 23,
+            "number": "",
+            "question": "23 TestCase: TestMinioOper.test_download_model_file",
+            "nodetype": "Solution",
+            "reason": "",
+            "node_width": 300,
+            "actions": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "Addition": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ]
+        },
+        {
+            "key": 24,
+            "number": "",
+            "question": "24 TestCase: TestModelManager.test_model_load",
+            "nodetype": "Solution",
+            "reason": "",
+            "node_width": 300,
+            "actions": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "DSTheory": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ],
+            "Addition": [
+                {
+                    "text": "",
+                    "text_width": 300
+                }
+            ]
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": 2,
+            "to": 6,
+            "answer": "And"
+        },
+        {
+            "from": 2,
+            "to": 12,
+            "answer": "And"
+        },
+        {
+            "from": 2,
+            "to": 14,
+            "answer": "And"
+        },
+        {
+            "from": 6,
+            "to": 8,
+            "answer": "And"
+        },
+        {
+            "from": 14,
+            "to": 16,
+            "answer": "And"
+        },
+        {
+            "from": 16,
+            "to": 18,
+            "answer": "And"
+        },
+        {
+            "from": 18,
+            "to": 19,
+            "answer": "And"
+        },
+        {
+            "from": 19,
+            "to": 20,
+            "answer": "And"
+        },
+        {
+            "from": 8,
+            "to": 21,
+            "answer": "Or"
+        },
+        {
+            "from": 12,
+            "to": 22,
+            "answer": "Or"
+        },
+        {
+            "from": 20,
+            "to": 23,
+            "answer": "Or"
+        },
+        {
+            "from": 20,
+            "to": 24,
+            "answer": "Or"
+        }
+    ]
+}

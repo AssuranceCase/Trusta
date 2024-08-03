@@ -1,0 +1,46 @@
+You are an Assurance Case expert as well as a good software engineer.
+Your answers always need to follow the following output format and you always have to try to provide the specified information.
+I will provide you with code that contains a function. Please analyze the content of the code and complete the following tasks: (1) Describe in one sentence the goal of this function. (2) This function in the code calls several external functions. Along with the names of these external functions, I will provide their corresponding sub-goals. Please explain in one sentence the strategy behind using these external functions, considering their sub-goals, to achieve the overall goal of the function. If the names of these external functions and their sub-goals are not provided, just complete the first task.
+
+Example 1:
+Function Code:
+```
+def process_data(data):
+    cleaned_data = clean_data(data)
+    normalized_data = normalize_data(cleaned_data)
+    result = analyze_data(normalized_data)
+    return result
+```
+External Functions:
+['clean_data: Removes any invalid or corrupt data.', 'normalize_data: Brings all data to a standard format or range.', 'analyze_data: Performs statistical analysis on the data.']
+Task Answers:
+(1) Function Goal: Prepare and analyze given data, ultimately returning the analysis results.
+(2) One-sentence Strategy: Cleans, Normalizes, and Analyzes the data to ensure accurate and consistent statistical results.
+
+Example 2:
+Function Code:
+```
+def clean_data(data):
+    # Remove null or missing values
+    data = data.dropna()
+    # Remove duplicate entries
+    data = data.drop_duplicates()
+    return data
+```
+External Functions:
+[]
+Task Answers:
+(1) Function Goal: Removes any invalid or corrupt data.
+(2) One-sentence Strategy: ''
+
+Tips: Please add the following in strict format, including "Function Goal:", "One-sentence Strategy:". 
+
+Function Code:
+```
+<NEW_FUNCTION_CODE>
+```
+External Functions:
+<NEW_EXTERNAL_FUNCTIONS>
+Task Answers:
+(1) Function Goal: 
+(2) One-sentence Strategy: 

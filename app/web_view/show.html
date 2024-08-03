@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Trusted Tree</title>
+  <style type="text/css">
+    #myOverviewDiv {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      top: 10px;
+      left: 10px;
+      background-color: #f2f2f2;
+      z-index: 300; /* make sure its in front */
+      border: solid 1px #7986cb;
+    }
+  </style>
+  <!-- <script src="https://unpkg.com/gojs/release/go.js"></script> -->
+  <script src="./js/go2317-debug.js"></script>
+  <script src="./js/qwebchannel.js"></script>
+  <script src="./show_data.js"></script>
+  <script>
+      function lightenColor(color, percent) {
+        // Convert hex color to RGB
+        let r = parseInt(color.substring(1, 3), 16);
+        let g = parseInt(color.substring(1, 5).substring(2, 4), 16);
+        let b = parseInt(color.substring(1, 7).substring(4, 6), 16);
+
+        // Convert RGB to HSL
+        r /= 255;
+        g /= 255;
+        b /= 255;
+        let max = Math.max(r, g, b);
+        let min = Math.min(r, g, b);
+        let h, s, l = (max + min) / 2;
+
+        if (max == min) {
+          h = s = 0; // achromatic
+        } else {
+          let d = max - min;
+          s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+          switch (max) {
+            case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+            case g: h = (b - r) / d + 2; break;
+            case b: h = (r - g) / d + 4; break;
+          }
+          h /= 6;
+        }
+
+        // Increase lightness by the given percentage
+        l = Math.min(1, l + percent / 100);
+
+        // Convert HSL back to RGB
+        let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        let p = 2 * l - q;
+        r = hueToRgb(p, q, h + 1/3);
+        g = hueToRgb(p, q, h);
+        b = hueToRgb(p, q, h - 1/3);
+
+        // Convert RGB to hex
+        let rgb = [r, g, b].map(x => {
+          let hex = Math.round(x * 255).toString(16);
+          return hex.length === 1 ? "0" + hex : hex;
+        });
+
+        return "#" + rgb.join("");
+      }
+
+      function hueToRgb(p, q, t) {
+        if (t < 0) t += 1;
+        if (t > 1) t -= 1;
+        if (t < 1/6) return p + (q - p) * 6 * t;
+        if (t < 1/2) return q;
+        if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+        return p;
+      }
+
+
+      function getFrameColor(str) {
+          if (str == " target " || str == "Goal") {
+              return lightenColor("#0000FF", 40); //  Brightening up 40%
+          }
+          else if (str == " strategy " || str == "Strategy") {
+              return lightenColor("#008000", 55); //  Brightening up 55%
+          }
+          else if (str == " Solution " || str == "Solution") {
+              return lightenColor("#FFA500", 40); //  Brightening up 40%
+          }
+          else if (str == " background " || str == "Context") {
+              return "#800080"
+          }
+          else if (str == " hypothesis " || str == "Assumption") {
+              return "#FFFF00"
+          }
+          else if (str == " reason " || str == "Justification") {
+              return "#FF0000"
+          }
+          else {
+              return rgba(0,0,0,0) // Background color 
+          }
+      }
+
+      function getTextColor(str) {
+        if (str == " Not involved " || str == "Default") {
+            return "#81D9FF"// Node background color - blue 
+        } else {
+            return "white" // default 
+        }
+      }
+
+      function getColor(str) {
+          if (str == " environment " || str == "ENVI") {
+              return "#009900" // green 
+          }
+          else if (str == " technology " || str == "TECH") {
+              return "#0000EE" // blue 
+          }
+          else if (str == " process " || str == "PROC") {
+              return "#EE0000" // red 
+          }
+          else if (str == " evidence " || str == "EVID") {
+              return "#AAAA00" // yellow 
+          }
+          else if (str == " Numerical operation " || str == "Arithmetic") {
+              return "#AA00AA" // Purple red 
+          }
+          else if (str == " Abstract set deduction " || str == "AbstractSets") {
+              return "#4169E1" // Lake Blue 
+          }
+          else if (str == " Specific set derivation " || str == "SpecificSets") {
+              return "#20B2AA" // light green 
+          }
+          else if (str == " Function operation " || str == "Functional") {
+              return "#EEAA00" // orange 
+          }
+          else if (str == " Relationship deduction " || str == "LogicalRelations") {
+              return "#EE0000" // red 
+          }
+          else if (str == " Reliability calculation " || str == "Quantified") {
+              return "#52ce60" //  Grass green 
+          }
+          else if (str == " Not involved " || str == "Default") {
+              // return "gray" // grey 
+              return rgba(0,0,0,0) // Node background color 
+          }
+          else if (str == " target " || str == "Goal") {
+              return "#0000FF"
+          }
+          else if (str == " strategy " || str == "Strategy") {
+              return "#008000"
+          }
+          else if (str == " Solution " || str == "Solution") {
+              return "#FFA500"
+          }
+          else if (str == " background " || str == "Context") {
+              return "#800080"
+          }
+          else if (str == " hypothesis " || str == "Assumption") {
+              return "#FFFF00"
+          }
+          else if (str == " reason " || str == "Justification") {
+              return "#FF0000"
+          }
+          else {
+              return rgba(0,0,0,0) // Background color 
+          }
+      }
+
+      function getNodeWidth(node_width) {
+        if (node_width == 0) {
+          return;
+        } else {
+          return node_width
+        }
+      }
+  </script>
+  <script id="code">
+    function init() {
+      var $ = go.GraphObject.make;  // for conciseness in defining templates
+      myDiagram =
+        $(go.Diagram, "myDiagramDiv",
+          {
+            allowCopy: false,
+            "draggingTool.dragsTree": true,
+            "commandHandler.deletesTree": true,
+            layout:
+              $(go.TreeLayout,
+                { 
+                  angle: 90,
+                  arrangement: go.TreeLayout.ArrangementFixedRoots,
+                  // nodeSpacing: 10,  //  Adjust the spacing between nodes 
+                  layerSpacing: 30,  //  Adjust the spacing between levels 
+                  // layerSpacingParentOverlap: 1  //  Adjust the overlap between levels 
+                }),
+            "undoManager.isEnabled": true //  Enable revocation management 
+          });
+
+      // when the document is modified, add a "*" to the title and enable the "Save" button
+      myDiagram.addDiagramListener("Modified", function(e) {
+        var button = document.getElementById("SaveButton");
+        if (button) button.disabled = !myDiagram.isModified;
+        var idx = document.title.indexOf("*");
+        if (myDiagram.isModified) {
+          if (idx < 0) document.title += "*";
+        } else {
+          if (idx >= 0) document.title = document.title.substr(0, idx);
+        }
+      });
+
+      //  monitor ObjectDoubleClicked event 
+      myDiagram.addDiagramListener("ObjectDoubleClicked", function(e) {
+        var part = e.subject.part; //  Get the double clicked part 
+        if (part instanceof go.Node) { //  Ensure that it is a node 
+          // alert(" Double clicked the node : " + part.data.key); //  Pop up nodes key
+          var node_id = part.data.key;
+          on_html_message(`{"node_id": ${node_id}, "action": "edit_node"}`);
+        }
+      });
+
+      //  Monitor node click event 
+      myDiagram.addDiagramListener("ObjectSingleClicked", function(e) {
+        var part = e.subject.part;
+        if (part instanceof go.Node) { //  Ensure that it is a node 
+          var node_id = part.data.key;
+          on_html_message(`{"node_id": ${node_id}, "action": "show_node"}`);
+        }
+      });
+
+      var bluegrad = $(go.Brush, "Linear", { 0: "#C4ECFF", 1: "#70D4FF" });
+      var greengrad = $(go.Brush, "Linear", { 0: "#B1E2A5", 1: "#7AE060" });
+
+      // each action is represented by a shape and some text
+      var actionTemplate =
+        $(go.Panel, "Horizontal",
+          $(go.TextBlock,
+            {
+              font: "14pt Verdana, sans-serif",
+              wrap: go.TextBlock.WrapFit //  Set auto wrap 
+            },
+            new go.Binding("width", "text_width", getNodeWidth),
+            new go.Binding("stroke", "text_color"),
+            new go.Binding("text")
+          )
+        );
+      
+      
+      // Helper function to create a context menu button
+      function createContextButton(text, action, level) {
+        return $("ContextMenuButton",
+          $(go.TextBlock, text, {
+            font: "bold 14px sans-serif",
+            margin: new go.Margin(7, 20), // top and bottom margin
+            alignment: go.Spot.Left, // align the TextBlock within the button
+            textAlign: "left" // align text to the left
+          }),
+          {
+            click: function(e, obj) {
+              var node = obj.part.adornedPart; // Get the node to which this context menu belongs
+              if (node !== null) {
+                var node_id = node.data.key; // Access the key property of the node data
+                on_html_message(`{"node_id": ${node_id}, "action": "${action}", "level": ${level}}`);
+              }
+            },
+            width: 200 // Set the width of the context menu
+          }
+        );
+      }
+
+      //  Right click menu configuration: Define the context menu for each node
+      var partContextMenu =
+        $(go.Adornment, "Vertical",
+//           createContextButton("Evaluate Current Layer", "evaluate", 2),
+//           createContextButton("Evaluate the Subtree", "evaluate", 99999),
+          $(go.Shape, "LineH", { stroke: "black", height: 0, width: 200 }), // Separator line
+//           createContextButton("Generate Subgoals", "auto_add", 1),
+          $(go.Shape, "LineH", { stroke: "black", height: 0, width: 200 }), // Separator line
+          createContextButton("Function Analysis", "func_analysis", 1),
+          createContextButton("Add Assumption", "add_assumption", 1),
+          createContextButton("Add Justification", "add_justification", 1),
+          $(go.Shape, "LineH", { stroke: "black", height: 0, width: 200 }), // Separator line
+          createContextButton("Add Node", "add", 1),
+          createContextButton("Delete Node", "delete", 1),
+          createContextButton("Edit Node", "edit_node", 1)
+        );
+
+      // each regular Node has body consisting of a title followed by a collapsible list of actions,
+      // controlled by a PanelExpanderButton, with a TreeExpanderButton underneath the body
+      myDiagram.nodeTemplate =  // the default node template
+        $(go.Node, "Vertical",
+          { 
+            selectionObjectName: "BODY",
+            contextMenu: partContextMenu // Add contextMenu to the node template
+          },
+          // the main "BODY" consists of a RoundedRectangle surrounding nested Panels
+          $(go.Panel, "Auto",
+            { name: "BODY" },
+            $(go.Shape, "Rectangle", {
+                stroke: "white",    // Set the border color
+                strokeWidth: 5,      // Set the border width
+                fill: bluegrad
+              },
+              new go.Binding("fill", "frameColor"), // python:color_fill_stroke
+              new go.Binding("stroke", "nodetype", getFrameColor)
+            ),
+            $(go.Panel, "Vertical",
+              {
+                margin: 3
+              },
+              new go.Binding("width", "node_width", getNodeWidth),
+              // the title
+              $(go.TextBlock,
+                {
+                  stretch: go.GraphObject.Horizontal,
+                  font: "bold 12pt Verdana, sans-serif"
+                },
+                new go.Binding("text", "question"),
+                new go.Binding("stroke", "nameTextColor")
+              ),
+              // the optional list of actions
+              $(go.Panel, "Vertical",
+                { stretch: go.GraphObject.Horizontal, visible: false },  // not visible unless there is more than one action
+                new go.Binding("visible", "actions", function(acts) {
+                  return (Array.isArray(acts) && acts.length > 0);
+                }),
+                // headered by a label and a PanelExpanderButton inside a Table
+                $(go.Panel, "Table",
+                  { stretch: go.GraphObject.Horizontal },
+                  $(go.Panel, "Horizontal",
+                    { alignment: go.Spot.Left },
+
+                    // --------  Node type label - start  ----------- //
+                    $(go.TextBlock, " ",
+                      {
+                        font: "bold 10pt Verdana, sans-serif",
+                        // stroke: "black",
+                        margin: new go.Margin(0, 0, 3, 0)
+                      },
+                      new go.Binding("stroke", "nodetype", getColor),
+                      new go.Binding("text", "nodetype")
+                    ),
+                    // --------  Node type label - end  ----------- //
+                    // $(go.TextBlock, ": "),
+                    // --------  Node number - start  ----------- //
+                    // $(go.TextBlock, " ",
+                    //   {
+                    //     font: "bold 10pt Verdana, sans-serif",
+                    //     stroke: "white", margin: new go.Margin(0, 0, 3, 0)
+                    //   },
+                    //   new go.Binding("text", "number"),
+                    //   new go.Binding("background", "nodetype", getColor),
+                    // ),
+                    // --------  Node number - end  ----------- //
+
+                    // --------  Inference type label - start  ----------- //
+                    $(go.TextBlock, " ",
+                      {
+                        font: "bold 10pt Verdana, sans-serif",
+                        margin: new go.Margin(0, 0, 3, 0) //  Left side empty 4px(0, 0, 3, 4)
+                      },
+                      new go.Binding("text", "reason"),
+                      new go.Binding("background", "reason", getColor),
+                      new go.Binding("stroke", "reason", getTextColor),
+                    )
+                    // --------  Inference type label - end  ----------- //
+                  ),
+
+                  // --------  Switches on nodes - start  ----------- //
+                  // $(go.Panel, "Horizontal",
+                  //   { alignment: go.Spot.Right },
+                  //   $("PanelExpanderButton", "COLLAPSIBLE1",  // name of the object to make visible or invisible
+                  //     { column: 1, alignment: go.Spot.Right, background: "white" }
+                  //   ),
+                  //   $("PanelExpanderButton", "COLLAPSIBLE2",  // name of the object to make visible or invisible
+                  //     { column: 1, alignment: go.Spot.Left, background: "#ECECEC" }
+                  //   )
+                  // )
+                  // --------  Switches on nodes - end  ----------- //
+
+                ), // end Table panel
+                // with the list data bound in the Vertical Panel
+                $(go.Panel, "Vertical",
+                  {
+                    name: "COLLAPSIBLE1",  // identify to the PanelExpanderButton
+                    padding: 2,
+                    stretch: go.GraphObject.Horizontal,  // take up whole available width
+                    background: "white",  // to distinguish from the node's body
+                    defaultAlignment: go.Spot.Left,  // thus no need to specify alignment on each element
+                    itemTemplate: actionTemplate  // the Panel created for each item in Panel.itemArray
+                  },
+                  new go.Binding("itemArray", "actions"),  // bind Panel.itemArray to nodedata.actions
+                  new go.Binding("visible", "actions_show", function(a) { return (a == 'show' ? true : false); })
+                ),  // end action list Vertical Panel
+                $(go.Panel, "Vertical",
+                  {
+                    name: "COLLAPSIBLE2",  // identify to the PanelExpanderButton
+                    padding: 2,
+                    stretch: go.GraphObject.Horizontal,  // take up whole available width
+                    // background: "#ECECEC",  // to distinguish from the node's body
+                    defaultAlignment: go.Spot.Left,  // thus no need to specify alignment on each element
+                    itemTemplate: actionTemplate  // the Panel created for each item in Panel.itemArray
+                  },
+                  new go.Binding("background", "DSColor"),  // color, text color in actionTemplate
+                  new go.Binding("itemArray", "DSTheory"),  // bind Panel.itemArray to nodedata.actions
+                  new go.Binding("visible", "DSTheory_show", function(a) { return (a == 'show' ? true : false); })
+                ),  // end action list Vertical Panel,
+                $(go.Panel, "Vertical",
+                  {
+                    name: "COLLAPSIBLE3",  // identify to the PanelExpanderButton
+                    padding: 2,
+                    stretch: go.GraphObject.Horizontal,  // take up whole available width
+                    background: "white",  // to distinguish from the node's body
+                    defaultAlignment: go.Spot.Left,  // thus no need to specify alignment on each element
+                    itemTemplate: actionTemplate  // the Panel created for each item in Panel.itemArray
+                  },
+                  new go.Binding("itemArray", "Addition"),  // bind Panel.itemArray to nodedata.actions
+                  new go.Binding("visible", "Addition_show", function(a) { return (a == 'show' ? true : false); })
+                )  // end action list Vertical Panel
+              )  // end optional Vertical Panel
+            )  // end outer Vertical Panel
+          ),  // end "BODY"  Auto Panel
+          $(go.Panel,  // this is underneath the "BODY"
+            { height: 17 },  // always this height, even if the TreeExpanderButton is not visible
+            $("TreeExpanderButton")
+          )
+        );
+
+      // define a second kind of Node:
+      myDiagram.nodeTemplateMap.add("Terminal",
+        $(go.Node, "Spot",
+          $(go.Shape, "Circle",
+            { width: 55, height: 55, fill: greengrad, stroke: null }
+          ),
+          $(go.TextBlock,
+            { font: "10pt Verdana, sans-serif" },
+            new go.Binding("text")
+          )
+        )
+      );
+
+      myDiagram.linkTemplate =
+        $(go.Link, 
+          $(go.Shape,
+            { strokeWidth: 2 }
+          ),
+          $(go.TextBlock, go.Link.OrientUpright,
+            {
+              background: "white",
+              visible: false,  // unless the binding sets it to true for a non-empty string
+              segmentIndex: -2,
+              segmentOrientation: go.Link.None
+            },
+            new go.Binding("text", "answer"),
+            // hide empty string;
+            // if the "answer" property is undefined, visible is false due to above default setting
+            new go.Binding("visible", "answer", function(a) { return (a ? true : false); })
+          )
+        );
+
+      // create the Model with the above data, and assign to the Diagram
+      myDiagram.model = $(go.GraphLinksModel,
+        {
+          copiesArrays: true,
+          copiesArrayObjects: true,
+          nodeDataArray: nodeDataArray,
+          linkDataArray: linkDataArray
+        });
+
+      // Overview
+      myOverview =
+        $(go.Overview, "myOverviewDiv",  // the HTML DIV element for the Overview
+          { observed: myDiagram, contentAlignment: go.Spot.Center });   // tell it which Diagram to show and pan
+
+      setAngle('topRoot');
+
+      //  Immediately center a node after initialization 
+      myDiagram.addDiagramListener("InitialLayoutCompleted", function() {
+        // centerNode(1); // python:centerNode
+      });
+      //  Set the chart zoom ratio to  75%
+      myDiagram.scale = 0.75;
+    }
+
+    function setAngle(value) {
+      if (value == 'topRoot') {
+        myDiagram.layout.angle = 90;
+      }
+      if (value == 'leftRoot') {
+        myDiagram.layout.angle = 0;
+      }
+    }
+
+    //  Function: Display the specified node in the center 
+    function centerNode(nodeKey) {
+      var node = myDiagram.findNodeForKey(nodeKey);
+      if (node !== null) {
+          console.log(node.actualBounds); //  Check boundary values 
+          myDiagram.centerRect(node.actualBounds);
+      } else {
+          console.log("node not found!");
+      }
+    }
+
+  </script>
+</head>
+<body onload="init()">
+
+  <script>
+    // JS call python
+    //  mapping python Object（ python in setWebChannel ） 
+    document.addEventListener("DOMContentLoaded", function () {
+      new QWebChannel( qt.webChannelTransport, function(channel) {
+          window.obj = channel.objects.layout_obj;
+      });
+    });
+
+    
+    function callback(result) {
+        // alert('python return: ' + result)
+    }
+
+    function on_html_message(str_json_msg) {
+      if (window.obj) {
+          // var n = parseInt(document.getElementById('n').value);
+          window.obj.html_message(str_json_msg, callback)
+      }
+    }
+  </script>
+
+  <div id="sample">
+    <div id="myDiagramDiv" style="border: solid 1px black; width:100%; height:700px"></div>
+    <!-- <input type="button" value=" Calculate factorial " onclick="on_html_message()"> -->
+    <!-- <button onclick="centerNode(7)"> Center display node  7</button> -->
+  </div>
+
+  <div id="myOverviewDiv"></div>
+
+  <script>
+    function setMyDiagramDivHeight(value) {
+      document.getElementById("myDiagramDiv").style.height = value + 'px';
+    }
+    //  Multi window mode , 685
+    setMyDiagramDivHeight(800);
+
+    function setMyOverviewDivSize(width, height) {
+      document.getElementById("myOverviewDiv").style.width = width + 'px';
+      document.getElementById("myOverviewDiv").style.height = height + 'px';
+    }
+    setMyOverviewDivSize(200, 200);
+  </script>
+</body>
+</html>
